@@ -26,8 +26,6 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
-	<option value="overview">Overview</option>
-	
 	
 	
 	
@@ -48,11 +46,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/executeScript">&nbsp;&nbsp;&nbsp;&nbsp;- executeScript</option>
+	<option value="//api/name/executeScriptAppliedToViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- executeScriptAppliedToViewController:</option>
 	
 	<option value="//api/name/initWithScript:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithScript:</option>
-	
-	<option value="//api/name/pageIndexWithCurrentPage:fromDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- pageIndexWithCurrentPage:fromDocument:</option>
 	
 	
 	
@@ -63,8 +59,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -88,11 +82,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScript">executeScript</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScriptAppliedToViewController:">executeScriptAppliedToViewController:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithScript:">initWithScript:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageIndexWithCurrentPage:fromDocument:">pageIndexWithCurrentPage:fromDocument:</a></span></li>
 	
 </ul></li>
 
@@ -128,15 +120,6 @@
                     
                     
 					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Only very rudimentary support for JavaScript exists.
-Currently only a <a href="#//api/name/script">script</a> like &lsquo;this.pageNum = 190&rsquo; is supported.</p>
-					</div>
-					
-					
-					
 					
 					
 					<div class="section section-tasks">
@@ -162,13 +145,7 @@ Currently only a <a href="#//api/name/script">script</a> like &lsquo;this.pageNu
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/executeScript">&ndash;&nbsp;executeScript</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/pageIndexWithCurrentPage:fromDocument:">&ndash;&nbsp;pageIndexWithCurrentPage:fromDocument:</a></code>
+		<code><a href="#//api/name/executeScriptAppliedToViewController:">&ndash;&nbsp;executeScriptAppliedToViewController:</a></code>
 	</span>
 	
 	
@@ -232,18 +209,18 @@ Currently only a <a href="#//api/name/script">script</a> like &lsquo;this.pageNu
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/executeScript" title="executeScript"></a>
-	<h3 class="subsubtitle method-title">executeScript</h3>
+	<a name="//api/name/executeScriptAppliedToViewController:" title="executeScriptAppliedToViewController:"></a>
+	<h3 class="subsubtitle method-title">executeScriptAppliedToViewController:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Tries to execute the JavaScript. Experimental.</p>
+		<p>Tries to execute the JavaScript in the context of a view controller.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)executeScript</code></div>
+	<div class="method-subsection method-declaration"><code>- (void)executeScriptAppliedToViewController:(PSPDFViewController *)<em>viewController</em></code></div>
 
     
 	
@@ -303,47 +280,6 @@ Currently only a <a href="#//api/name/script">script</a> like &lsquo;this.pageNu
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/pageIndexWithCurrentPage:fromDocument:" title="pageIndexWithCurrentPage:fromDocument:"></a>
-	<h3 class="subsubtitle method-title">pageIndexWithCurrentPage:fromDocument:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Calculate new page from JavaScript.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (NSUInteger)pageIndexWithCurrentPage:(NSUInteger)<em>currentPage</em> fromDocument:(PSPDFDocument *)<em>document</em></code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>page number (might not be valid) or NSNotFound.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFJavaScriptAction.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
@@ -359,7 +295,7 @@ Currently only a <a href="#//api/name/script">script</a> like &lsquo;this.pageNu
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-09)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

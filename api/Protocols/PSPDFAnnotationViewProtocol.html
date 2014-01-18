@@ -60,15 +60,11 @@
 	
 	<option value="//api/name/didChangePageBounds:">&nbsp;&nbsp;&nbsp;&nbsp;- didChangePageBounds:</option>
 	
-	<option value="//api/name/didHidePage:">&nbsp;&nbsp;&nbsp;&nbsp;- didHidePage:</option>
+	<option value="//api/name/didHidePageView:">&nbsp;&nbsp;&nbsp;&nbsp;- didHidePageView:</option>
 	
-	<option value="//api/name/didShowPage:">&nbsp;&nbsp;&nbsp;&nbsp;- didShowPage:</option>
+	<option value="//api/name/didShowPageView:">&nbsp;&nbsp;&nbsp;&nbsp;- didShowPageView:</option>
 	
 	<option value="//api/name/didTapAtPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- didTapAtPoint:</option>
-	
-	<option value="//api/name/willHidePage:">&nbsp;&nbsp;&nbsp;&nbsp;- willHidePage:</option>
-	
-	<option value="//api/name/willShowPage:">&nbsp;&nbsp;&nbsp;&nbsp;- willShowPage:</option>
 	
 	
 	
@@ -116,15 +112,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didChangePageBounds:">didChangePageBounds:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didHidePage:">didHidePage:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didHidePageView:">didHidePageView:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didShowPage:">didShowPage:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didShowPageView:">didShowPageView:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didTapAtPoint:">didTapAtPoint:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willHidePage:">willHidePage:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willShowPage:">willShowPage:</a></span></li>
 	
 </ul></li>
 
@@ -205,25 +197,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/willShowPage:">&ndash;&nbsp;willShowPage:</a></code>
+		<code><a href="#//api/name/didShowPageView:">&ndash;&nbsp;didShowPageView:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/didShowPage:">&ndash;&nbsp;didShowPage:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/willHidePage:">&ndash;&nbsp;willHidePage:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didHidePage:">&ndash;&nbsp;didHidePage:</a></code>
+		<code><a href="#//api/name/didHidePageView:">&ndash;&nbsp;didHidePageView:</a></code>
 	</span>
 	
 	
@@ -527,8 +507,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/didHidePage:" title="didHidePage:"></a>
-	<h3 class="subsubtitle method-title">didHidePage:</h3>
+	<a name="//api/name/didHidePageView:" title="didHidePageView:"></a>
+	<h3 class="subsubtitle method-title">didHidePageView:</h3>
 	
 	
 	
@@ -538,7 +518,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)didHidePage:(NSUInteger)<em>page</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)didHidePageView:(PSPDFPageView *)<em>pageView</em></code></div>
 
     
 	
@@ -563,8 +543,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/didShowPage:" title="didShowPage:"></a>
-	<h3 class="subsubtitle method-title">didShowPage:</h3>
+	<a name="//api/name/didShowPageView:" title="didShowPageView:"></a>
+	<h3 class="subsubtitle method-title">didShowPageView:</h3>
 	
 	
 	
@@ -574,7 +554,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)didShowPage:(NSUInteger)<em>page</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)didShowPageView:(PSPDFPageView *)<em>pageView</em></code></div>
 
     
 	
@@ -634,78 +614,6 @@
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/willHidePage:" title="willHidePage:"></a>
-	<h3 class="subsubtitle method-title">willHidePage:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Called when <a href="#//api/name/pageView"><code>pageView</code></a> will be hidden. Only available in pageCurl mode.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)willHidePage:(NSUInteger)<em>page</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFAnnotationViewProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/willShowPage:" title="willShowPage:"></a>
-	<h3 class="subsubtitle method-title">willShowPage:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Called when page will be displayed. Only available in pageCurl mode.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)willShowPage:(NSUInteger)<em>page</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFAnnotationViewProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
@@ -721,7 +629,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-09)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
