@@ -72,9 +72,9 @@
 	<option value="//api/name/saveAfterToolbarHiding">&nbsp;&nbsp;&nbsp;&nbsp;saveAfterToolbarHiding</option>
 	
 	<option value="//api/name/selectedBackgroundColor">&nbsp;&nbsp;&nbsp;&nbsp;selectedBackgroundColor</option>
-
+	
 	<option value="//api/name/selectedTintColor">&nbsp;&nbsp;&nbsp;&nbsp;selectedTintColor</option>
-
+	
 	<option value="//api/name/slideToolbar">&nbsp;&nbsp;&nbsp;&nbsp;slideToolbar</option>
 	
 	<option value="//api/name/textAlignment">&nbsp;&nbsp;&nbsp;&nbsp;textAlignment</option>
@@ -116,9 +116,9 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SubclassingHooks Methods">SubclassingHooks Methods</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Advanced Methods">Advanced Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SubclassingHooks Methods">SubclassingHooks Methods</a></span></li>
 	
 </ul></li>
 
@@ -161,9 +161,9 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveAfterToolbarHiding">saveAfterToolbarHiding</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedBackgroundColor">selectedBackgroundColor</a></span></li>
-
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedTintColor">selectedTintColor</a></span></li>
-
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/slideToolbar">slideToolbar</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textAlignment">textAlignment</a></span></li>
@@ -372,13 +372,13 @@ To customize which annotation icons should be displayed, edit <code>editableAnno
 		<code><a href="#//api/name/selectedTintColor">&nbsp;&nbsp;selectedTintColor</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
-
+	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/selectedBackgroundColor">&nbsp;&nbsp;selectedBackgroundColor</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
-
+	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/annotationGroups">&nbsp;&nbsp;annotationGroups</a></code>
@@ -388,6 +388,20 @@ To customize which annotation icons should be displayed, edit <code>editableAnno
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/additionalBarButtonItems">&nbsp;&nbsp;additionalBarButtonItems</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Advanced Methods" name="task_Advanced Methods"></a>
+						<h3 class="subsubtitle task-title">Advanced Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/barPosition">&nbsp;&nbsp;barPosition</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -410,20 +424,6 @@ To customize which annotation icons should be displayed, edit <code>editableAnno
 		<code><a href="#//api/name/backButtonItem">&ndash;&nbsp;backButtonItem</a></code>
 	</span>
 	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Advanced Methods" name="task_Advanced Methods"></a>
-						<h3 class="subsubtitle task-title">Advanced Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/barPosition">&nbsp;&nbsp;barPosition</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -1054,78 +1054,78 @@ Defaults to nil.</p>
 						<div class="section-method">
 	<a name="//api/name/selectedBackgroundColor" title="selectedBackgroundColor"></a>
 	<h3 class="subsubtitle method-title">selectedBackgroundColor</h3>
-
-
-
+	
+	
+	
 	<div class="method-subsection brief-description">
 		<p>Selected UIBarButtonItem background bezel color.
 Defaults to tintColor on iOS 7 and later and 50% white on previous versions.</p>
-	</div>
-
-
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *selectedBackgroundColor</code></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">PSPDFAnnotationToolbar.h</code><br />
-	</div>
-
-
+	</div>				
+	
+	
 </div>
-
+						
 						<div class="section-method">
 	<a name="//api/name/selectedTintColor" title="selectedTintColor"></a>
 	<h3 class="subsubtitle method-title">selectedTintColor</h3>
-
-
-
+	
+	
+	
 	<div class="method-subsection brief-description">
 		<p>Selected UIBarButtonItem tint color on iOS 7 and later.
 Has no effect on previous system versions.
 Defaults to barTintColor.</p>
-	</div>
-
-
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *selectedTintColor</code></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">PSPDFAnnotationToolbar.h</code><br />
-	</div>
-
-
+	</div>				
+	
+	
 </div>
-
+						
 						<div class="section-method">
 	<a name="//api/name/slideToolbar" title="slideToolbar"></a>
 	<h3 class="subsubtitle method-title">slideToolbar</h3>
