@@ -54,39 +54,39 @@
     <h1>Integration</h1>
     
     <div class="container">
-      <h2>Objective C &amp; Xcode</h2>
+      <h2>Objective-C &amp; Xcode</h2>
       <p>
         PSPDFKit is designed to compile with Xcode 5 (iOS SDK 7 with Clang compiler).<br>
-        We support all iOS 6 and 7. We also have a special arm64 build available if your application is iOS 7 only. (This is a restriction from Apple; either iOS 7+ with arm64 or iOS 6+ but no 64bit slice. PSPDFKit works great on the iPhone 5s either way.)
+        It fully supports iOS 6 and 7, both in their native style.
       </p>
       <p><a href="/api">API Documentation</a></p>
 
-      <h3>Cocoapods</h3>
+      <h3>CocoaPods</h3>
       <p>
-      PSPDFKit is available via CocoaPods. Just add the 'PSPDFKit' pod and you're good to go. There is only one version for all variants, and you unlock features with your license key.
+      PSPDFKit is available via CocoaPods. Just add the 'PSPDFKit' pod and you're good to go. There is only one version for all variants, and you can unlock features with your license key.
       </p>
 
       <h3>Binary</h3>
       <p>
-        Simply drag the <code>PSPDFKit.embeddedframework</code> folder into your Xcode project. You're almost done. Now enable the <code>PSPDFKit.xcconfig</code> as seen in this screenshot or add the required frameworks listed below. If you have custom values set in your project settings "Other Linker Flags", you need to clear that or merge the entries with the contents of PSPDFKit.xcconfig.
+        Simply drag the <code>PSPDFKit.embeddedframework</code> folder into your Xcode project and you're almost done. Now, enable the <code>PSPDFKit.xcconfig</code> as seen in this screenshot or add the required frameworks listed below. If you have custom values set in your project settings as “Other Linker Flags,” you need to clear that or merge the entries with the contents of PSPDFKit.xcconfig.
         <img src="/images/documentation/xcconfig.png" alt="How to set the PSPDFKit.xcconfig for your project" width="908" height="218" class="border">
       </p>
 
       <h3>Source Code</h3>
       <p>
-        If you have the source code and want to integrate PSPDFKit as a subproject, copy the PSPDFKit source folder into your repository and drag the <code>PSPDFKit-lib.xcodeproj</code> file into your project tree, add it as a dependency (choose PSDPFKit, NOT PSPDFKit Demo) and add the library to the "Link Binary with Libraries)" phase. Also add <code>PSPDFKit.bundle</code> and make sure it's in within "Copy Bundle Resource".
+        If you have the source code and want to integrate PSPDFKit as a subproject, copy the PSPDFKit source folder into your repository and drag the <code>PSPDFKit-lib.xcodeproj</code> file into your project tree. Add it as a dependency (choose PSDPFKit, <i>not</i> PSPDFKit Demo) and add the library to the "Link Binary with Libraries" phase. Be sure to also add <code>PSPDFKit.bundle</code> and make sure it's within "Copy Bundle Resource.”
       </p>
       <img src="/images/documentation/sourcecode.png" alt="How to use PSPDFKit as a subproject" width="908" height="362" class="border">
       <p>
-        Also, in Build Settings, set the <a href="/images/documentation/project-settings.png">"User Header Search Paths" to "PSPDFKit"</a> (The folder that you copied into your project folder) and check Recursive.
+        In Build Settings, set the <a href="/images/documentation/project-settings.png">"User Header Search Paths" to "PSPDFKit"</a> (the folder that you copied into your project folder) and check “Recursive.”
       </p>
 
       <p>
-        Be sure to add the file ACKNOWLEDGEMENTS to your app resources to value 3rd party licenses.
+        Be sure to add the file ACKNOWLEDGEMENTS to your app resources to value third-party licenses.
       </p>
 
       <p>
-        Required frameworks are <code>CoreText.framework</code>, <code>QuartzCore.framework</code>, <code>MessageUI.framework</code>, <code>libz.dylib</code>, <code>ImageIO.framework</code>, <code>CoreMedia.framework</code>, <code>MediaPlayer.framework</code>, <code>CFNetwork.framework</code>, <code>AVFoundation.framework</code>, <code>AssetsLibrary.framework</code>, <code>Security.framework</code>, <code>QuickLook.framework</code>, <code>AudioToolbox.framework</code>, <code>sqlite3</code>, <code>libxml2</code>, <code>CoreData.framework</code> ,<code>CoreTelephony.framework</code>, <code>SystemConfiguration.framework<code>, and the linker flags <code>-ObjC</code> and <code>-fobjc-arc</code> (only of you're not using ARC) (<a href="http://developer.apple.com/library/mac/#qa/qa1490/_index.html">see QA1490 for details</a>)
+        Required frameworks are: <code>CoreText.framework</code>, <code>QuartzCore.framework</code>, <code>MessageUI.framework</code>, <code>libz.dylib</code>, <code>ImageIO.framework</code>, <code>CoreMedia.framework</code>, <code>MediaPlayer.framework</code>, <code>CFNetwork.framework</code>, <code>AVFoundation.framework</code>, <code>AssetsLibrary.framework</code>, <code>Security.framework</code>, <code>QuickLook.framework</code>, <code>AudioToolbox.framework</code>, <code>sqlite3</code>, <code>libxml2</code>, <code>CoreData.framework</code> ,<code>CoreTelephony.framework</code>, <code>SystemConfiguration.framework<code>, and the linker flags <code>-ObjC</code> and <code>-fobjc-arc</code> (only if you're not using ARC) (<a href="http://developer.apple.com/library/mac/#qa/qa1490/_index.html">see QA1490 for details</a>).
       </p>
 
       <h3>Usage</h3>
@@ -104,25 +104,25 @@
          <a name="titanium"></a>
         <h3>Appcelerator Titanium Module</h3>
         <p>
-          PSPDFKit is also available as an <a href="https://marketplace.appcelerator.com/apps/1072">Appcelerator Titanium Module. See the in the module included app.js for working example code.</a> Currently only a practical subset of the features of the ObjC-Version are exposed via the JavaScript bridge. This will be expanded as required. All available features are listed in the <code>examples/app.js</code> supplied with the module.
+          PSPDFKit is also available as an <a href="https://marketplace.appcelerator.com/apps/1072">Appcelerator Titanium Module. See app.js, which is included in the module, for working example code.</a> Currently only a practical subset of the features of the Objective-C version are exposed via the JavaScript bridge. This will be expanded as required. All available features are listed in the <code>examples/app.js</code> supplied with the module.
         </p>
         <p>
-          You need to have the most recent version of Xcode installed and the latest available versions of Titanium Studio and the Titanium SDK (3.1.2 GA or higher). If you're getting errors like "unrecognized selector sent to instance", chances are high that your Xcode is too old.
-        </p>
-
-        <p>
-          You install the plugin via copying <code>com.pspdfkit.source-iphone-xxx.zip</code> (where <code>xxx</code> is the version number) to <code>/Users/USERNAME/Library/Application\ Support/Titanium/</code> (where <code>USERNAME</code> is your mac user name). Note that on some installations, Titanium might be installed on root, then the target folder is <code>/Library/Application\ Support/Titanium/</code>.
-        </p>
-        <p>
-          Just copy the zip and then start Titanium Studio. Select <code>tiapp.xml</code> and press the [+] on Modules. Select <code>com.pspdfkit</code> (or <code>com.pspdfkit.source;</code> depending on the version you downloaded). If pspdfkit doesn't appear, try to run your application and re-do the Module add step.
+          You need to have the most recent version of Xcode installed and the latest available versions of Titanium Studio and the Titanium SDK (3.1.2 GA or higher). If you're getting errors like "unrecognized selector sent to instance,” chances are high that your Xcode is too old.
         </p>
 
         <p>
-          You also need to <a href="/images/documentation/titaniumbundle.png" target="_blank">add "PSPDFKit.bundle" to your resources</a>. You'll find it at <code>/Users/USERNAME/Library/Application\ Support/Titanium/modules/ iphone/com.pspdfkit.source/VERSIONNUMBER/example/PSPDFKit.bundle</code>. Drop the whole PSPDFKit.bundle folder into the <code>Resources/iphone</code> folder of your Appcelerator project.
+          Install the plugin via copying <code>com.pspdfkit.source-iphone-xxx.zip</code> (where <code>xxx</code> is the version number) to <code>/Users/USERNAME/Library/Application\ Support/Titanium/</code> (where <code>USERNAME</code> is your Mac username). Note that on some installations, Titanium might be installed on root. In those cases, the target folder is <code>/Library/Application\ Support/Titanium/</code>.
+        </p>
+        <p>
+          Just copy the zip and then start Titanium Studio. Select <code>tiapp.xml</code> and press the [+] on Modules. Then select <code>com.pspdfkit</code>. If PSPDFKit doesn't appear, try to run your application and redo the module-add step.
         </p>
 
         <p>
-          You also will need to set the minimum iOS version to 6.0. Open tiapp.xml as source (right click, Open With... -> Text Editor) and add following inside the <code>&lt;ti:app&gt;</code> xml block:
+          You also need to <a href="/images/documentation/titaniumbundle.png" target="_blank">add "PSPDFKit.bundle" to your resources</a>. You'll find it at <code>/Users/USERNAME/Library/Application\ Support/Titanium/modules/ iphone/com.pspdfkit.source/VERSIONNUMBER/example/PSPDFKit.bundle</code>. Drop the whole PSPDFKit.bundle folder into the <code>Resources/iPhone</code> folder of your Appcelerator project.
+        </p>
+
+        <p>
+          You also will need to set the minimum iOS version to 6.0. Open tiapp.xml as source (right click, Open With... -> Text Editor) and add the following inside the <code>&lt;ti:app&gt;</code> xml block:
         </p>
           <script src="https://gist.github.com/4547044.js"></script>
         
@@ -130,10 +130,10 @@
         <h3>Xamarin MonoTouch</h3>
       
         <p>
-          PSPDFKit provides full-featured <a href="https://github.com/PSPDFKit/Xamarin-v3">bindings for Xamarin/MonoTouch</a> to deliver the best way to view and edit PDF with annotations with the power of C#. It allows extensive customization and subclassing (especially when compared to the more limited Appcelerator plugin).
+          PSPDFKit provides full-featured <a href="https://github.com/PSPDFKit/Xamarin-v3">bindings for Xamarin/MonoTouch</a>, in order to deliver the best way to view and edit PDFs with annotations with the power of C#. It allows extensive customization and subclassing (especially when compared to the more limited Appcelerator plugin).
         </p>
         <p>
-          You can try the demo with simply using the linked GitHub repository, just add <a href="https://github.com/PSPDFKit/PSPDFKit-Demo/blob/master/PSPDFKit.embeddedframework/PSPDFKit.framework/Versions/A/PSPDFKit">the matching binary from the PSPDFKit-Demo repository</a>.
+          You can try the demo by simply using the linked GitHub repository. Just add <a href="https://github.com/PSPDFKit/PSPDFKit-Demo/blob/master/PSPDFKit.embeddedframework/PSPDFKit.framework/Versions/A/PSPDFKit">the matching binary from the PSPDFKit-Demo repository</a>.
         </p>
         <p>
         Please note that we're still working to update the bindings to PSPDFKit v3.
@@ -146,9 +146,9 @@
         </p>
         
       <a name="rubymotion"></a>
-        <h3>Rubymotion</h3>
+        <h3>RubyMotion</h3>
         <p>
-          PSPDFKit can also be used from RubyMotion, here's a <a href="https://github.com/tmeinlschmidt/rubymotion-pspdfkit">3rd party example</a> to get you started.
+          PSPDFKit can also be used from RubyMotion. Here's a <a href="https://github.com/tmeinlschmidt/rubymotion-pspdfkit">third-party example</a> to get you started.
         </p>
       </div>
     </div>
@@ -167,14 +167,14 @@
     
     <h2>Annotations</h2>
     <p>
-      PSPDFKit supports all common annotation types: <a href="/api/Classes/PSPDFLinkAnnotation.html">Link</a>, <a href="/api/Classes/PSPDFHighlightAnnotation.html">Highlight, Underscore, StrikeOut</a>, <a href="/api/Classes/PSPDFFreeTextAnnotation.html">Text</a>, <a href="/api/Classes/PSPDFInkAnnotation.html">Ink</a>, <a href="/api/Classes/PSPDFShapeAnnotation.html">Square, Circle</a>, <a href="/api/Classes/PSPDFLineAnnotation.html">Line</a>, <a href="/api/Classes/PSPDFNoteAnnotation.html">Note</a>, <a href="/api/Classes/PSPDFPolygonAnnotation.html">Polygon/Polyline</a>, <a href="/api/Classes/PSPDFFileAnnotation.html">File</a>, <a href="/api/Classes/PSPDFStampAnnotation.html">Image/Stamp</a>, Caret. These are the standard annotations (as defined in the PDF Reference) that can be read and written by many apps like Adobe Acrobat or even Apple's Preview.app.
+      PSPDFKit supports all common annotation types: <a href="/api/Classes/PSPDFLinkAnnotation.html">Link</a>, <a href="/api/Classes/PSPDFHighlightAnnotation.html">Highlight, Underscore, StrikeOut</a>, <a href="/api/Classes/PSPDFFreeTextAnnotation.html">Text</a>, <a href="/api/Classes/PSPDFInkAnnotation.html">Ink</a>, <a href="/api/Classes/PSPDFShapeAnnotation.html">Square, Circle</a>, <a href="/api/Classes/PSPDFLineAnnotation.html">Line</a>, <a href="/api/Classes/PSPDFNoteAnnotation.html">Note</a>, <a href="/api/Classes/PSPDFPolygonAnnotation.html">Polygon/Polyline</a>, <a href="/api/Classes/PSPDFFileAnnotation.html">File</a>, <a href="/api/Classes/PSPDFStampAnnotation.html">Image/Stamp</a>, and Caret. These are the standard annotations (as defined in the PDF Reference) that can be read and written by many apps like Adobe Acrobat or even Apple's Preview.app.
     </p>
     <p>
-      <b>PSPDFKit Annotate can edit and write the changes back into the PDF</b> with following annotation types: Highlight, Underscore, StrikeOut, FreeText, Ink, Note. <b>Annotations can only be written back into the PDF if the file is writeable. The default location (App Bundle) is readonly. Copy the PDF into your Documents folder (see "Test PDF annotation writing" in PSPDFCatalog)</b> Optionally and as a fallback, annotations can also written as an external file. This is the default behavior if the PDF is readonly. This can be customized with changing <a href="/api/Classes/PSPDFDocument.html#//api/name/annotationSaveMode">annotationSaveMode</a> Valid options are PSPDFAnnotationSaveModeDisabled, PSPDFAnnotationSaveModeExternalFile, PSPDFAnnotationSaveModeEmbedded, PSPDFAnnotationSaveModeEmbeddedWithExternalFileAsFallback (default)
+      <b>PSPDFKit Annotate can edit and write the changes back into the PDF</b> with the following annotation types: Highlight, Underscore, StrikeOut, FreeText, Ink, and Note. <b>Annotations can only be written back into the PDF if the file is writeable. The default location (App Bundle) is readonly. Copy the PDF into your Documents folder (see "Test PDF annotation writing" in PSPDFCatalog)</b> Optionally and as a fallback, annotations can also written as external files. This is the default behavior if the PDF is readonly. This can be customized with changing <a href="/api/Classes/PSPDFDocument.html#//api/name/annotationSaveMode">annotationSaveMode</a>. Valid options are: PSPDFAnnotationSaveModeDisabled, PSPDFAnnotationSaveModeExternalFile, PSPDFAnnotationSaveModeEmbedded, and PSPDFAnnotationSaveModeEmbeddedWithExternalFileAsFallback (default).
     </p>
     
     <p>
-      Annotations are handled by the <a href="/api/Classes/PSPDFAnnotationParser.html">PSPDFAnnotationParser class.</a> that exists once per <a href="/api/Classes/PSPDFDocumentProvider.html">PSPDFDocumentProvider</a>. A PSPDFDocument contains one or more PSPDFDocumentProviders, depending on the amount of PDF files it contains (usually it's one). You can subclass PSPDFAnnotationParser to change way annotations are loaded and saved. (e.g. to provide a database-backed annotation saving/loading). If you want to change PSPDFAnnotationParser application-wide, the best way is to add an entry in the <a href="/api/Classes/PSPDFDocument.html#//api/name/overrideClassNames">overrideClassNames dictionary</a> of PSPDFDocument.
+      Annotations are handled by the <a href="/api/Classes/PSPDFAnnotationParser.html">PSPDFAnnotationParser class</a>, which exists once per <a href="/api/Classes/PSPDFDocumentProvider.html">PSPDFDocumentProvider</a>. A PSPDFDocument contains one or more PSPDFDocumentProviders, depending on the amount of PDF files it contains (usually it's one). You can subclass PSPDFAnnotationParser to change the way annotations are loaded and saved (e.g. to provide a database-backed annotation saving/loading). If you want to change PSPDFAnnotationParser across the application, the best way is to add an entry in the <a href="/api/Classes/PSPDFDocument.html#//api/name/overrideClassNames">overrideClassNames dictionary</a> of PSPDFDocument.
     </p>
     
     <p>
@@ -182,88 +182,88 @@
     </p>
     
     <p>
-      PSPDFCatalog contains many annotation examples, make sure to check them out.
+      PSPDFCatalog contains many annotation examples; be sure to check them out.
     </p>
     
     <h3>Link Annotations</h3>
     <p>
-      Link annotations are supported. Both page links and web/email links are fully supported, even unicode-URL's will work. (for example <a href="http://💩.la">http://💩.la</a> works). This is achieved with PSPDFKit integrating the IDNSDK, since iOS does not support this per default. With long-pressing on a link, a actionsheet/popover opens showing the destination.
+      Link annotations are supported. Both page links and web/email links are fully supported. By long pressing on a link, an actionsheet/popover opens, showing the destination.
     </p>
     
-    <h3>Link Annotations to other PDF documents</h3>
+    <h3>Link Annotations to Other PDF Documents</h3>
     <p>
-      PSPDFKit also supports link annotations to external documents. You can both use the Launch annotation type ("Open a file" in Acrobat). This annotation subtype doesn't support setting a page target, so page 0 will be used. Another option is using regular web link annotations ("Open a web link" in Acrobat). The same path resolving methods as with other link annotations are used. Use pspdfkit://localhost/PSPDFKit.pdf#page=3 to link to the file PSPDFKit.pdf at page 4. (pages start at 0 here)
+      PSPDFKit also supports link annotations to external documents. You can use the Launch annotation type ("Open a file" in Acrobat). This annotation subtype doesn't support setting a page target, so the first page will be used. Another option is using regular web link annotations ("Open a web link" in Acrobat). The same path-resolving methods, as used with other link annotations, are used here. Use pspdfkit://localhost/PSPDFKit.pdf#page=3 to link to the file PSPDFKit.pdf at page four (pages start at zero here).
     </p>
     
     <a href="" id="encryption"></a>
     <h2>Encryption</h2>
     <p>
-      The default PDF password encryption is supported. If you open a PDF document that is password protected, PSPDFKit will show a password prompt to unlock. (<a href="/api/Classes/PSPDFViewController.html#//api/name/passwordDialogEnabled">This can also be disabled</a> and/or <a href="/api/Classes/PSPDFDocument.html#//api/name/unlockWithPassword:">the password can be set programmatically</a>)
+      The default PDF password encryption is supported. If you open a PDF document that is password protected, PSPDFKit will show a password prompt to unlock. (<a href="/api/Classes/PSPDFViewController.html#//api/name/passwordDialogEnabled">This can also be disabled</a> and/or <a href="/api/Classes/PSPDFDocument.html#//api/name/unlockWithPassword:">the password can be set programmatically</a>.)
     </p>
     <p>
-      The Acrobat 3 And Later option uses a low encryption level (40‑bit RC4), while the other options use a high encryption level (128‑bit RC4 or AES). Acrobat 9.0 And Later encrypts the document using the AES encryption algorithm with a 256-bit key size. iOS including version 6 does not yet support the Acrobat 9.0+ style encryption.
+      The Acrobat 3 And Later option uses a low encryption level (40‑bit RC4), while the other options use a high encryption level (128‑bit RC4 or AES). Acrobat 9.0 And Later encrypts the document using the AES encryption algorithm with a 256-bit key size. iOS, including version 6, does not yet support the Acrobat 9.0+ style encryption.
     </p>
     <p>
-      PSPDFKit Annotate is able to add an <b>additional layer of security</b> with support for state-of-the-art fast, in-memory <a href="http://en.wikipedia.org/wiki/AES256">AES256</a> decryption using the PSPDFAESCryptoDataProvider (iOS5+) class. You can encrypt the whole file with a password+salt, and with using 50.000 <a href="http://en.wikipedia.org/wiki/PBKDF2">PBKDF</a> iterations it's well-protected against brute-force attacks (<a href="http://www.macworld.com/article/1137343/pdf.html">unlike solutions from Adobe</a>). We also provide the "AESCryptor" Mac app that encrypts your PDF documents. Unlike NSData-based solutions, the PDF never is *fully* decrypted, and this even works with very large (> 500MB) documents. The file also will never be written out unencrypted to disk, and the cache is automatically disabled for encrypted content.
+      PSPDFKit Annotate is able to add an <b>additional layer of security</b> with support for state-of-the-art, fast, in-memory <a href="http://en.wikipedia.org/wiki/AES256">AES256</a> decryption using the PSPDFAESCryptoDataProvider (iOS5+) class. You can encrypt the whole file with a password+salt, and by using 50,000 <a href="http://en.wikipedia.org/wiki/PBKDF2">PBKDF</a> iterations, the file is well protected against brute-force attacks (<a href="http://www.macworld.com/article/1137343/pdf.html">unlike solutions from Adobe</a>). We also provide the "AESCryptor" Mac app that encrypts your PDF documents. Unlike NSData-based solutions, the PDF is never *fully* decrypted, and this even works with very large (> 500MB) documents. The file also will never be written out unencrypted to disk, and the cache is automatically disabled for encrypted content.
     </p>
     <script src="https://gist.github.com/3727230.js?file=PSPDFAESCryptoDataProviderExample.m"></script>
 
     <h2>Logging</h2>
     <p>
-      The log level can be set at runtime, from anywhere in your project. The default log level is PSPDFLogLevelWarning.
+      The log level can be set at runtime from anywhere in your project. The default log level is PSPDFLogLevelWarning.
     </p>
     <script src="https://gist.github.com/1117227.js"> </script>
 
     <h2>Localization</h2>
     <p>
-      The PSPDFKit.bundle file contains localization for german, english, french, italian and spanish. You can either add further localization via adding the corresponding folders, or (the preferred way) set new localization programmatically.<br>(Set before displaying PSPDFViewController, your AppDelegate is a good place)</p>
+      The PSPDFKit.bundle file contains localization for English, French, German, Italian, and Spanish. You can either add further localization via adding the corresponding folders, or set new localization programmatically (the preferred way).<br>(Set this before displaying PSPDFViewController. Your AppDelegate is a good place.)</p>
     <p>
-      To see all strings that should be localized, look inside PSPDFKit/PSPDFKit.bundle/en.lproj/PSPDFKit.strings. PSPDFKit uses `NSLocale.preferredLanguages` to determine the language and falls back to english if this method doesn't return anything or the language is not available either in the PSPDFKit.bundle or the language dictionary. PSPDFKit will NOT look into your default project strings file. To get all strings translated (including OS-level default buttons like "Edit" or "Done") you need to add a Localizable.strings file of your target language to your project.
+      To see all strings that should be localized, look inside PSPDFKit/PSPDFKit.bundle/en.lproj/PSPDFKit.strings. PSPDFKit uses `NSLocale.preferredLanguages` to determine the language and falls back to English if this method doesn't return anything or the language is not available either in the PSPDFKit.bundle or the language dictionary. PSPDFKit will <i>not</i> look into your default project strings file. To get all strings translated (including OS-level default buttons like "Edit" or "Done") you need to add a Localizable.strings file of your target language to your project.
     </p>
     <script src="https://gist.github.com/1409651.js"> </script>
     <p>
-      As a further option, you can also use `PSPDFSetLocalizationBlock(NSString *(^)(NSString *stringToLocalize))` to register a block that is called every time a string is translated. This way you can easily use your default bundle or a custom bundle with using `NSLocalizedStringFromTableInBundle`.
+      As a further option, you can also use `PSPDFSetLocalizationBlock(NSString *(^)(NSString *stringToLocalize))` to register a block that is called every time a string is translated. This way, you can easily use your default bundle or a custom bundle with `NSLocalizedStringFromTableInBundle`.
     </p>
     <script src="https://gist.github.com/steipete/6357231.js"></script>
 
     <h2 class="section-title">Multimedia Overlay Features</h2>
     <p>
-      PSPDFKit supports rich multimedia annotations. Those can be created with Mac Preview.app* or Adobe Acrobat. Create a URL annotation and use <code>pspdfkit://</code> as the url scheme instead of http. The system will auto-detect the correct end correct point. Supported are:
+      PSPDFKit supports rich multimedia annotations, which can be created with Mac Preview.app* or Adobe Acrobat. Create a URL annotation and use <code>pspdfkit://</code> as the URL scheme instead of HTTP. The system will auto-detect the correct endpoint. Supported are:
     </p>
 
     <ul>
-      <li>Video (m3u8, mov, avi, mpg, m4v - formats that are supported by iOS) Both local and remote content is supported.</li>
-      <li>YouTube. (e.g. <code>pspdfkit://youtube.com/watch?v=0DSCFQcR08E</code>)</li>
+      <li>Video (m3u8, mov, avi, mpg, m4v - formats that are supported by iOS). Both local and remote content is supported.</li>
+      <li>YouTube (e.g. <code>pspdfkit://youtube.com/watch?v=0DSCFQcR08E</code>)</li>
       <li>Audio (mp3, m4a, mp4)</li>
       <li>Images (jpg, jpeg, png, (animated) gif, tiff, tif, bmp, bmpf, cur, xmb)</li>
       <li>Inline Web Pages</li>
       <li>
-        Modal Web Pages (e.g. <code>pspdfkit://[modal:YES,size:500x500]http://apple.com</code>. Size is optional and only honored on iPad. Inline Web Browser can also enabled with changing <a href="/api/Classes/PSPDFViewController.html#//api/name/linkAction">linkAction in PSPDFViewController</a>.
+        Modal Web Pages (e.g. <code>pspdfkit://[modal:YES,size:500x500]http://apple.com</code>). Size is optional and only honored on iPad. The Inline Web Browser can also be enabled with changing <a href="/api/Classes/PSPDFViewController.html#//api/name/linkAction">linkAction in PSPDFViewController</a>.
       </li>
       <li>Any custom UIView with using the delegate methods.</li>
     </ul>
 
     <p>
-      For example, <code>pspdfkit://devimages.apple.com/ iphone/samples/bipbop/bipbopall.m3u8</code> will show the Apple HTTP Live streaming test page. There are <a href="/api/Protocols/PSPDFViewControllerDelegate.html#//api/name/pdfViewController:shouldDisplayAnnotation:onPageView:">delegate methods</a> if you need more control (like manually setting auto play, adding custom annotations).
+      For example, <code>pspdfkit://devimages.apple.com/ iphone/samples/bipbop/bipbopall.m3u8</code> will show the Apple HTTP Live streaming test page. There are <a href="/api/Protocols/PSPDFViewControllerDelegate.html#//api/name/pdfViewController:shouldDisplayAnnotation:onPageView:">delegate methods</a> if you need more control (like manually setting autoplay, or adding custom annotations).
     </p>
 
     <img src="/images/documentation/editlink-adobe.png" alt="Add annotations in Adobe Acrobat" width="944" height="597" class="border"/>
     <p>
-      Note: The <code>%5B</code> and <code>%5D</code> are just encoded and stand for <code>[</code> and <code>]</code>.
+      Note: The <code>%5B</code> and <code>%5D</code> are encoded and stand for <code>[</code> and <code>]</code>.
     </p>
 
     <p>
-      If you want to display local files, use  <code>pspdfkit://localhost/file.xy</code>. The Path is automatically set to the same path as the displayed PDF. Supported folders include Bundle, Documents and Cache - but you can easily extend that to support custom folders.
+      If you want to display local files, use  <code>pspdfkit://localhost/file.xy</code>. The Path is automatically set to the same path as the displayed PDF. Supported folders include Bundle, Documents, and Cache, but you can easily extend that to support custom folders.
     </p>
 
   <h3>Video Options</h3>
   <ul>
     <li><code>autostart:</code> starts the video as soon as the page is displayed (e.g. <code>pspdfkit://[autostart:true]devimages.apple.com/ iphone/samples/bipbop/bipbopall.m3u8</code>)</li>
-    <li><code>cover:</code> displays a custom play button with the cover image. If you just need the play button without a background image, use <code>cover : ""</code>. Cover uses the same path resolving like the multimedia link annotation system (<code>http://website</code> or <code>/localhost/Bundle/image.jpg</code>). Note: <code>autostart:true</code> will override the cover setting.</li>
-    <li><code>offset:</code> will start the video at a specific time in seconds. (e.g. <code>pspdfkit://[offset:10]devimages.apple.com/ iphone/samples/bipbop/bipbopall.m3u8</code>)</li>
+    <li><code>cover:</code> displays a custom play button with the cover image. If you just need the play button without a background image, use <code>cover : ""</code>. Cover uses the same path resolution as the multimedia link annotation system (<code>http://website</code> or <code>/localhost/Bundle/image.jpg</code>). Note: <code>autostart:true</code> will override the cover setting.</li>
+    <li><code>offset:</code> starts the video at a specific time in seconds (e.g. <code>pspdfkit://[offset:10]devimages.apple.com/ iphone/samples/bipbop/bipbopall.m3u8</code>).</li>
 
   </ul><br>
-    <p>Note: YouTube-Links are not displayed as a inline-thumbnail on the iPhone if the PSPDFViewController is displayed modally. This is a workaround for a known Apple bug, where the UINavigationController breaks after the control returns from fullscreen.</p><br>
+    <p>Note: YouTube links are not displayed as inline-thumbnails on the iPhone if the PSPDFViewController is displayed modally. This is a workaround for a known Apple bug, where the UINavigationController breaks after the control returns from fullscreen.</p><br>
 
     <p>(*) Starting with Mountain Lion, the URL linking feature in Preview.app has been removed. Either use Adobe Acrobat or <a href="http://itunes.apple.com/us/app/pdfpenpro-for-mac/id403758325?mt=12">PDFpen</a>.</p>
       </div>
@@ -284,7 +284,7 @@
       <p>
         By purchasing or integrating PSPDFKit, you or the entity or company that you represent are unconditionally agreeing to be bound by the terms and are becoming a party to the Terms. IF YOU DO NOT AGREE TO THE TERMS, YOU MAY NOT USE PSPDFKIT, IN WHOLE OR IN PART.</p>
       <p>
-        <a href="/License.pdf">View the PSPDFKit License as PDF.</a>  
+        <a href="/License.pdf">View the PSPDFKit License as a PDF.</a>  
       </p>
     </div>
   </section>
