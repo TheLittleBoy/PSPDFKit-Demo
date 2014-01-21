@@ -50,13 +50,13 @@
 	
 	<option value="//api/name/bytesAtOffset:length:buffer:">&nbsp;&nbsp;&nbsp;&nbsp;- bytesAtOffset:length:buffer:</option>
 	
-	<option value="//api/name/initWithURL:key:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:key:</option>
+	<option value="//api/name/initWithURL:key:error:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:key:error:</option>
 	
-	<option value="//api/name/initWithURL:passphrase:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:passphrase:</option>
+	<option value="//api/name/initWithURL:passphrase:PRF:rounds:error:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:passphrase:PRF:rounds:error:</option>
 	
-	<option value="//api/name/initWithURL:passphrase:PRF:rounds:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:passphrase:PRF:rounds:</option>
+	<option value="//api/name/initWithURL:passphrase:error:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:passphrase:error:</option>
 	
-	<option value="//api/name/initWithURL:passphrase:salt:rounds:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:passphrase:salt:rounds:</option>
+	<option value="//api/name/initWithURL:passphrase:salt:rounds:error:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:passphrase:salt:rounds:error:</option>
 	
 	
 	
@@ -94,13 +94,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bytesAtOffset:length:buffer:">bytesAtOffset:length:buffer:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:key:">initWithURL:key:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:key:error:">initWithURL:key:error:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:passphrase:">initWithURL:passphrase:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:passphrase:PRF:rounds:error:">initWithURL:passphrase:PRF:rounds:error:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:passphrase:PRF:rounds:">initWithURL:passphrase:PRF:rounds:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:passphrase:error:">initWithURL:passphrase:error:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:passphrase:salt:rounds:">initWithURL:passphrase:salt:rounds:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:passphrase:salt:rounds:error:">initWithURL:passphrase:salt:rounds:error:</a></span></li>
 	
 </ul></li>
 
@@ -158,25 +158,25 @@ or using legacy file format (CBC and an initial 16 byte IV vector written in the
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithURL:passphrase:">&ndash;&nbsp;initWithURL:passphrase:</a></code>
+		<code><a href="#//api/name/initWithURL:passphrase:error:">&ndash;&nbsp;initWithURL:passphrase:error:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithURL:passphrase:PRF:rounds:">&ndash;&nbsp;initWithURL:passphrase:PRF:rounds:</a></code>
+		<code><a href="#//api/name/initWithURL:passphrase:PRF:rounds:error:">&ndash;&nbsp;initWithURL:passphrase:PRF:rounds:error:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithURL:key:">&ndash;&nbsp;initWithURL:key:</a></code>
+		<code><a href="#//api/name/initWithURL:key:error:">&ndash;&nbsp;initWithURL:key:error:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithURL:passphrase:salt:rounds:">&ndash;&nbsp;initWithURL:passphrase:salt:rounds:</a></code>
+		<code><a href="#//api/name/initWithURL:passphrase:salt:rounds:error:">&ndash;&nbsp;initWithURL:passphrase:salt:rounds:error:</a></code>
 	</span>
 	
 	
@@ -288,8 +288,8 @@ or using legacy file format (CBC and an initial 16 byte IV vector written in the
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithURL:key:" title="initWithURL:key:"></a>
-	<h3 class="subsubtitle method-title">initWithURL:key:</h3>
+	<a name="//api/name/initWithURL:key:error:" title="initWithURL:key:error:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:key:error:</h3>
 	
 	
 	
@@ -301,7 +301,7 @@ URL must be a file-based URL.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> key:(NSData *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> key:(NSData *)<em>key</em> error:(NSError **)<em>error</em></code></div>
 
     
 	
@@ -326,49 +326,8 @@ URL must be a file-based URL.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithURL:passphrase:" title="initWithURL:passphrase:"></a>
-	<h3 class="subsubtitle method-title">initWithURL:passphrase:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Designated initializer with the passphrase.
-URL must be a file-based URL.
-Salt will be loaded from the header of the
-current file format <a href="https://github.com/rnapier/RNCryptor/wiki/Data-Format">https://github.com/rnapier/RNCryptor/wiki/Data-Format</a>
-The default PRF is <code>kCCPRFHmacAlgSHA1</code>.
-The default number of iterations is <code>PSPDFAESDefaultPBKDFNumberOfRounds</code> (10000).</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> passphrase:(NSString *)<em>passphrase</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFAESDecryptor.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithURL:passphrase:PRF:rounds:" title="initWithURL:passphrase:PRF:rounds:"></a>
-	<h3 class="subsubtitle method-title">initWithURL:passphrase:PRF:rounds:</h3>
+	<a name="//api/name/initWithURL:passphrase:PRF:rounds:error:" title="initWithURL:passphrase:PRF:rounds:error:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:passphrase:PRF:rounds:error:</h3>
 	
 	
 	
@@ -383,7 +342,7 @@ URL must be a file-based URL.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> passphrase:(NSString *)<em>passphrase</em> PRF:(CCPseudoRandomAlgorithm)<em>prf</em> rounds:(uint)<em>rounds</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> passphrase:(NSString *)<em>passphrase</em> PRF:(CCPseudoRandomAlgorithm)<em>prf</em> rounds:(uint)<em>rounds</em> error:(NSError **)<em>error</em></code></div>
 
     
 	
@@ -408,8 +367,49 @@ URL must be a file-based URL.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithURL:passphrase:salt:rounds:" title="initWithURL:passphrase:salt:rounds:"></a>
-	<h3 class="subsubtitle method-title">initWithURL:passphrase:salt:rounds:</h3>
+	<a name="//api/name/initWithURL:passphrase:error:" title="initWithURL:passphrase:error:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:passphrase:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated initializer with the passphrase.
+URL must be a file-based URL.
+Salt will be loaded from the header of the
+current file format <a href="https://github.com/rnapier/RNCryptor/wiki/Data-Format">https://github.com/rnapier/RNCryptor/wiki/Data-Format</a>
+The default PRF is <code>kCCPRFHmacAlgSHA1</code>.
+The default number of iterations is <code>PSPDFAESDefaultPBKDFNumberOfRounds</code> (10000).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> passphrase:(NSString *)<em>passphrase</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAESDecryptor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithURL:passphrase:salt:rounds:error:" title="initWithURL:passphrase:salt:rounds:error:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:passphrase:salt:rounds:error:</h3>
 	
 	
 	
@@ -420,7 +420,7 @@ Supports the old legacy format and the new format. (see <a href="https://github.
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> passphrase:(NSString *)<em>passphrase</em> salt:(NSString *)<em>salt</em> rounds:(uint)<em>rounds</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>sourceURL</em> passphrase:(NSString *)<em>passphrase</em> salt:(NSString *)<em>salt</em> rounds:(uint)<em>rounds</em> error:(NSError **)<em>error</em></code></div>
 
     
 	
@@ -459,7 +459,7 @@ Supports the old legacy format and the new format. (see <a href="https://github.
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-19)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

@@ -54,9 +54,9 @@
 	
 	<option value="//api/name/generatePDFFromDocument:pageRanges:outputFileURL:options:progressBlock:error:">&nbsp;&nbsp;&nbsp;&nbsp;- generatePDFFromDocument:pageRanges:outputFileURL:options:progressBlock:error:</option>
 	
-	<option value="//api/name/generatePDFFromHTMLString:options:">&nbsp;&nbsp;&nbsp;&nbsp;- generatePDFFromHTMLString:options:</option>
+	<option value="//api/name/generatePDFFromHTMLString:options:error:">&nbsp;&nbsp;&nbsp;&nbsp;- generatePDFFromHTMLString:options:error:</option>
 	
-	<option value="//api/name/generatePDFFromHTMLString:outputFileURL:options:">&nbsp;&nbsp;&nbsp;&nbsp;- generatePDFFromHTMLString:outputFileURL:options:</option>
+	<option value="//api/name/generatePDFFromHTMLString:outputFileURL:options:error:">&nbsp;&nbsp;&nbsp;&nbsp;- generatePDFFromHTMLString:outputFileURL:options:error:</option>
 	
 	<option value="//api/name/generatePDFFromURL:options:completionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- generatePDFFromURL:options:completionBlock:</option>
 	
@@ -102,9 +102,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generatePDFFromDocument:pageRanges:outputFileURL:options:progressBlock:error:">generatePDFFromDocument:pageRanges:outputFileURL:options:progressBlock:error:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generatePDFFromHTMLString:options:">generatePDFFromHTMLString:options:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generatePDFFromHTMLString:options:error:">generatePDFFromHTMLString:options:error:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generatePDFFromHTMLString:outputFileURL:options:">generatePDFFromHTMLString:outputFileURL:options:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generatePDFFromHTMLString:outputFileURL:options:error:">generatePDFFromHTMLString:outputFileURL:options:error:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generatePDFFromURL:options:completionBlock:">generatePDFFromURL:options:completionBlock:</a></span></li>
 	
@@ -183,13 +183,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/generatePDFFromHTMLString:outputFileURL:options:">&ndash;&nbsp;generatePDFFromHTMLString:outputFileURL:options:</a></code>
+		<code><a href="#//api/name/generatePDFFromHTMLString:outputFileURL:options:error:">&ndash;&nbsp;generatePDFFromHTMLString:outputFileURL:options:error:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/generatePDFFromHTMLString:options:">&ndash;&nbsp;generatePDFFromHTMLString:options:</a></code>
+		<code><a href="#//api/name/generatePDFFromHTMLString:options:error:">&ndash;&nbsp;generatePDFFromHTMLString:options:error:</a></code>
 	</span>
 	
 	
@@ -389,8 +389,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/generatePDFFromHTMLString:options:" title="generatePDFFromHTMLString:options:"></a>
-	<h3 class="subsubtitle method-title">generatePDFFromHTMLString:options:</h3>
+	<a name="//api/name/generatePDFFromHTMLString:options:error:" title="generatePDFFromHTMLString:options:error:"></a>
+	<h3 class="subsubtitle method-title">generatePDFFromHTMLString:options:error:</h3>
 	
 	
 	
@@ -400,7 +400,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (NSData *)generatePDFFromHTMLString:(NSString *)<em>HTML</em> options:(NSDictionary *)<em>options</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSData *)generatePDFFromHTMLString:(NSString *)<em>HTML</em> options:(NSDictionary *)<em>options</em> error:(NSError **)<em>error</em></code></div>
 
     
 	
@@ -430,8 +430,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/generatePDFFromHTMLString:outputFileURL:options:" title="generatePDFFromHTMLString:outputFileURL:options:"></a>
-	<h3 class="subsubtitle method-title">generatePDFFromHTMLString:outputFileURL:options:</h3>
+	<a name="//api/name/generatePDFFromHTMLString:outputFileURL:options:error:" title="generatePDFFromHTMLString:outputFileURL:options:error:"></a>
+	<h3 class="subsubtitle method-title">generatePDFFromHTMLString:outputFileURL:options:error:</h3>
 	
 	
 	
@@ -442,7 +442,7 @@ e.g. <code>@"This is a &lt;b&gt;test&lt;/b&gt;</code> in <code>&lt;span style='c
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)generatePDFFromHTMLString:(NSString *)<em>HTML</em> outputFileURL:(NSURL *)<em>fileURL</em> options:(NSDictionary *)<em>options</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)generatePDFFromHTMLString:(NSString *)<em>HTML</em> outputFileURL:(NSURL *)<em>fileURL</em> options:(NSDictionary *)<em>options</em> error:(NSError **)<em>error</em></code></div>
 
     
 	
@@ -533,14 +533,13 @@ Upon completion, the <code>completionBlock</code> will be called.</p>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Supported are web pages and certain file types like pages, keynote, word, powerpoint, excel, rtf, jpg, png, &hellip;
-See <a href="https://developer.apple.com/library/ios/">https://developer.apple.com/library/ios/</a>#qa/qa2008/qa1630.html for the full list.
-FILE/OFFICE CONVERSION IS AN EXPERIMENTAL FEATURE AND WE CAN&rsquo;T OFFER SUPPORT FOR CONVERSION ISSUES.
+See <a href="https://developer.apple.com/library/ios/">https://developer.apple.com/library/ios/</a>#qa/qa2008/qa1630.html for the full list.</p><div class="note"><p><strong>Note:</strong> FILE/OFFICE CONVERSION IS AN EXPERIMENTAL FEATURE AND WE CAN&rsquo;T OFFER SUPPORT FOR CONVERSION ISSUES.
 If you require a 1:1 conversion, you need to convert those files on a server with a product that is specialized for this task.</p>
 
 <p>Certain documents might not have the correct pagination.
 (Try to manually define <code>PSPDFProcessorPageRect</code> to fine-tune this.)</p>
 
-<p>&lsquo;options&rsquo; can contain both the PSPDF constants listed above and any <code>kCGPDFContext</code> constants.
+<p><code>options</code> can contain both the PSPDF constants listed above and any <code>kCGPDFContext</code> constants.
 For example, to password protect the pdf, you can use:
 <code>@{(id)kCGPDFContextUserPassword  : password,
    (id)kCGPDFContextOwnerPassword : password,
@@ -552,13 +551,12 @@ For example, to password protect the pdf, you can use:
 - <code>kCGPDFContextKeywords</code>
 - <code>kCGPDFContextAuthor</code></p>
 
-<p>@note
-PSPDFKit Basic/Complete feature.</p>
+<p>PSPDFKit Basic/Complete feature. Not available for PSPDFKit Viewer.</p>
 
 <p>@warning
 Don&rsquo;t manually override NSOperation&rsquo;s <code>completionBlock</code>.
 If this helper is used, operation will be automatically queued in <a href="#//api/name/conversionOperationQueue"><code>conversionOperationQueue</code></a>.
-When a password is set, only link annotations can be added as dictionary (this does not affect flattening)</p>
+When a password is set, only link annotations can be added as dictionary (this does not affect flattening)</p></div>
 	</div>
 	
 	
@@ -590,7 +588,7 @@ When a password is set, only link annotations can be added as dictionary (this d
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-19)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
