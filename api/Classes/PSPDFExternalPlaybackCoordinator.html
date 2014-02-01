@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PSPDFEmailBarButtonItem Class Reference</title>
+		<title>PSPDFExternalPlaybackCoordinator Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PSPDFEmailBarButtonItem Class Reference</h1>
+				<h1 class="hideInXcode">PSPDFExternalPlaybackCoordinator Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -39,13 +39,23 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/mailComposeViewControllerCustomizationBlock">&nbsp;&nbsp;&nbsp;&nbsp;mailComposeViewControllerCustomizationBlock</option>
+	<option value="//api/name/wirelessRouteActive">&nbsp;&nbsp;&nbsp;&nbsp;wirelessRouteActive</option>
 	
-	<option value="//api/name/sendOptions">&nbsp;&nbsp;&nbsp;&nbsp;sendOptions</option>
-	
-	
+	<option value="//api/name/wirelessRoutesAvailable">&nbsp;&nbsp;&nbsp;&nbsp;wirelessRoutesAvailable</option>
 	
 	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/defaultCoordinator">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultCoordinator</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/requestExternalPlaybackPriorityForPlayer:">&nbsp;&nbsp;&nbsp;&nbsp;- requestExternalPlaybackPriorityForPlayer:</option>
 	
 	
 	
@@ -71,22 +81,34 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mailComposeViewControllerCustomizationBlock">mailComposeViewControllerCustomizationBlock</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wirelessRouteActive">wirelessRouteActive</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendOptions">sendOptions</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wirelessRoutesAvailable">wirelessRoutesAvailable</a></span></li>
 	
 </ul></li>
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultCoordinator">defaultCoordinator</a></span></li>
+	
+</ul></li>
 
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestExternalPlaybackPriorityForPlayer:">requestExternalPlaybackPriorityForPlayer:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PSPDFEmailBarButtonItem Class Reference" name="top"></a>
+				<a title="PSPDFExternalPlaybackCoordinator Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -95,7 +117,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PSPDFEmailBarButtonItem Class Reference</h1>
+						<h1 class="title title-header">PSPDFExternalPlaybackCoordinator Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -103,13 +125,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/PSPDFBarButtonItem.html">PSPDFBarButtonItem</a> : UIBarButtonItem</td>
-</tr><tr>
-	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">MFMailComposeViewControllerDelegate<br /><a href="../Protocols/PSPDFDocumentSharingViewControllerDelegate.html">PSPDFDocumentSharingViewControllerDelegate</a></td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PSPDFEmailBarButtonItem.h</td>
+	<td class="specification-value">PSPDFExternalPlaybackCoordinator.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -119,12 +138,10 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Allows to send the whole PDF or the visible page(s) as PDF.</p>
-
-<p>If the PDF consists of multiple files, a temporary PDF will be created merging all pages.
-To figure out the name, <code>PSPDFDocument's</code> <code>fileNamesWithDataDictionary</code> will be used.</p>
-
-<p>IF you want to customize the body text, use the <code>shouldShowController:</code> delegate in <a href="../Classes/PSPDFViewController.html"><code>PSPDFViewController</code></a>. To check that this mail controller was created via <code>PSPDFEmailBarButtonItem</code>, compare the delegate destination.</p>
+						<p>A simple class that provides access to the current external playback status.
+This class also coordinates external playback. This is necessary because
+while multiple videos can be played on the device at the same time,
+external playback only supports one video at any given time.</p>
 					</div>
 					
 					
@@ -142,15 +159,27 @@ To figure out the name, <code>PSPDFDocument's</code> <code>fileNamesWithDataDict
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/sendOptions">&nbsp;&nbsp;sendOptions</a></code>
+		<code><a href="#//api/name/defaultCoordinator">+&nbsp;defaultCoordinator</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wirelessRoutesAvailable">&nbsp;&nbsp;wirelessRoutesAvailable</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/mailComposeViewControllerCustomizationBlock">&nbsp;&nbsp;mailComposeViewControllerCustomizationBlock</a></code>
+		<code><a href="#//api/name/wirelessRouteActive">&nbsp;&nbsp;wirelessRouteActive</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestExternalPlaybackPriorityForPlayer:">&ndash;&nbsp;requestExternalPlaybackPriorityForPlayer:</a></code>
+	</span>
+	
 	
 </li>
 						</ul>
@@ -166,18 +195,18 @@ To figure out the name, <code>PSPDFDocument's</code> <code>fileNamesWithDataDict
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/mailComposeViewControllerCustomizationBlock" title="mailComposeViewControllerCustomizationBlock"></a>
-	<h3 class="subsubtitle method-title">mailComposeViewControllerCustomizationBlock</h3>
+	<a name="//api/name/wirelessRouteActive" title="wirelessRouteActive"></a>
+	<h3 class="subsubtitle method-title">wirelessRouteActive</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Allows customization of the mail compose controller before it&rsquo;s displayed. (e.g. set custom body text)</p>
+		<p>Indicates that a wireless route is active. Only supported on iOS 7 and later.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( MFMailComposeViewController *) mailComposeViewControllerCustomizationBlock</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isWirelessRouteActive) BOOL wirelessRouteActive</code></div>
 
     
 	
@@ -195,26 +224,25 @@ To figure out the name, <code>PSPDFDocument's</code> <code>fileNamesWithDataDict
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFEmailBarButtonItem.h</code><br />
+		<code class="declared-in-ref">PSPDFExternalPlaybackCoordinator.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/sendOptions" title="sendOptions"></a>
-	<h3 class="subsubtitle method-title">sendOptions</h3>
+	<a name="//api/name/wirelessRoutesAvailable" title="wirelessRoutesAvailable"></a>
+	<h3 class="subsubtitle method-title">wirelessRoutesAvailable</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Control what data is sent. Defaults to <code>PSPDFDocumentSharingOptionCurrentPageOnly|PSPDFDocumentSharingOptionAllPages|PSPDFDocumentSharingOptionEmbedAnnotations|PSPDFDocumentSharingOptionFlattenAnnotations|PSPDFDocumentSharingOptionAnnotationsSummary|PSPDFDocumentSharingOptionOfferMergeFiles</code>.
-If only one option is set here, no menu will be displayed.</p>
+		<p>Indicates that at least one wireless route is available.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PSPDFDocumentSharingOptions sendOptions</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=areWirelessRoutesAvailable) BOOL wirelessRoutesAvailable</code></div>
 
     
 	
@@ -223,12 +251,6 @@ If only one option is set here, no menu will be displayed.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>*Flattened controls if annotations should be flattened.
-Annotations that are not flattened are not displayed in Mobile Mail/Mobile Safari (partly as of iOS 7).</p>
-	</div>
 	
 	
 	
@@ -238,7 +260,7 @@ Annotations that are not flattened are not displayed in Mobile Mail/Mobile Safar
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFEmailBarButtonItem.h</code><br />
+		<code class="declared-in-ref">PSPDFExternalPlaybackCoordinator.h</code><br />
 	</div>				
 	
 	
@@ -248,7 +270,93 @@ Annotations that are not flattened are not displayed in Mobile Mail/Mobile Safar
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultCoordinator" title="defaultCoordinator"></a>
+	<h3 class="subsubtitle method-title">defaultCoordinator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the default coordinator.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)defaultCoordinator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFExternalPlaybackCoordinator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/requestExternalPlaybackPriorityForPlayer:" title="requestExternalPlaybackPriorityForPlayer:"></a>
+	<h3 class="subsubtitle method-title">requestExternalPlaybackPriorityForPlayer:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Requesting and canceling external playback priority is necessary
+to coordinate external playback among multiple videos. The video
+that has most recently requested external playback will always get it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestExternalPlaybackPriorityForPlayer:(AVPlayer *)<em>player</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFExternalPlaybackCoordinator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
                     

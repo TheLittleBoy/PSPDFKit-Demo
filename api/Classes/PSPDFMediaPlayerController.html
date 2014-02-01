@@ -39,6 +39,12 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/contentError">&nbsp;&nbsp;&nbsp;&nbsp;contentError</option>
+	
+	<option value="//api/name/contentState">&nbsp;&nbsp;&nbsp;&nbsp;contentState</option>
+	
+	<option value="//api/name/contentURL">&nbsp;&nbsp;&nbsp;&nbsp;contentURL</option>
+	
 	<option value="//api/name/controlStyle">&nbsp;&nbsp;&nbsp;&nbsp;controlStyle</option>
 	
 	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
@@ -53,6 +59,8 @@
 	
 	<option value="//api/name/shouldHideToolbar">&nbsp;&nbsp;&nbsp;&nbsp;shouldHideToolbar</option>
 	
+	<option value="//api/name/state">&nbsp;&nbsp;&nbsp;&nbsp;state</option>
+	
 	<option value="//api/name/tapGestureRecognizer">&nbsp;&nbsp;&nbsp;&nbsp;tapGestureRecognizer</option>
 	
 	<option value="//api/name/view">&nbsp;&nbsp;&nbsp;&nbsp;view</option>
@@ -65,8 +73,6 @@
 	<option value="instance_methods">Instance Methods</option>
 	
 	<option value="//api/name/initWithContentURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithContentURL:</option>
-	
-	<option value="//api/name/initWithPlayerItem:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithPlayerItem:</option>
 	
 	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;- pause</option>
 	
@@ -98,6 +104,12 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentError">contentError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentState">contentState</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentURL">contentURL</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controlStyle">controlStyle</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
@@ -112,6 +124,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldHideToolbar">shouldHideToolbar</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/state">state</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tapGestureRecognizer">tapGestureRecognizer</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/view">view</a></span></li>
@@ -125,8 +139,6 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithContentURL:">initWithContentURL:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithPlayerItem:">initWithPlayerItem:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
 	
@@ -195,9 +207,15 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithPlayerItem:">&ndash;&nbsp;initWithPlayerItem:</a></code>
+		<code><a href="#//api/name/contentURL">&nbsp;&nbsp;contentURL</a></code>
 	</span>
+	<span class="task-item-suffix">property</span>
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentError">&nbsp;&nbsp;contentError</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
@@ -226,6 +244,18 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/playing">&nbsp;&nbsp;playing</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentState">&nbsp;&nbsp;contentState</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -283,6 +313,114 @@
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/contentError" title="contentError"></a>
+	<h3 class="subsubtitle method-title">contentError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If an error occured while preparing the content for playback, this will bet set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSError *contentError</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFMediaPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentState" title="contentState"></a>
+	<h3 class="subsubtitle method-title">contentState</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current <a href="#//api/name/state">state</a> of the content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) PSPDFMediaPlayerControllerContentState contentState</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFMediaPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentURL" title="contentURL"></a>
+	<h3 class="subsubtitle method-title">contentURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The content URL of the item that the <a href="#//api/name/player">player</a> plays.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSURL *contentURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFMediaPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/controlStyle" title="controlStyle"></a>
@@ -510,7 +648,7 @@ Defaults to NO.</p>
 	<div class="method-subsection brief-description">
 		<p>Set this to YES if you want to hide the toolbar. This property might be ignored
 if it is set to NO in case the <a href="../Classes/PSPDFMediaPlayerCoverView.html"><code>PSPDFMediaPlayerCoverView</code></a> is visible. Use <a href="#//api/name/view">view</a>.toolbar.hidden
-to access the actual visibility state of the toolbar. Normally you don&rsquo;t need to change
+to access the actual visibility <a href="#//api/name/state">state</a> of the toolbar. Normally you don&rsquo;t need to change
 this property yourself because <code>PSPDFMediaPlayerController</code> handles it for you.
 Defaults to YES.</p>
 	</div>		
@@ -518,6 +656,42 @@ Defaults to YES.</p>
     
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldHideToolbar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFMediaPlayerController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/state" title="state"></a>
+	<h3 class="subsubtitle method-title">state</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current state of the <a href="#//api/name/player">player</a>. The <a href="#//api/name/player">player</a> will only perform actions if it is ready.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) PSPDFMediaPlayerControllerState state</code></div>
 
     
 	
@@ -635,43 +809,7 @@ Defaults to YES.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithContentURL:(NSURL *)<em>URL</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFMediaPlayerController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithPlayerItem:" title="initWithPlayerItem:"></a>
-	<h3 class="subsubtitle method-title">initWithPlayerItem:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Initalizes the <a href="#//api/name/player">player</a> controller with an <code>AVPlayerItem</code>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)initWithPlayerItem:(AVPlayerItem *)<em>playerItem</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithContentURL:(NSURL *)<em>contentURL</em></code></div>
 
     
 	
@@ -818,7 +956,7 @@ Defaults to YES.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-01-24)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-01)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
