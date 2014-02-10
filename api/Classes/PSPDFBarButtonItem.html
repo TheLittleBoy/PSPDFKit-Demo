@@ -67,8 +67,6 @@
 	
 	<option value="//api/name/isAvailable">&nbsp;&nbsp;&nbsp;&nbsp;- isAvailable</option>
 	
-	<option value="//api/name/itemStyle">&nbsp;&nbsp;&nbsp;&nbsp;- itemStyle</option>
-	
 	<option value="//api/name/landscapeImagePhone">&nbsp;&nbsp;&nbsp;&nbsp;- landscapeImagePhone</option>
 	
 	<option value="//api/name/presentAnimated:sender:">&nbsp;&nbsp;&nbsp;&nbsp;- presentAnimated:sender:</option>
@@ -135,8 +133,6 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAvailable">isAvailable</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemStyle">itemStyle</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/landscapeImagePhone">landscapeImagePhone</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentAnimated:sender:">presentAnimated:sender:</a></span></li>
@@ -195,7 +191,7 @@
 
 <p>PSPDFBarButtonItem also gives you access to the <a href="#//api/name/pdfController"><code>pdfController</code></a> and ways to dynamically enable/disable your icon.</p>
 
-<p>Call <code>updateBarButtonItem:animated:</code> if you need to change the <code>image</code>/<a href="#//api/name/customView"><code>customView</code></a>/<code>systemImage</code> after the barButton has been displayed.</p><div class="warning"><p><strong>Warning:</strong> Do not change <code>target</code>/<code>selector</code> - if the case of <code>UIActionSheet</code>/moreButton we call target/selector of the selected <code>barButtonItem</code> but with the sender argument of the <code>PSPDFMoreBarButtonItem</code>. This is needed to get the correct coordinates in case an <code>UIPopoverController</code> follows (which will originate from that <code>moreBarButtonItem</code>). If you override target/selector to something generic, you&rsquo;ll never know what button has been selected.</p></div>
+<p>Call <code>updateBarButtonItem:animated:</code> if you need to change the <code>image</code>/<a href="#//api/name/customView"><code>customView</code></a>/<code>systemImage</code> after the barButton has been displayed.</p><div class="warning"><p><strong>Warning:</strong> Do not change <code>target</code>/<code>selector</code> - if the case of <code>UIActionSheet</code>/moreButton we call target/selector of the selected <code>barButtonItem</code> but with the sender argument of the <a href="../Classes/PSPDFMoreBarButtonItem.html"><code>PSPDFMoreBarButtonItem</code></a>. This is needed to get the correct coordinates in case an <code>UIPopoverController</code> follows (which will originate from that <code>moreBarButtonItem</code>). If you override target/selector to something generic, you&rsquo;ll never know what button has been selected.</p></div>
 					</div>
 					
 					
@@ -256,12 +252,6 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/actionName">&ndash;&nbsp;actionName</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/itemStyle">&ndash;&nbsp;itemStyle</a></code>
 	</span>
 	
 	
@@ -681,42 +671,6 @@ e.g. return <code>self.</code>pdfController<code>.document.isValid &amp;&amp; se
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/itemStyle" title="itemStyle"></a>
-	<h3 class="subsubtitle method-title">itemStyle</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Override if you want something different than <code>UIBarButtonItemStylePlain</code>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (UIBarButtonItemStyle)itemStyle</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFBarButtonItem.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/landscapeImagePhone" title="landscapeImagePhone"></a>
 	<h3 class="subsubtitle method-title">landscapeImagePhone</h3>
 	
@@ -869,7 +823,7 @@ Use this to correctly set up barButton dismissal logic for non-popover controls 
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Defaults to <code>(UIBarButtonSystemItem)-1</code>. If you want to e.g. override the searchBarButtonItem that uses a system item, you need to override the <code>PSPDFSearchBarButtonItem</code> class, register it at overrideClassNames, return <code>(UIBarButtonSystemItem)-1</code> here and implement <code>image</code>/<a href="#//api/name/landscapeImagePhone"><code>landscapeImagePhone</code></a>.</p>
+		<p>Defaults to <code>(UIBarButtonSystemItem)-1</code>. If you want to e.g. override the searchBarButtonItem that uses a system item, you need to override the <a href="../Classes/PSPDFSearchBarButtonItem.html"><code>PSPDFSearchBarButtonItem</code></a> class, register it at overrideClassNames, return <code>(UIBarButtonSystemItem)-1</code> here and implement <code>image</code>/<a href="#//api/name/landscapeImagePhone"><code>landscapeImagePhone</code></a>.</p>
 	</div>		
 	
     
@@ -951,7 +905,7 @@ Defaults to enabled, as long as a document is set and valid on pdfViewController
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-01)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-10)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
