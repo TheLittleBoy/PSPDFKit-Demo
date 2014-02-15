@@ -42,11 +42,16 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/executeScript:appliedToViewController:finished:">&nbsp;&nbsp;&nbsp;&nbsp;+ executeScript:appliedToViewController:finished:</option>
+	
+	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/executeScriptAppliedToViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- executeScriptAppliedToViewController:</option>
+	<option value="//api/name/executeScriptAppliedToViewController:finished:">&nbsp;&nbsp;&nbsp;&nbsp;- executeScriptAppliedToViewController:finished:</option>
 	
 	<option value="//api/name/initWithScript:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithScript:</option>
 	
@@ -78,11 +83,17 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScript:appliedToViewController:finished:">executeScript:appliedToViewController:finished:</a></span></li>
+	
+</ul></li>
+
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScriptAppliedToViewController:">executeScriptAppliedToViewController:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScriptAppliedToViewController:finished:">executeScriptAppliedToViewController:finished:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithScript:">initWithScript:</a></span></li>
 	
@@ -145,7 +156,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/executeScriptAppliedToViewController:">&ndash;&nbsp;executeScriptAppliedToViewController:</a></code>
+		<code><a href="#//api/name/executeScriptAppliedToViewController:finished:">&ndash;&nbsp;executeScriptAppliedToViewController:finished:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeScript:appliedToViewController:finished:">+&nbsp;executeScript:appliedToViewController:finished:</a></code>
 	</span>
 	
 	
@@ -202,6 +219,50 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/executeScript:appliedToViewController:finished:" title="executeScript:appliedToViewController:finished:"></a>
+	<h3 class="subsubtitle method-title">executeScript:appliedToViewController:finished:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tries to execute an arbirary <a href="#//api/name/script">script</a> not attached to a specific action in the context of a view controller.
+Execution is asynchronous and calls the passed completion block when complete
+Used for testing purposes. Do not use for scripts that ref Event objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)executeScript:(NSString *)<em>script</em> appliedToViewController:(PSPDFViewController *)<em>viewController</em> finished:(void ( ^ ) ( ))<em>done</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFJavaScriptAction.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
 					
 					
 					<div class="section section-methods">
@@ -209,18 +270,19 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/executeScriptAppliedToViewController:" title="executeScriptAppliedToViewController:"></a>
-	<h3 class="subsubtitle method-title">executeScriptAppliedToViewController:</h3>
+	<a name="//api/name/executeScriptAppliedToViewController:finished:" title="executeScriptAppliedToViewController:finished:"></a>
+	<h3 class="subsubtitle method-title">executeScriptAppliedToViewController:finished:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Tries to execute the JavaScript in the context of a view controller.</p>
+		<p>Tries to execute the JavaScript in the context of a view controller.
+Execution is asynchronous and calls the passed completion block when complete</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)executeScriptAppliedToViewController:(PSPDFViewController *)<em>viewController</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)executeScriptAppliedToViewController:(PSPDFViewController *)<em>viewController</em> finished:(void ( ^ ) ( ))<em>done</em></code></div>
 
     
 	
@@ -295,7 +357,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-10)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-15)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
