@@ -68,11 +68,11 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/cellForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- cellForPage:</option>
+	<option value="//api/name/cellForPage:document:">&nbsp;&nbsp;&nbsp;&nbsp;- cellForPage:document:</option>
 	
 	<option value="//api/name/initWithDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDocument:</option>
 	
-	<option value="//api/name/scrollToPage:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollToPage:animated:</option>
+	<option value="//api/name/scrollToPage:document:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollToPage:document:animated:</option>
 	
 	<option value="//api/name/stopScrolling">&nbsp;&nbsp;&nbsp;&nbsp;- stopScrolling</option>
 	
@@ -132,11 +132,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellForPage:">cellForPage:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellForPage:document:">cellForPage:document:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDocument:">initWithDocument:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollToPage:animated:">scrollToPage:animated:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollToPage:document:animated:">scrollToPage:document:animated:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopScrolling">stopScrolling</a></span></li>
 	
@@ -224,13 +224,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/cellForPage:">&ndash;&nbsp;cellForPage:</a></code>
+		<code><a href="#//api/name/cellForPage:document:">&ndash;&nbsp;cellForPage:document:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/scrollToPage:animated:">&ndash;&nbsp;scrollToPage:animated:</a></code>
+		<code><a href="#//api/name/scrollToPage:document:animated:">&ndash;&nbsp;scrollToPage:document:animated:</a></code>
 	</span>
 	
 	
@@ -737,8 +737,8 @@ Margin is extra space around the grid of thumbnails (sectionInset of the flow <a
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/cellForPage:" title="cellForPage:"></a>
-	<h3 class="subsubtitle method-title">cellForPage:</h3>
+	<a name="//api/name/cellForPage:document:" title="cellForPage:document:"></a>
+	<h3 class="subsubtitle method-title">cellForPage:document:</h3>
 	
 	
 	
@@ -748,7 +748,7 @@ Margin is extra space around the grid of thumbnails (sectionInset of the flow <a
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (UICollectionViewCell *)cellForPage:(NSUInteger)<em>page</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (UICollectionViewCell *)cellForPage:(NSUInteger)<em>page</em> document:(PSPDFDocument *)<em>document</em></code></div>
 
     
 	
@@ -757,6 +757,11 @@ Margin is extra space around the grid of thumbnails (sectionInset of the flow <a
 	
 	
 	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> <a href="#//api/name/document"><code>document</code></a> is ignored in the default implementation.</p></div>
+	</div>
 	
 	
 	
@@ -809,8 +814,8 @@ Margin is extra space around the grid of thumbnails (sectionInset of the flow <a
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/scrollToPage:animated:" title="scrollToPage:animated:"></a>
-	<h3 class="subsubtitle method-title">scrollToPage:animated:</h3>
+	<a name="//api/name/scrollToPage:document:animated:" title="scrollToPage:document:animated:"></a>
+	<h3 class="subsubtitle method-title">scrollToPage:document:animated:</h3>
 	
 	
 	
@@ -820,7 +825,7 @@ Margin is extra space around the grid of thumbnails (sectionInset of the flow <a
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)scrollToPage:(NSUInteger)<em>page</em> animated:(BOOL)<em>animated</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)scrollToPage:(NSUInteger)<em>page</em> document:(PSPDFDocument *)<em>document</em> animated:(BOOL)<em>animated</em></code></div>
 
     
 	
@@ -829,6 +834,11 @@ Margin is extra space around the grid of thumbnails (sectionInset of the flow <a
 	
 	
 	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> <a href="#//api/name/document"><code>document</code></a> is ignored in the default implementation.</p></div>
+	</div>
 	
 	
 	
@@ -931,7 +941,7 @@ Margin is extra space around the grid of thumbnails (sectionInset of the flow <a
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-15)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
