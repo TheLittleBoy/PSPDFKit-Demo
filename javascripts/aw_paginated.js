@@ -136,22 +136,3 @@
   })();
 
 }).call(this);
-(function() {
-  $(window).load(function() {
-    window.CaseStudies = new AWPaginated("section.case-studies .aw_paginated", ".project", {
-      autostart: false,
-      interval: false
-    });
-    window.HeroTitles = new AWPaginated("section.hero .aw_paginated", "h1", {
-      autostart: true,
-      interval: 12345,
-      pageIndicators: false,
-      pageScrollers: false
-    });
-    return window.WhatOurClientsSay = new AWPaginated("section.clients .aw_paginated", "blockquote", {
-      autostart: false,
-      interval: false
-    });
-  });
-
-}).call(this);

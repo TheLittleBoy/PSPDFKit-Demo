@@ -1,0 +1,98 @@
+/* line 3, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+.aw_paginated .aw_paginated__show_previous {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  font-family: "aw gallery dings";
+  font-size: 40px;
+  line-height: 2em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  z-index: 11; }
+  /* line 19, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__show_previous:before {
+    content: "d"; }
+  /* line 22, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__show_previous:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  /* line 25, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__show_previous:active {
+    color: #0e6cae;
+    background-color: white; }
+/* line 31, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+.aw_paginated .aw_paginated__show_next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  font-family: "aw gallery dings";
+  font-size: 40px;
+  line-height: 2em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  z-index: 11; }
+  /* line 47, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__show_next:before {
+    content: "f"; }
+  /* line 50, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__show_next:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  /* line 53, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__show_next:active {
+    color: #0e6cae;
+    background-color: white; }
+/* line 59, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+.aw_paginated .aw_paginated__indicators {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  z-index: 12;
+  bottom: 3em;
+  text-align: center;
+  box-align: center; }
+  /* line 69, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__indicators .aw_paginated__indicator {
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer; }
+    /* line 79, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+    .aw_paginated .aw_paginated__indicators .aw_paginated__indicator:hover {
+      background: rgba(255, 255, 255, 0.25); }
+    /* line 83, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+    .aw_paginated .aw_paginated__indicators .aw_paginated__indicator:active {
+      background: #0972a8;
+      border-color: #0893da; }
+  /* line 88, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+  .aw_paginated .aw_paginated__indicators .aw_paginated__indicator_active {
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer; }
+    /* line 101, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+    .aw_paginated .aw_paginated__indicators .aw_paginated__indicator_active:hover {
+      background: #fff; }
+    /* line 104, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/aw_paginated.scss */
+    .aw_paginated .aw_paginated__indicators .aw_paginated__indicator_active:active {
+      background: #0972a8; }
