@@ -39,17 +39,15 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/externalPlaybackItem">&nbsp;&nbsp;&nbsp;&nbsp;externalPlaybackItem</option>
+	<option value="//api/name/externalPlaybackControl">&nbsp;&nbsp;&nbsp;&nbsp;externalPlaybackControl</option>
 	
-	<option value="//api/name/externalPlaybackItemHidden">&nbsp;&nbsp;&nbsp;&nbsp;externalPlaybackItemHidden</option>
+	<option value="//api/name/externalPlaybackControlHidden">&nbsp;&nbsp;&nbsp;&nbsp;externalPlaybackControlHidden</option>
 	
-	<option value="//api/name/pauseButtonItem">&nbsp;&nbsp;&nbsp;&nbsp;pauseButtonItem</option>
+	<option value="//api/name/pauseButton">&nbsp;&nbsp;&nbsp;&nbsp;pauseButton</option>
 	
-	<option value="//api/name/playButtonItem">&nbsp;&nbsp;&nbsp;&nbsp;playButtonItem</option>
+	<option value="//api/name/playButton">&nbsp;&nbsp;&nbsp;&nbsp;playButton</option>
 	
 	<option value="//api/name/playing">&nbsp;&nbsp;&nbsp;&nbsp;playing</option>
-	
-	<option value="//api/name/scrubberItem">&nbsp;&nbsp;&nbsp;&nbsp;scrubberItem</option>
 	
 	<option value="//api/name/scrubberView">&nbsp;&nbsp;&nbsp;&nbsp;scrubberView</option>
 	
@@ -81,17 +79,15 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/externalPlaybackItem">externalPlaybackItem</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/externalPlaybackControl">externalPlaybackControl</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/externalPlaybackItemHidden">externalPlaybackItemHidden</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/externalPlaybackControlHidden">externalPlaybackControlHidden</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseButtonItem">pauseButtonItem</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseButton">pauseButton</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playButtonItem">playButtonItem</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playButton">playButton</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playing">playing</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrubberItem">scrubberItem</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrubberView">scrubberView</a></span></li>
 	
@@ -160,37 +156,31 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/playButtonItem">&nbsp;&nbsp;playButtonItem</a></code>
+		<code><a href="#//api/name/playButton">&nbsp;&nbsp;playButton</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/pauseButtonItem">&nbsp;&nbsp;pauseButtonItem</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/scrubberItem">&nbsp;&nbsp;scrubberItem</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/externalPlaybackItem">&nbsp;&nbsp;externalPlaybackItem</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/externalPlaybackItemHidden">&nbsp;&nbsp;externalPlaybackItemHidden</a></code>
+		<code><a href="#//api/name/pauseButton">&nbsp;&nbsp;pauseButton</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/scrubberView">&nbsp;&nbsp;scrubberView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/externalPlaybackControl">&nbsp;&nbsp;externalPlaybackControl</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/externalPlaybackControlHidden">&nbsp;&nbsp;externalPlaybackControlHidden</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -208,18 +198,18 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/externalPlaybackItem" title="externalPlaybackItem"></a>
-	<h3 class="subsubtitle method-title">externalPlaybackItem</h3>
+	<a name="//api/name/externalPlaybackControl" title="externalPlaybackControl"></a>
+	<h3 class="subsubtitle method-title">externalPlaybackControl</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The external playback item. Contains <a href="#//api/name/volumeView"><code>volumeView</code></a>.</p>
+		<p>The external playback control.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIBarButtonItem *externalPlaybackItem</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) MPVolumeView *externalPlaybackControl</code></div>
 
     
 	
@@ -244,18 +234,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/externalPlaybackItemHidden" title="externalPlaybackItemHidden"></a>
-	<h3 class="subsubtitle method-title">externalPlaybackItemHidden</h3>
+	<a name="//api/name/externalPlaybackControlHidden" title="externalPlaybackControlHidden"></a>
+	<h3 class="subsubtitle method-title">externalPlaybackControlHidden</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Hides or shows the volume view. Defaults to <code>YES</code>.</p>
+		<p>Hides or shows the external playback control. Defaults to <code>YES</code>.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isExternalPlaybackItemHidden) BOOL externalPlaybackItemHidden</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isExternalPlaybackControlHidden) BOOL externalPlaybackControlHidden</code></div>
 
     
 	
@@ -280,18 +270,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/pauseButtonItem" title="pauseButtonItem"></a>
-	<h3 class="subsubtitle method-title">pauseButtonItem</h3>
+	<a name="//api/name/pauseButton" title="pauseButton"></a>
+	<h3 class="subsubtitle method-title">pauseButton</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The pause button item.</p>
+		<p>The pause button.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIBarButtonItem *pauseButtonItem</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIButton *pauseButton</code></div>
 
     
 	
@@ -316,18 +306,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/playButtonItem" title="playButtonItem"></a>
-	<h3 class="subsubtitle method-title">playButtonItem</h3>
+	<a name="//api/name/playButton" title="playButton"></a>
+	<h3 class="subsubtitle method-title">playButton</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The play button item.</p>
+		<p>The play button.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIBarButtonItem *playButtonItem</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIButton *playButton</code></div>
 
     
 	
@@ -389,54 +379,18 @@ playing or paused.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/scrubberItem" title="scrubberItem"></a>
-	<h3 class="subsubtitle method-title">scrubberItem</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The scrubber item.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIBarButtonItem *scrubberItem</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFMediaPlayerToolbar.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/scrubberView" title="scrubberView"></a>
 	<h3 class="subsubtitle method-title">scrubberView</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The scrubber view, which is contained within <a href="#//api/name/scrubberItem"><code>scrubberItem</code></a>.</p>
+		<p>The scrubber view.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) PSPDFMediaPlayerScrubberView *scrubberView</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) PSPDFMediaPlayerScrubberView *scrubberView</code></div>
 
     
 	
@@ -479,7 +433,7 @@ playing or paused.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

@@ -52,7 +52,7 @@
 	
 	<option value="//api/name/deselect">&nbsp;&nbsp;&nbsp;&nbsp;- deselect</option>
 	
-	<option value="//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:</option>
+	<option value="//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:</option>
 	
 	<option value="//api/name/isCheckBox">&nbsp;&nbsp;&nbsp;&nbsp;- isCheckBox</option>
 	
@@ -64,7 +64,7 @@
 	
 	<option value="//api/name/select">&nbsp;&nbsp;&nbsp;&nbsp;- select</option>
 	
-	<option value="//api/name/toggleButtonSelectionState">&nbsp;&nbsp;&nbsp;&nbsp;- toggleButtonSelectionState</option>
+	<option value="//api/name/toggleButtonSelectionStateAndSendNotification:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleButtonSelectionStateAndSendNotification:</option>
 	
 	
 	
@@ -81,6 +81,8 @@
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Private Methods">Private Methods</a></span></li>
 	
 </ul></li>
 
@@ -104,7 +106,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deselect">deselect</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:">initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:">initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isCheckBox">isCheckBox</a></span></li>
 	
@@ -116,7 +118,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/select">select</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleButtonSelectionState">toggleButtonSelectionState</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleButtonSelectionStateAndSendNotification:">toggleButtonSelectionStateAndSendNotification:</a></span></li>
 	
 </ul></li>
 
@@ -168,16 +170,10 @@
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:">&ndash;&nbsp;initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:</a></code>
-	</span>
-	
-	
-</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isPushButton">&ndash;&nbsp;isPushButton</a></code>
 	</span>
@@ -215,7 +211,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/toggleButtonSelectionState">&ndash;&nbsp;toggleButtonSelectionState</a></code>
+		<code><a href="#//api/name/toggleButtonSelectionStateAndSendNotification:">&ndash;&nbsp;toggleButtonSelectionStateAndSendNotification:</a></code>
 	</span>
 	
 	
@@ -230,6 +226,20 @@
 		<code><a href="#//api/name/onState">&nbsp;&nbsp;onState</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Private Methods" name="task_Private Methods"></a>
+						<h3 class="subsubtitle task-title">Private Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:">&ndash;&nbsp;initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:</a></code>
+	</span>
+	
 	
 </li>
 						</ul>
@@ -363,8 +373,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:" title="initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:"></a>
-	<h3 class="subsubtitle method-title">initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:</h3>
+	<a name="//api/name/initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:" title="initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:"></a>
+	<h3 class="subsubtitle method-title">initWithAnnotationDictionary:documentRef:parent:fieldsAddressMap:overrideDataSource:</h3>
 	
 	
 	
@@ -374,7 +384,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithAnnotationDictionary:(CGPDFDictionaryRef)<em>annotDict</em> documentRef:(CGPDFDocumentRef)<em>documentRef</em> parent:(PSPDFFormElement *)<em>parentFormElement</em> fieldsAddressMap:(NSMutableDictionary *)<em>fieldsAddressMap</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithAnnotationDictionary:(CGPDFDictionaryRef)<em>annotDict</em> documentRef:(CGPDFDocumentRef)<em>documentRef</em> parent:(PSPDFFormElement *)<em>parentFormElement</em> fieldsAddressMap:(NSMutableDictionary *)<em>fieldsAddressMap</em> overrideDataSource:(id&lt;PSPDFOverridable&gt;)<em>overrideDataSource</em></code></div>
 
     
 	
@@ -392,7 +402,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFButtonFormElement.h</code><br />
+		<code class="declared-in-ref">PSPDFButtonFormElement+Private.h</code><br />
 	</div>				
 	
 	
@@ -579,8 +589,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/toggleButtonSelectionState" title="toggleButtonSelectionState"></a>
-	<h3 class="subsubtitle method-title">toggleButtonSelectionState</h3>
+	<a name="//api/name/toggleButtonSelectionStateAndSendNotification:" title="toggleButtonSelectionStateAndSendNotification:"></a>
+	<h3 class="subsubtitle method-title">toggleButtonSelectionStateAndSendNotification:</h3>
 	
 	
 	
@@ -590,7 +600,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)toggleButtonSelectionState</code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)toggleButtonSelectionStateAndSendNotification:(BOOL)<em>sendNotification</em></code></div>
 
     
 	
@@ -629,7 +639,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

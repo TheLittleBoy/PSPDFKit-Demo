@@ -41,11 +41,13 @@
 	
 	<option value="//api/name/allowTapsOutsidePageArea">&nbsp;&nbsp;&nbsp;&nbsp;allowTapsOutsidePageArea</option>
 	
+	<option value="//api/name/dataSource">&nbsp;&nbsp;&nbsp;&nbsp;dataSource</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
 	<option value="//api/name/leftBorderMargin">&nbsp;&nbsp;&nbsp;&nbsp;leftBorderMargin</option>
 	
 	<option value="//api/name/page">&nbsp;&nbsp;&nbsp;&nbsp;page</option>
-	
-	<option value="//api/name/pdfController">&nbsp;&nbsp;&nbsp;&nbsp;pdfController</option>
 	
 	<option value="//api/name/rightBorderMargin">&nbsp;&nbsp;&nbsp;&nbsp;rightBorderMargin</option>
 	
@@ -63,8 +65,6 @@
 	<option value="//api/name/updateToolbarAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- updateToolbarAnimated:</option>
 	
 	<option value="//api/name/updateToolbarForced">&nbsp;&nbsp;&nbsp;&nbsp;- updateToolbarForced</option>
-	
-	<option value="//api/name/updateToolbarPositionAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- updateToolbarPositionAnimated:</option>
 	
 	
 	
@@ -92,11 +92,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowTapsOutsidePageArea">allowTapsOutsidePageArea</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataSource">dataSource</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leftBorderMargin">leftBorderMargin</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/page">page</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pdfController">pdfController</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rightBorderMargin">rightBorderMargin</a></span></li>
 	
@@ -115,8 +117,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateToolbarAnimated:">updateToolbarAnimated:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateToolbarForced">updateToolbarForced</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateToolbarPositionAnimated:">updateToolbarPositionAnimated:</a></span></li>
 	
 </ul></li>
 
@@ -176,19 +176,19 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/pdfController">&nbsp;&nbsp;pdfController</a></code>
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataSource">&nbsp;&nbsp;dataSource</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/updateToolbarAnimated:">&ndash;&nbsp;updateToolbarAnimated:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/updateToolbarPositionAnimated:">&ndash;&nbsp;updateToolbarPositionAnimated:</a></code>
 	</span>
 	
 	
@@ -284,6 +284,78 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/dataSource" title="dataSource"></a>
+	<h3 class="subsubtitle method-title">dataSource</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The data source.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PSPDFConfigurationDataSource&gt; dataSource</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFScrobbleBar.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate for touch events</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PSPDFScrobbleBarDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFScrobbleBar.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/leftBorderMargin" title="leftBorderMargin"></a>
 	<h3 class="subsubtitle method-title">leftBorderMargin</h3>
 	
@@ -332,43 +404,6 @@
     
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger page</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFScrobbleBar.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/pdfController" title="pdfController"></a>
-	<h3 class="subsubtitle method-title">pdfController</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>PDF controller delegate. We use KVO, thus no weak here.
-Re-set pdfController to update <code>tintColor</code>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) PSPDFViewController *pdfController</code></div>
 
     
 	
@@ -482,7 +517,7 @@ Alpha is set to 0.7f, can be changed.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Updates the <a href="#//api/name/page">page</a> marker. call manually after alpha > 0 !</p>
+		<p>Updates the <a href="#//api/name/page">page</a> marker.</p>
 	</div>		
 	
     
@@ -583,42 +618,6 @@ Alpha is set to 0.7f, can be changed.</p>
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/updateToolbarPositionAnimated:" title="updateToolbarPositionAnimated:"></a>
-	<h3 class="subsubtitle method-title">updateToolbarPositionAnimated:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Updates the <a href="#//api/name/toolbar">toolbar</a> position.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)updateToolbarPositionAnimated:(BOOL)<em>animated</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFScrobbleBar.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
@@ -634,7 +633,7 @@ Alpha is set to 0.7f, can be changed.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

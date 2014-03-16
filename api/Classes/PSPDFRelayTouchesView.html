@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PSPDFProgressHUDMaskType Constants Reference</title>
+		<title>PSPDFRelayTouchesView Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PSPDFProgressHUDMaskType Constants Reference</h1>
+				<h1 class="hideInXcode">PSPDFRelayTouchesView Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -25,6 +25,16 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -37,6 +47,16 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -45,7 +65,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PSPDFProgressHUDMaskType Constants Reference" name="top"></a>
+				<a title="PSPDFRelayTouchesView Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -54,94 +74,44 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PSPDFProgressHUDMaskType Constants Reference</h1>
+						<h1 class="title title-header">PSPDFRelayTouchesView Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PSPDFProgressHUD.h</td>
+	<td class="specification-value">PSPDFRelayTouchesView.h</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The HUD will relay touches of subviews, but won&rsquo;t react on touches on this actual view.
+This is achieved with overriding <code>pointInside:withEvent:</code>.</p>
+					</div>
 					
 					
 					
-                    
-                    
-                    <h3 class="subsubtitle method-title">PSPDFProgressHUDMaskType</h3>
-                    
-                    <div class="section">
-                        <!-- display enum values -->
-                        
-                        <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, PSPDFProgressHUDMaskType ) {<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFProgressHUDMaskTypeNone</a> = 1,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFProgressHUDMaskTypeClear</a>,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFProgressHUDMaskTypeBlack</a>,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFProgressHUDMaskTypeGradient</a>,<br/>
-                            
-                            };</code>
-                    
-                    </div>
-                    
-                    <div class="section section-methods">
-                        <h4 class="method-subtitle">Constants</h4>
-                        <dl class="termdef">
-                            
-                            <dt><a name="" title="PSPDFProgressHUDMaskTypeNone"></a><code>PSPDFProgressHUDMaskTypeNone</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFProgressHUD.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PSPDFProgressHUDMaskTypeClear"></a><code>PSPDFProgressHUDMaskTypeClear</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFProgressHUD.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PSPDFProgressHUDMaskTypeBlack"></a><code>PSPDFProgressHUDMaskTypeBlack</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFProgressHUD.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PSPDFProgressHUDMaskTypeGradient"></a><code>PSPDFProgressHUDMaskTypeGradient</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFProgressHUD.h</code>.
-	</p>
-	
-</dd>
-                            
-                        </dl>
-                    </div>
-                    
-                    
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
                     
                     
 				</div>
@@ -154,7 +124,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

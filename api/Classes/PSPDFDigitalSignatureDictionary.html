@@ -51,6 +51,8 @@
 	
 	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
 	
+	<option value="//api/name/propBuild">&nbsp;&nbsp;&nbsp;&nbsp;propBuild</option>
+	
 	<option value="//api/name/reason">&nbsp;&nbsp;&nbsp;&nbsp;reason</option>
 	
 	<option value="//api/name/references">&nbsp;&nbsp;&nbsp;&nbsp;references</option>
@@ -102,6 +104,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propBuild">propBuild</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reason">reason</a></span></li>
 	
@@ -242,6 +246,12 @@
 	</span>
 	<span class="task-item-suffix">property</span>
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propBuild">&nbsp;&nbsp;propBuild</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
 </li>
 						</ul>
 						
@@ -267,7 +277,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *byteRange</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) PSPDFByteRange *byteRange</code></div>
 
     
 	
@@ -304,7 +314,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(Required when SubFilter is adbe.x509.rsa_sha1) An array of byte strings rep- resenting the X.509 certificate chain used when signing and verifying signatures that use public-key cryptography, or a byte string if the chain has only one entry. The signing certificate must appear first in the array; it is used to verify the signature value in Contents, and the other certificates are used to verify the authenticity of the signing certificate. If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry is not used, and the certificate chain must be put in the PKCS#7 envelope in Contents.</p>
+		<p>(Required when SubFilter is adbe.x509.rsa_sha1) An array of byte strings representing the X.509 certificate chain used when signing and verifying signatures that use public-key cryptography, or a byte string if the chain has only one entry. The signing certificate must appear first in the array; it is used to verify the signature value in Contents, and the other certificates are used to verify the authenticity of the signing certificate. If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry is not used, and the certificate chain must be put in the PKCS#7 envelope in Contents.</p>
 	</div>		
 	
     
@@ -376,7 +386,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(Required) The signature value. When ByteRange is present, the value is a hexadecimal string (see “Hexadecimal Strings” on page 56) representing the value of the byte range digest. If ByteRange is not present, the value is an ob- ject digest of the signature dictionary, excluding the Contents entry. For public-key signatures, Contents is commonly either a DER-encoded PKCS#1 binary data object or a DER-encoded PKCS#7 binary data object.</p>
+		<p>(Required) The signature value. When ByteRange is present, the value is a hexadecimal string (see “Hexadecimal Strings” on page 56) representing the value of the byte range digest. If ByteRange is not present, the value is an object digest of the signature dictionary, excluding the Contents entry. For public-key signatures, Contents is commonly either a DER-encoded PKCS#1 binary data object or a DER-encoded PKCS#7 binary data object.</p>
 	</div>		
 	
     
@@ -490,6 +500,42 @@
     
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFDigitalSignatureDictionary.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propBuild" title="propBuild"></a>
+	<h3 class="subsubtitle method-title">propBuild</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(Optional; PDF 1.5) A dictionary that can be used by a signature handler to record information that captures the state of the computer environment used for signing, such as the <a href="#//api/name/name">name</a> of the handler used to create the signature, soft- ware build date, version, and operating system. Adobe publishes a separate specification, the PDF Signature Build Dictionary Specification for Acrobat 6.0 that provides implementation guidelines for the use of this dictionary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) PSPDFDigitalSignatureBuildProperties *propBuild</code></div>
 
     
 	
@@ -748,7 +794,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

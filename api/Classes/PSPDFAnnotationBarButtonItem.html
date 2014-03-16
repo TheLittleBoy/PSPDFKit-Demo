@@ -41,6 +41,10 @@
 	
 	<option value="//api/name/annotationToolbar">&nbsp;&nbsp;&nbsp;&nbsp;annotationToolbar</option>
 	
+	<option value="//api/name/annotationToolbarType">&nbsp;&nbsp;&nbsp;&nbsp;annotationToolbarType</option>
+	
+	<option value="//api/name/flexibleAnnotationToolbar">&nbsp;&nbsp;&nbsp;&nbsp;flexibleAnnotationToolbar</option>
+	
 	
 	
 	
@@ -68,6 +72,8 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SubclassingHooks Methods">SubclassingHooks Methods</a></span></li>
+	
 </ul></li>
 
 
@@ -77,6 +83,10 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/annotationToolbar">annotationToolbar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/annotationToolbarType">annotationToolbarType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flexibleAnnotationToolbar">flexibleAnnotationToolbar</a></span></li>
 	
 </ul></li>
 
@@ -114,7 +124,7 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/PSPDFBarButtonItem.html">PSPDFBarButtonItem</a> : UIBarButtonItem</td>
+	<td class="specification-value"><a href="../Classes/PSPDFSelectableBarButtonItem.html">PSPDFSelectableBarButtonItem</a> : <a href="../Classes/PSPDFBarButtonItem.html">PSPDFBarButtonItem</a> : UIBarButtonItem</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
 	<td class="specification-value"><a href="../Protocols/PSPDFAnnotationToolbarDelegate.html">PSPDFAnnotationToolbarDelegate</a></td>
@@ -154,7 +164,7 @@ If everything else fails, the toolbar will be displayed above the <code>PSPDFVie
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -165,15 +175,35 @@ If everything else fails, the toolbar will be displayed above the <code>PSPDFVie
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/targetToolbarForBarButtonItem:">&ndash;&nbsp;targetToolbarForBarButtonItem:</a></code>
+		<code><a href="#//api/name/annotationToolbarType">&nbsp;&nbsp;annotationToolbarType</a></code>
 	</span>
-	
+	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/annotationToolbar">&nbsp;&nbsp;annotationToolbar</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flexibleAnnotationToolbar">&nbsp;&nbsp;flexibleAnnotationToolbar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="SubclassingHooks Methods" name="task_SubclassingHooks Methods"></a>
+						<h3 class="subsubtitle task-title">SubclassingHooks Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/targetToolbarForBarButtonItem:">&ndash;&nbsp;targetToolbarForBarButtonItem:</a></code>
+	</span>
+	
 	
 </li>
 						</ul>
@@ -201,6 +231,79 @@ If everything else fails, the toolbar will be displayed above the <code>PSPDFVie
     
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) PSPDFAnnotationToolbar *annotationToolbar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotationBarButtonItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/annotationToolbarType" title="annotationToolbarType"></a>
+	<h3 class="subsubtitle method-title">annotationToolbarType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The selected toolbar type will be used the next time the bar button action is invoked.
+Defaults to <code>PSPDFAnnotationToolbarTypeFlexible</code> on iOS 7.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PSPDFAnnotationToolbarType annotationToolbarType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotationBarButtonItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flexibleAnnotationToolbar" title="flexibleAnnotationToolbar"></a>
+	<h3 class="subsubtitle method-title">flexibleAnnotationToolbar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Internally used and displayed flexible annotation toolbar.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) PSPDFFlexibleAnnotationToolbar *flexibleAnnotationToolbar</code></div>
 
     
 	
@@ -322,7 +425,7 @@ Returns <code>UIToolbar</code> or <code>UINavigationBar</code>.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

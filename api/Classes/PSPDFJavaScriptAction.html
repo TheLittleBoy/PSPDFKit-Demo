@@ -44,14 +44,14 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/executeScript:appliedToViewController:finished:">&nbsp;&nbsp;&nbsp;&nbsp;+ executeScript:appliedToViewController:finished:</option>
+	<option value="//api/name/executeScript:appliedToViewController:eventDictionary:sender:completionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ executeScript:appliedToViewController:eventDictionary:sender:completionBlock:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/executeScriptAppliedToViewController:finished:">&nbsp;&nbsp;&nbsp;&nbsp;- executeScriptAppliedToViewController:finished:</option>
+	<option value="//api/name/executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:</option>
 	
 	<option value="//api/name/initWithScript:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithScript:</option>
 	
@@ -85,7 +85,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScript:appliedToViewController:finished:">executeScript:appliedToViewController:finished:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScript:appliedToViewController:eventDictionary:sender:completionBlock:">executeScript:appliedToViewController:eventDictionary:sender:completionBlock:</a></span></li>
 	
 </ul></li>
 
@@ -93,7 +93,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScriptAppliedToViewController:finished:">executeScriptAppliedToViewController:finished:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:">executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithScript:">initWithScript:</a></span></li>
 	
@@ -156,13 +156,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/executeScriptAppliedToViewController:finished:">&ndash;&nbsp;executeScriptAppliedToViewController:finished:</a></code>
+		<code><a href="#//api/name/executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:">&ndash;&nbsp;executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/executeScript:appliedToViewController:finished:">+&nbsp;executeScript:appliedToViewController:finished:</a></code>
+		<code><a href="#//api/name/executeScript:appliedToViewController:eventDictionary:sender:completionBlock:">+&nbsp;executeScript:appliedToViewController:eventDictionary:sender:completionBlock:</a></code>
 	</span>
 	
 	
@@ -224,20 +224,21 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/executeScript:appliedToViewController:finished:" title="executeScript:appliedToViewController:finished:"></a>
-	<h3 class="subsubtitle method-title">executeScript:appliedToViewController:finished:</h3>
+	<a name="//api/name/executeScript:appliedToViewController:eventDictionary:sender:completionBlock:" title="executeScript:appliedToViewController:eventDictionary:sender:completionBlock:"></a>
+	<h3 class="subsubtitle method-title">executeScript:appliedToViewController:eventDictionary:sender:completionBlock:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Tries to execute an arbirary <a href="#//api/name/script">script</a> not attached to a specific action in the context of a view controller.
-Execution is asynchronous and calls the passed completion block when complete
+		<p>Tries to execute an arbirary <a href="#//api/name/script">script</a> not attached to a specific action in the context of a view controller and an event.
+For a list of keys for the event dictionary and an overview of action event objects see above.
+Execution is asynchronous and calls the passed completion block when complete.
 Used for testing purposes. Do not use for scripts that ref Event objects.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (void)executeScript:(NSString *)<em>script</em> appliedToViewController:(PSPDFViewController *)<em>viewController</em> finished:(void ( ^ ) ( ))<em>done</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)executeScript:(NSString *)<em>script</em> appliedToViewController:(PSPDFViewController *)<em>viewController</em> eventDictionary:(NSDictionary *)<em>eventDictionary</em> sender:(id)<em>sender</em> completionBlock:(void ( ^ ) ( ))<em>completionBlock</em></code></div>
 
     
 	
@@ -270,19 +271,21 @@ Used for testing purposes. Do not use for scripts that ref Event objects.</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/executeScriptAppliedToViewController:finished:" title="executeScriptAppliedToViewController:finished:"></a>
-	<h3 class="subsubtitle method-title">executeScriptAppliedToViewController:finished:</h3>
+	<a name="//api/name/executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:" title="executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:"></a>
+	<h3 class="subsubtitle method-title">executeScriptAppliedToViewController:eventDictionary:sender:completionBlock:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
 		<p>Tries to execute the JavaScript in the context of a view controller.
-Execution is asynchronous and calls the passed completion block when complete</p>
+Execution is asynchronous and calls the passed completion block when complete.
+If the eventProvider is set, it is used to gather further information about what
+triggered the event that may be used in the <a href="#//api/name/script">script</a>.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)executeScriptAppliedToViewController:(PSPDFViewController *)<em>viewController</em> finished:(void ( ^ ) ( ))<em>done</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)executeScriptAppliedToViewController:(PSPDFViewController *)<em>viewController</em> eventDictionary:(NSDictionary *)<em>eventDictionary</em> sender:(id)<em>sender</em> completionBlock:(void ( ^ ) ( ))<em>completionBlock</em></code></div>
 
     
 	
@@ -357,7 +360,7 @@ Execution is asynchronous and calls the passed completion block when complete</p
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-02-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
