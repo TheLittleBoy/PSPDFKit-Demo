@@ -39,11 +39,11 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/allowFullscreen">&nbsp;&nbsp;&nbsp;&nbsp;allowFullscreen</option>
-	
 	<option value="//api/name/backgroundColor">&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor</option>
 	
 	<option value="//api/name/blurBackground">&nbsp;&nbsp;&nbsp;&nbsp;blurBackground</option>
+	
+	<option value="//api/name/displayModeUserInteractionEnabled">&nbsp;&nbsp;&nbsp;&nbsp;displayModeUserInteractionEnabled</option>
 	
 	<option value="//api/name/doubleTapGestureRecognizer">&nbsp;&nbsp;&nbsp;&nbsp;doubleTapGestureRecognizer</option>
 	
@@ -118,11 +118,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowFullscreen">allowFullscreen</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundColor">backgroundColor</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/blurBackground">blurBackground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayModeUserInteractionEnabled">displayModeUserInteractionEnabled</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doubleTapGestureRecognizer">doubleTapGestureRecognizer</a></span></li>
 	
@@ -252,7 +252,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/allowFullscreen">&nbsp;&nbsp;allowFullscreen</a></code>
+		<code><a href="#//api/name/displayModeUserInteractionEnabled">&nbsp;&nbsp;displayModeUserInteractionEnabled</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -388,48 +388,6 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/allowFullscreen" title="allowFullscreen"></a>
-	<h3 class="subsubtitle method-title">allowFullscreen</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Control if the user can enter the <a href="#//api/name/fullscreen">fullscreen</a> mode by double-tapping. Defaults to YES.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL allowFullscreen</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<div class="note"><p><strong>Note:</strong> This only affects user interaction. If you call <code>setFullscreen:YES</code> manually, the <a href="#//api/name/fullscreen">fullscreen</a> mode will
-still be entered.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFGalleryViewController.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/backgroundColor" title="backgroundColor"></a>
 	<h3 class="subsubtitle method-title">backgroundColor</h3>
 	
@@ -492,6 +450,49 @@ if you need a transparent mode. Defaults to black.</p>
 		<h4 class="method-subtitle">Discussion</h4>
 		<div class="note"><p><strong>Note:</strong> Blurring is not available when in <a href="#//api/name/fullscreen">fullscreen</a> mode.</p></div><div class="warning"><p><strong>Warning:</strong> Blurring might be slow on older devices or versions of iOS. Before using, make sure
 to test your application on those devices!</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFGalleryViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/displayModeUserInteractionEnabled" title="displayModeUserInteractionEnabled"></a>
+	<h3 class="subsubtitle method-title">displayModeUserInteractionEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Controls if the user can switch between the <a href="#//api/name/fullscreen">fullscreen</a> mode and embedded mode by double-tapping
+or panning. Defaults to <code>YES</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL displayModeUserInteractionEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This only affects user interaction. If you call <a href="#//api/name/setFullscreen:animated:"><code>setFullscreen:animated:</code></a> programmatically,
+the mode will still be set accordingly.</p></div>
 	</div>
 	
 	
@@ -1186,7 +1187,7 @@ Defaults to 1.0.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-17)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
