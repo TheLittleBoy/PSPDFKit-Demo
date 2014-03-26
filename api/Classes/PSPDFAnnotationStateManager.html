@@ -78,13 +78,21 @@
 	
 	<option value="//api/name/redo">&nbsp;&nbsp;&nbsp;&nbsp;- redo</option>
 	
-	<option value="//api/name/showStylePickerFrom:withPassThroughViews:">&nbsp;&nbsp;&nbsp;&nbsp;- showStylePickerFrom:withPassThroughViews:</option>
+	<option value="//api/name/showStylePickerFrom:">&nbsp;&nbsp;&nbsp;&nbsp;- showStylePickerFrom:</option>
+	
+	<option value="//api/name/showStylePickerFrom:presentationOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- showStylePickerFrom:presentationOptions:</option>
 	
 	<option value="//api/name/toggleImagePickerControllerFrom:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleImagePickerControllerFrom:</option>
 	
+	<option value="//api/name/toggleImagePickerControllerFrom:presentationOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleImagePickerControllerFrom:presentationOptions:</option>
+	
 	<option value="//api/name/toggleSignatureControllerFrom:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleSignatureControllerFrom:</option>
 	
+	<option value="//api/name/toggleSignatureControllerFrom:presentationOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleSignatureControllerFrom:presentationOptions:</option>
+	
 	<option value="//api/name/toggleStampControllerFrom:includeSavedAnnotations:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleStampControllerFrom:includeSavedAnnotations:</option>
+	
+	<option value="//api/name/toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:</option>
 	
 	<option value="//api/name/toggleState:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleState:</option>
 	
@@ -154,13 +162,21 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/redo">redo</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showStylePickerFrom:withPassThroughViews:">showStylePickerFrom:withPassThroughViews:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showStylePickerFrom:">showStylePickerFrom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showStylePickerFrom:presentationOptions:">showStylePickerFrom:presentationOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleImagePickerControllerFrom:">toggleImagePickerControllerFrom:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleImagePickerControllerFrom:presentationOptions:">toggleImagePickerControllerFrom:presentationOptions:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleSignatureControllerFrom:">toggleSignatureControllerFrom:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleSignatureControllerFrom:presentationOptions:">toggleSignatureControllerFrom:presentationOptions:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleStampControllerFrom:includeSavedAnnotations:">toggleStampControllerFrom:includeSavedAnnotations:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:">toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleState:">toggleState:</a></span></li>
 	
@@ -336,7 +352,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/showStylePickerFrom:withPassThroughViews:">&ndash;&nbsp;showStylePickerFrom:withPassThroughViews:</a></code>
+		<code><a href="#//api/name/showStylePickerFrom:">&ndash;&nbsp;showStylePickerFrom:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showStylePickerFrom:presentationOptions:">&ndash;&nbsp;showStylePickerFrom:presentationOptions:</a></code>
 	</span>
 	
 	
@@ -348,13 +370,31 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/toggleSignatureControllerFrom:presentationOptions:">&ndash;&nbsp;toggleSignatureControllerFrom:presentationOptions:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/toggleStampControllerFrom:includeSavedAnnotations:">&ndash;&nbsp;toggleStampControllerFrom:includeSavedAnnotations:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:">&ndash;&nbsp;toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/toggleImagePickerControllerFrom:">&ndash;&nbsp;toggleImagePickerControllerFrom:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleImagePickerControllerFrom:presentationOptions:">&ndash;&nbsp;toggleImagePickerControllerFrom:presentationOptions:</a></code>
 	</span>
 	
 	
@@ -1024,8 +1064,8 @@ Defaults to nil.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/showStylePickerFrom:withPassThroughViews:" title="showStylePickerFrom:withPassThroughViews:"></a>
-	<h3 class="subsubtitle method-title">showStylePickerFrom:withPassThroughViews:</h3>
+	<a name="//api/name/showStylePickerFrom:" title="showStylePickerFrom:"></a>
+	<h3 class="subsubtitle method-title">showStylePickerFrom:</h3>
 	
 	
 	
@@ -1035,7 +1075,52 @@ Defaults to nil.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)showStylePickerFrom:(id)<em>sender</em> withPassThroughViews:(NSArray *)<em>passThroughViews</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)showStylePickerFrom:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/showStylePickerFrom:presentationOptions:">- showStylePickerFrom:presentationOptions:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotationStateManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showStylePickerFrom:presentationOptions:" title="showStylePickerFrom:presentationOptions:"></a>
+	<h3 class="subsubtitle method-title">showStylePickerFrom:presentationOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shows the style picker for the current annotation class and configures it with annotation <a href="#//api/name/state">state</a> manager style attributes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showStylePickerFrom:(id)<em>sender</em> presentationOptions:(NSDictionary *)<em>options</em></code></div>
 
     
 	
@@ -1048,8 +1133,8 @@ Defaults to nil.</p>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>passThroughViews</em></dt>
-			<dd><p>Pass through views for the popover controller.</p></dd>
+			<dt><em>options</em></dt>
+			<dd><p>A dictionary of presentation options. See <a href="../Classes/PSPDFViewController.html">PSPDFViewController</a>.h (Presentation category) for possible values.</p></dd>
 		</dl>
 		
 	</div>
@@ -1090,12 +1175,62 @@ Defaults to nil.</p>
 
     
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/toggleImagePickerControllerFrom:presentationOptions:">- toggleImagePickerControllerFrom:presentationOptions:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotationStateManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleImagePickerControllerFrom:presentationOptions:" title="toggleImagePickerControllerFrom:presentationOptions:"></a>
+	<h3 class="subsubtitle method-title">toggleImagePickerControllerFrom:presentationOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Displays a <a href="../Classes/PSPDFStampViewController.html"><code>PSPDFStampViewController</code></a> and toggles the <a href="#//api/name/state">state</a> to <code>PSPDFAnnotationStringImage</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)toggleImagePickerControllerFrom:(id)<em>sender</em> presentationOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>sender</em></dt>
 			<dd><p>A <code>UIView</code> or <code>UIBarButtonItem</code> used as the anchor view for the popover controller (iPad only).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>A dictionary of presentation options. See <a href="../Classes/PSPDFViewController.html">PSPDFViewController</a>.h (Presentation category) for possible values.</p></dd>
 		</dl>
 		
 	</div>
@@ -1136,12 +1271,62 @@ Defaults to nil.</p>
 
     
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/toggleSignatureControllerFrom:presentationOptions:">- toggleSignatureControllerFrom:presentationOptions:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotationStateManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleSignatureControllerFrom:presentationOptions:" title="toggleSignatureControllerFrom:presentationOptions:"></a>
+	<h3 class="subsubtitle method-title">toggleSignatureControllerFrom:presentationOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Displays a <a href="../Classes/PSPDFSignatureViewController.html"><code>PSPDFSignatureViewController</code></a> and toggles the <a href="#//api/name/state">state</a> to <code>PSPDFAnnotationStringSignature</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)toggleSignatureControllerFrom:(id)<em>sender</em> presentationOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>sender</em></dt>
 			<dd><p>A <code>UIView</code> or <code>UIBarButtonItem</code> used as the anchor view for the popover controller (iPad only).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>A dictionary of presentation options. See <a href="../Classes/PSPDFViewController.html">PSPDFViewController</a>.h (Presentation category) for possible values.</p></dd>
 		</dl>
 		
 	</div>
@@ -1182,12 +1367,67 @@ Defaults to nil.</p>
 
     
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:">- toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotationStateManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:" title="toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:"></a>
+	<h3 class="subsubtitle method-title">toggleStampControllerFrom:includeSavedAnnotations:presentationOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Displays a <a href="../Classes/PSPDFStampViewController.html"><code>PSPDFStampViewController</code></a> and toggles the <a href="#//api/name/state">state</a> to <code>PSPDFAnnotationStringStamp</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)toggleStampControllerFrom:(id)<em>sender</em> includeSavedAnnotations:(BOOL)<em>includeSavedAnnotations</em> presentationOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>sender</em></dt>
 			<dd><p>A <code>UIView</code> or <code>UIBarButtonItem</code> used as the anchor view for the popover controller (iPad only).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>includeSavedAnnotations</em></dt>
+			<dd><p>Whether to include saved annotation using <a href="../Classes/PSPDFSavedAnnotationsViewController.html">PSPDFSavedAnnotationsViewController</a> or not.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>A dictionary of presentation options. See <a href="../Classes/PSPDFViewController.html">PSPDFViewController</a>.h (Presentation category) for possible values.</p></dd>
 		</dl>
 		
 	</div>
@@ -1299,7 +1539,7 @@ Defaults to nil.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-21)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-26)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
