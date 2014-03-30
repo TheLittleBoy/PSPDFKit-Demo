@@ -45,6 +45,8 @@
 	
 	<option value="//api/name/dataSource">&nbsp;&nbsp;&nbsp;&nbsp;dataSource</option>
 	
+	<option value="//api/name/loopEnabled">&nbsp;&nbsp;&nbsp;&nbsp;loopEnabled</option>
+	
 	
 	
 	
@@ -55,6 +57,8 @@
 	<option value="//api/name/activeContentViews">&nbsp;&nbsp;&nbsp;&nbsp;- activeContentViews</option>
 	
 	<option value="//api/name/contentViewForItemAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- contentViewForItemAtIndex:</option>
+	
+	<option value="//api/name/contentViewsForItemAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- contentViewsForItemAtIndex:</option>
 	
 	<option value="//api/name/dequeueReusableContentViewWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- dequeueReusableContentViewWithIdentifier:</option>
 	
@@ -96,6 +100,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataSource">dataSource</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loopEnabled">loopEnabled</a></span></li>
+	
 </ul></li>
 
 
@@ -107,6 +113,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activeContentViews">activeContentViews</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentViewForItemAtIndex:">contentViewForItemAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentViewsForItemAtIndex:">contentViewsForItemAtIndex:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dequeueReusableContentViewWithIdentifier:">dequeueReusableContentViewWithIdentifier:</a></span></li>
 	
@@ -210,6 +218,12 @@ a data source and can be reused. It is built on top of a <code>UIScrollView</cod
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/contentViewsForItemAtIndex:">&ndash;&nbsp;contentViewsForItemAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/itemIndexForContentView:">&ndash;&nbsp;itemIndexForContentView:</a></code>
 	</span>
 	
@@ -231,6 +245,12 @@ a data source and can be reused. It is built on top of a <code>UIScrollView</cod
 		<code><a href="#//api/name/activeContentViews">&ndash;&nbsp;activeContentViews</a></code>
 	</span>
 	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loopEnabled">&nbsp;&nbsp;loopEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -353,6 +373,42 @@ a data source and can be reused. It is built on top of a <code>UIScrollView</cod
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/loopEnabled" title="loopEnabled"></a>
+	<h3 class="subsubtitle method-title">loopEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables the loop mode, where the gallery wraps around at both ends. Defaults to <code>NO</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isLoopEnabled) BOOL loopEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFGalleryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -420,6 +476,55 @@ a data source and can be reused. It is built on top of a <code>UIScrollView</cod
 	
 	
 	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> If <a href="#//api/name/loopEnabled"><code>loopEnabled</code></a> is <code>YES</code>, this method will throw an exception. Always use
+<a href="#//api/name/contentViewsForItemAtIndex:"><code>contentViewsForItemAtIndex:</code></a> when enabling the loop feature!</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFGalleryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentViewsForItemAtIndex:" title="contentViewsForItemAtIndex:"></a>
+	<h3 class="subsubtitle method-title">contentViewsForItemAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="../Classes/PSPDFGalleryContentView.html"><code>PSPDFGalleryContentView</code></a>s for the given item index or an empty set if does not exist
+or is not part of <a href="#//api/name/activeContentViews"><code>activeContentViews</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)contentViewsForItemAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This method will usually return one view per index. However, if <a href="#//api/name/loopEnabled"><code>loopEnabled</code></a> is <code>YES</code>,
+under certain circumstances there will be more than one view per index!</p></div>
+	</div>
 	
 	
 	
@@ -630,7 +735,7 @@ a data source and can be reused. It is built on top of a <code>UIScrollView</cod
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-26)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-30)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

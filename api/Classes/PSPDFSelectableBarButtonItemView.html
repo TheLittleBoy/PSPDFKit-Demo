@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PSPDFTextLineBorder Constants Reference</title>
+		<title>PSPDFSelectableBarButtonItemView Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PSPDFTextLineBorder Constants Reference</h1>
+				<h1 class="hideInXcode">PSPDFSelectableBarButtonItemView Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -25,6 +25,23 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/UI_APPEARANCE_SELECTOR">&nbsp;&nbsp;&nbsp;&nbsp;UI_APPEARANCE_SELECTOR</option>
+	
+	
 	
 	
 	
@@ -37,6 +54,28 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Styling">Styling</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/UI_APPEARANCE_SELECTOR">UI_APPEARANCE_SELECTOR</a></span></li>
+	
+</ul></li>
+
+
 
 
 
@@ -45,7 +84,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PSPDFTextLineBorder Constants Reference" name="top"></a>
+				<a title="PSPDFSelectableBarButtonItemView Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -54,94 +93,113 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PSPDFTextLineBorder Constants Reference</h1>
+						<h1 class="title title-header">PSPDFSelectableBarButtonItemView Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PSPDFTextLine.h</td>
+	<td class="specification-value">PSPDFSelectableBarButtonItem.h</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Use this class to configure the <a href="../Classes/PSPDFSelectableBarButtonItem.html"><code>PSPDFSelectableBarButtonItem</code></a> appearance.</p>
+
+<p>The recommended way to set the <code>PSPDFSelectableBarButtonItemView</code> <code>tintColor</code> is by setting
+the tintColor property on the parent <code>UINavigationBar</code> / <code>UIToolbar</code>. This will enable you to
+quickly set the same tint color for all your UIBarButtonItems.</p>
+
+<p>You can also customize <code>PSPDFSelectableBarButtonItemView</code>&rsquo;s tintColor
+directly or via <code>UIViewAppearance</code> to achieve a different look for <a href="../Classes/PSPDFSelectableBarButtonItem.html"><code>PSPDFSelectableBarButtonItem</code></a>s.</p>
+					</div>
 					
 					
 					
-                    
-                    
-                    <h3 class="subsubtitle method-title">PSPDFTextLineBorder</h3>
-                    
-                    <div class="section">
-                        <!-- display enum values -->
-                        
-                        <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, PSPDFTextLineBorder ) {<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFTextLineBorderUndefined</a> = 0,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFTextLineBorderTopDown</a>,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFTextLineBorderBottomUp</a>,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PSPDFTextLineBorderNone</a>,<br/>
-                            
-                            };</code>
-                    
-                    </div>
-                    
-                    <div class="section section-methods">
-                        <h4 class="method-subtitle">Constants</h4>
-                        <dl class="termdef">
-                            
-                            <dt><a name="" title="PSPDFTextLineBorderUndefined"></a><code>PSPDFTextLineBorderUndefined</code></dt>
-<dd>
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Styling" name="task_Styling"></a>
+						
+<h3 class="subsubtitle task-title">Styling</h3>
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/UI_APPEARANCE_SELECTOR">&nbsp;&nbsp;UI_APPEARANCE_SELECTOR</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/UI_APPEARANCE_SELECTOR" title="UI_APPEARANCE_SELECTOR"></a>
+	<h3 class="subsubtitle method-title">UI_APPEARANCE_SELECTOR</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Selected image tint color.
+Defaults to the <code>barTintColor</code> of PSPDFViewController&rsquo;s navigation bar, if available.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *UI_APPEARANCE_SELECTOR</code></div>
 
     
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFTextLine.h</code>.
-	</p>
 	
-</dd>
-                            
-                            <dt><a name="" title="PSPDFTextLineBorderTopDown"></a><code>PSPDFTextLineBorderTopDown</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFTextLine.h</code>.
-	</p>
 	
-</dd>
-                            
-                            <dt><a name="" title="PSPDFTextLineBorderBottomUp"></a><code>PSPDFTextLineBorderBottomUp</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFTextLine.h</code>.
-	</p>
 	
-</dd>
-                            
-                            <dt><a name="" title="PSPDFTextLineBorderNone"></a><code>PSPDFTextLineBorderNone</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PSPDFTextLine.h</code>.
-	</p>
 	
-</dd>
-                            
-                        </dl>
-                    </div>
-                    
-                    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFSelectableBarButtonItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
                     
                     
 				</div>
