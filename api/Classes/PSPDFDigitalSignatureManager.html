@@ -54,9 +54,9 @@
 	
 	<option value="//api/name/trustedCertificates">&nbsp;&nbsp;&nbsp;&nbsp;- trustedCertificates</option>
 	
-	<option value="//api/name/verificationHandlerForSignature:">&nbsp;&nbsp;&nbsp;&nbsp;- verificationHandlerForSignature:</option>
+	<option value="//api/name/verificationHandlerClassForSignature:">&nbsp;&nbsp;&nbsp;&nbsp;- verificationHandlerClassForSignature:</option>
 	
-	<option value="//api/name/verificationHandlerInstanceForSignature:documentProvider:">&nbsp;&nbsp;&nbsp;&nbsp;- verificationHandlerInstanceForSignature:documentProvider:</option>
+	<option value="//api/name/verificationHandlerForSignature:documentProvider:">&nbsp;&nbsp;&nbsp;&nbsp;- verificationHandlerForSignature:documentProvider:</option>
 	
 	
 	
@@ -102,9 +102,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/trustedCertificates">trustedCertificates</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verificationHandlerForSignature:">verificationHandlerForSignature:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verificationHandlerClassForSignature:">verificationHandlerClassForSignature:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verificationHandlerInstanceForSignature:documentProvider:">verificationHandlerInstanceForSignature:documentProvider:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verificationHandlerForSignature:documentProvider:">verificationHandlerForSignature:documentProvider:</a></span></li>
 	
 </ul></li>
 
@@ -144,7 +144,7 @@
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Manages signatures.
-Only available for PSPDFKit Complete with OpenSSL.</p>
+Only available for <a href="../Classes/PSPDFKit.html">PSPDFKit</a> Complete with OpenSSL.</p>
 					</div>
 					
 					
@@ -202,13 +202,13 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/verificationHandlerForSignature:">&ndash;&nbsp;verificationHandlerForSignature:</a></code>
+		<code><a href="#//api/name/verificationHandlerClassForSignature:">&ndash;&nbsp;verificationHandlerClassForSignature:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/verificationHandlerInstanceForSignature:documentProvider:">&ndash;&nbsp;verificationHandlerInstanceForSignature:documentProvider:</a></code>
+		<code><a href="#//api/name/verificationHandlerForSignature:documentProvider:">&ndash;&nbsp;verificationHandlerForSignature:documentProvider:</a></code>
 	</span>
 	
 	
@@ -314,7 +314,7 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>List of signing identities, in the form of <a href="../Classes/PSPDFDigitalSigningIdentity.html">PSPDFDigitalSigningIdentity</a> objects.</p>
+		<p>List of signing identities, in the form of PSPDFDigitalSigningIdentity objects.</p>
 	</div>		
 	
     
@@ -350,7 +350,7 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>List of trusted certificates, in the form of PSPDFDigitalCertificate objects.</p>
+		<p>List of trusted certificates, in the form of <a href="../Classes/PSPDFDigitalCertificate.html">PSPDFDigitalCertificate</a> objects.</p>
 	</div>		
 	
     
@@ -380,8 +380,8 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/verificationHandlerForSignature:" title="verificationHandlerForSignature:"></a>
-	<h3 class="subsubtitle method-title">verificationHandlerForSignature:</h3>
+	<a name="//api/name/verificationHandlerClassForSignature:" title="verificationHandlerClassForSignature:"></a>
+	<h3 class="subsubtitle method-title">verificationHandlerClassForSignature:</h3>
 	
 	
 	
@@ -391,7 +391,7 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (Class&lt;PSPDFDigitalSignatureVerificationHandler&gt;)verificationHandlerForSignature:(PSPDFDigitalSignatureDictionary *)<em>signature</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (Class&lt;PSPDFDigitalSignatureVerificationHandler&gt;)verificationHandlerClassForSignature:(PSPDFDigitalSignatureDictionary *)<em>signature</em></code></div>
 
     
 	
@@ -416,8 +416,8 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/verificationHandlerInstanceForSignature:documentProvider:" title="verificationHandlerInstanceForSignature:documentProvider:"></a>
-	<h3 class="subsubtitle method-title">verificationHandlerInstanceForSignature:documentProvider:</h3>
+	<a name="//api/name/verificationHandlerForSignature:documentProvider:" title="verificationHandlerForSignature:documentProvider:"></a>
+	<h3 class="subsubtitle method-title">verificationHandlerForSignature:documentProvider:</h3>
 	
 	
 	
@@ -427,7 +427,7 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id&lt;PSPDFDigitalSignatureVerificationHandler&gt;)verificationHandlerInstanceForSignature:(PSPDFDigitalSignatureDictionary *)<em>signature</em> documentProvider:(PSPDFDocumentProvider *)<em>documentProvider</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id&lt;PSPDFDigitalSignatureVerificationHandler&gt;)verificationHandlerForSignature:(PSPDFDigitalSignatureDictionary *)<em>signature</em> documentProvider:(PSPDFDocumentProvider *)<em>documentProvider</em></code></div>
 
     
 	
@@ -466,7 +466,7 @@ Only available for PSPDFKit Complete with OpenSSL.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-31)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-04-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

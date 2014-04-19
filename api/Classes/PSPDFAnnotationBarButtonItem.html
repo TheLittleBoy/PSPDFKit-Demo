@@ -45,6 +45,8 @@
 	
 	<option value="//api/name/flexibleAnnotationToolbar">&nbsp;&nbsp;&nbsp;&nbsp;flexibleAnnotationToolbar</option>
 	
+	<option value="//api/name/hostView">&nbsp;&nbsp;&nbsp;&nbsp;hostView</option>
+	
 	
 	
 	
@@ -53,8 +55,6 @@
 	<option value="instance_methods">Instance Methods</option>
 	
 	<option value="//api/name/isAvailableBlocking">&nbsp;&nbsp;&nbsp;&nbsp;- isAvailableBlocking</option>
-	
-	<option value="//api/name/targetToolbarForBarButtonItem:">&nbsp;&nbsp;&nbsp;&nbsp;- targetToolbarForBarButtonItem:</option>
 	
 	
 	
@@ -72,8 +72,6 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SubclassingHooks Methods">SubclassingHooks Methods</a></span></li>
-	
 </ul></li>
 
 
@@ -88,6 +86,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flexibleAnnotationToolbar">flexibleAnnotationToolbar</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hostView">hostView</a></span></li>
+	
 </ul></li>
 
 
@@ -97,8 +97,6 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAvailableBlocking">isAvailableBlocking</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/targetToolbarForBarButtonItem:">targetToolbarForBarButtonItem:</a></span></li>
 	
 </ul></li>
 
@@ -150,7 +148,7 @@ In that case we assume that annotations are only meant as temporary notes.</p>
 <p>If you implement custom saving logic, either set <code>annotationSaveMode</code> to <code>PSPDFAnnotationSaveModeExternalFile</code> and override the load/save methods in <a href="../Classes/PSPDFAnnotationManager.html"><code>PSPDFAnnotationManager</code></a>, or override <code>PSPDFAnnotationBarButtonItem</code> and return <code>YES</code> on <code>isAvailable</code>. (a good implementation would be &lsquo;return <code>self.pdfController.document.isValid</code>&rsquo;.</p>
 
 <p>The annotation toolbar will be displayed on top of the <code>navigationController's</code> <code>navigationBar</code> - if it&rsquo;s visible.
-If not, <code>PSPDFAnnotationBarButtonItem</code> looks for the <code>UIToolbar</code> it is embedded in (you can override <code>targetToolbarForBarButtonItem</code>). The <a href="#//api/name/annotationToolbar"><code>annotationToolbar</code></a> will copy the style of the current UIToolbar. (<code>barStyle</code>, <code>translucent</code>, <code>tintColor</code>)
+If not, <code>PSPDFAnnotationBarButtonItem</code> looks for the <code>UIToolbar</code> or <code>UINavigationBar</code> it is embedded in (you can override <code>targetToolbar</code>). The <a href="#//api/name/annotationToolbar"><code>annotationToolbar</code></a> will copy the style of the current UIToolbar (<code>barStyle</code>, <code>translucent</code>, <code>tintColor</code>).
 If everything else fails, the toolbar will be displayed above the <code>PSPDFViewController's</code> view anchored at the top.</p>
 					</div>
 					
@@ -164,7 +162,7 @@ If everything else fails, the toolbar will be displayed above the <code>PSPDFVie
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
@@ -191,19 +189,11 @@ If everything else fails, the toolbar will be displayed above the <code>PSPDFVie
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li>
-						</ul>
-						
-						
-						<a title="SubclassingHooks Methods" name="task_SubclassingHooks Methods"></a>
-						<h3 class="subsubtitle task-title">SubclassingHooks Methods</h3>
-
-						<ul class="task-list">
-							<li>
+</li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/targetToolbarForBarButtonItem:">&ndash;&nbsp;targetToolbarForBarButtonItem:</a></code>
+		<code><a href="#//api/name/hostView">&nbsp;&nbsp;hostView</a></code>
 	</span>
-	
+	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -327,6 +317,43 @@ Defaults to <code>PSPDFAnnotationToolbarTypeFlexible</code> on iOS 7.</p>
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/hostView" title="hostView"></a>
+	<h3 class="subsubtitle method-title">hostView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The host view for the <code>PSPDFFlexibleAnnotationToolbarContainer</code>.
+If set to nil (the default), the <a href="../Classes/PSPDFViewController.html"><code>PSPDFViewController</code></a>&rsquo;s navigationController view or the containing <code>UIToolbar</code>&rsquo;s or <code>UINavigationBar</code>&rsquo;s superview will be used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIView *hostView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotationBarButtonItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -373,43 +400,6 @@ Defaults to <code>PSPDFAnnotationToolbarTypeFlexible</code> on iOS 7.</p>
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/targetToolbarForBarButtonItem:" title="targetToolbarForBarButtonItem:"></a>
-	<h3 class="subsubtitle method-title">targetToolbarForBarButtonItem:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Override if you are using multiple <code>UIToolbars</code> and want to change on what toolbar the annotation bar should be displayed.
-Returns <code>UIToolbar</code> or <code>UINavigationBar</code>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (UIView *)targetToolbarForBarButtonItem:(UIBarButtonItem *)<em>barButtonItem</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFAnnotationBarButtonItem.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
@@ -425,7 +415,7 @@ Returns <code>UIToolbar</code> or <code>UINavigationBar</code>.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-31)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-04-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

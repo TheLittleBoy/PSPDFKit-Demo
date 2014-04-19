@@ -39,6 +39,8 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/editViewController">&nbsp;&nbsp;&nbsp;&nbsp;editViewController</option>
+	
 	<option value="//api/name/soundAnnotation">&nbsp;&nbsp;&nbsp;&nbsp;soundAnnotation</option>
 	
 	
@@ -48,11 +50,13 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/finishRecording">&nbsp;&nbsp;&nbsp;&nbsp;- finishRecording</option>
+	<option value="//api/name/editorVisible">&nbsp;&nbsp;&nbsp;&nbsp;- editorVisible</option>
 	
-	<option value="//api/name/playOrPause">&nbsp;&nbsp;&nbsp;&nbsp;- playOrPause</option>
+	<option value="//api/name/hideEditorAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- hideEditorAnimated:</option>
 	
-	<option value="//api/name/recordOrPause">&nbsp;&nbsp;&nbsp;&nbsp;- recordOrPause</option>
+	<option value="//api/name/shouldShowEditMenu">&nbsp;&nbsp;&nbsp;&nbsp;- shouldShowEditMenu</option>
+	
+	<option value="//api/name/showEditorAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- showEditorAnimated:</option>
 	
 	
 	
@@ -78,6 +82,8 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editViewController">editViewController</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/soundAnnotation">soundAnnotation</a></span></li>
 	
 </ul></li>
@@ -88,11 +94,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finishRecording">finishRecording</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editorVisible">editorVisible</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playOrPause">playOrPause</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hideEditorAnimated:">hideEditorAnimated:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordOrPause">recordOrPause</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldShowEditMenu">shouldShowEditMenu</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showEditorAnimated:">showEditorAnimated:</a></span></li>
 	
 </ul></li>
 
@@ -155,19 +163,31 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/playOrPause">&ndash;&nbsp;playOrPause</a></code>
+		<code><a href="#//api/name/editViewController">&nbsp;&nbsp;editViewController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showEditorAnimated:">&ndash;&nbsp;showEditorAnimated:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/recordOrPause">&ndash;&nbsp;recordOrPause</a></code>
+		<code><a href="#//api/name/hideEditorAnimated:">&ndash;&nbsp;hideEditorAnimated:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/finishRecording">&ndash;&nbsp;finishRecording</a></code>
+		<code><a href="#//api/name/editorVisible">&ndash;&nbsp;editorVisible</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldShowEditMenu">&ndash;&nbsp;shouldShowEditMenu</a></code>
 	</span>
 	
 	
@@ -185,13 +205,49 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/editViewController" title="editViewController"></a>
+	<h3 class="subsubtitle method-title">editViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Edit view controller that manages the audio control views</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) PSPDFSoundAnnotationEditViewController *editViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFSoundAnnotationView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/soundAnnotation" title="soundAnnotation"></a>
 	<h3 class="subsubtitle method-title">soundAnnotation</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Saves the attached sound annotation.</p>
+		<p>The sound annotation</p>
 	</div>		
 	
     
@@ -231,18 +287,18 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/finishRecording" title="finishRecording"></a>
-	<h3 class="subsubtitle method-title">finishRecording</h3>
+	<a name="//api/name/editorVisible" title="editorVisible"></a>
+	<h3 class="subsubtitle method-title">editorVisible</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Finish if we&rsquo;re currently recording.</p>
+		<p>Returns YES if the sound editor view is visible, otherwise NO</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)finishRecording</code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)editorVisible</code></div>
 
     
 	
@@ -267,18 +323,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/playOrPause" title="playOrPause"></a>
-	<h3 class="subsubtitle method-title">playOrPause</h3>
+	<a name="//api/name/hideEditorAnimated:" title="hideEditorAnimated:"></a>
+	<h3 class="subsubtitle method-title">hideEditorAnimated:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Play or Pause current sound annotation.</p>
+		<p>Hides the sound editor view</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)playOrPause</code></div>
+	<div class="method-subsection method-declaration"><code>- (void)hideEditorAnimated:(BOOL)<em>animated</em></code></div>
 
     
 	
@@ -303,18 +359,54 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/recordOrPause" title="recordOrPause"></a>
-	<h3 class="subsubtitle method-title">recordOrPause</h3>
+	<a name="//api/name/shouldShowEditMenu" title="shouldShowEditMenu"></a>
+	<h3 class="subsubtitle method-title">shouldShowEditMenu</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Pause/Continue Recording.</p>
+		<p>Returns YES when the page view can show an edit menu</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)recordOrPause</code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldShowEditMenu</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFSoundAnnotationView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showEditorAnimated:" title="showEditorAnimated:"></a>
+	<h3 class="subsubtitle method-title">showEditorAnimated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shows the sound editor view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showEditorAnimated:(BOOL)<em>animated</em></code></div>
 
     
 	
@@ -353,7 +445,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-31)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-04-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

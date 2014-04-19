@@ -39,8 +39,6 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/formatString">&nbsp;&nbsp;&nbsp;&nbsp;formatString</option>
-	
 	<option value="//api/name/inputFormat">&nbsp;&nbsp;&nbsp;&nbsp;inputFormat</option>
 	
 	
@@ -56,7 +54,7 @@
 	
 	<option value="//api/name/isPassword">&nbsp;&nbsp;&nbsp;&nbsp;- isPassword</option>
 	
-	<option value="//api/name/validateContents:isFinal:error:">&nbsp;&nbsp;&nbsp;&nbsp;- validateContents:isFinal:error:</option>
+	<option value="//api/name/textFieldChangedWithContents:change:range:isFinal:error:">&nbsp;&nbsp;&nbsp;&nbsp;- textFieldChangedWithContents:change:range:isFinal:error:</option>
 	
 	
 	
@@ -74,8 +72,6 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Formatting Options">Formatting Options</a></span></li>
-	
 </ul></li>
 
 
@@ -83,8 +79,6 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/formatString">formatString</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputFormat">inputFormat</a></span></li>
 	
@@ -102,7 +96,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPassword">isPassword</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validateContents:isFinal:error:">validateContents:isFinal:error:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textFieldChangedWithContents:change:range:isFinal:error:">textFieldChangedWithContents:change:range:isFinal:error:</a></span></li>
 	
 </ul></li>
 
@@ -154,7 +148,7 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
@@ -169,15 +163,13 @@
 	</span>
 	
 	
-</li>
-						</ul>
-						
-						
-						<a title="Formatting Options" name="task_Formatting Options"></a>
-						<h3 class="subsubtitle task-title">Formatting Options</h3>
-
-						<ul class="task-list">
-							<li>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textFieldChangedWithContents:change:range:isFinal:error:">&ndash;&nbsp;textFieldChangedWithContents:change:range:isFinal:error:</a></code>
+	</span>
+	
+	
+</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/formattedContents">&ndash;&nbsp;formattedContents</a></code>
 	</span>
@@ -185,19 +177,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/validateContents:isFinal:error:">&ndash;&nbsp;validateContents:isFinal:error:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/inputFormat">&nbsp;&nbsp;inputFormat</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/formatString">&nbsp;&nbsp;formatString</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -215,42 +195,6 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/formatString" title="formatString"></a>
-	<h3 class="subsubtitle method-title">formatString</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The validation format string.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *formatString</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFTextFieldFormElement.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/inputFormat" title="inputFormat"></a>
 	<h3 class="subsubtitle method-title">inputFormat</h3>
 	
@@ -262,7 +206,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PSPDFTextInputFormat inputFormat</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) PSPDFTextInputFormat inputFormat</code></div>
 
     
 	
@@ -303,7 +247,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the content formatted in the way specified in the form element.</p>
+		<p>Returns the contents formatted based on rules in the annotation (including JavaScript)</p>
 	</div>		
 	
     
@@ -415,20 +359,21 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/validateContents:isFinal:error:" title="validateContents:isFinal:error:"></a>
-	<h3 class="subsubtitle method-title">validateContents:isFinal:error:</h3>
+	<a name="//api/name/textFieldChangedWithContents:change:range:isFinal:error:" title="textFieldChangedWithContents:change:range:isFinal:error:"></a>
+	<h3 class="subsubtitle method-title">textFieldChangedWithContents:change:range:isFinal:error:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Validates the content according to the <a href="#//api/name/formatString"><code>formatString</code></a> set.
-See <a href="http://www.pdfill.com/download/FormsAPIReference.pdf">http://www.pdfill.com/download/FormsAPIReference.pdf</a> for details.
-<code>isFinal</code> defines if the user is typing (NO) or if the string should be commited (YES).</p>
+		<p>Handles Keystroke, Validate and Calulate actions that follow from user text input automatically.
+<code>isFinal</code> defines if the user is typing (NO) or if the string should be commited (YES).
+The change is the change in text.
+Returns the new text contents (possibly different from the passed change) to be applied. Otherwise, if failed, returns nil.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)validateContents:(NSString *)<em>contents</em> isFinal:(BOOL)<em>isFinal</em> error:(NSError **)<em>validationError</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)textFieldChangedWithContents:(NSString *)<em>contents</em> change:(NSString *)<em>change</em> range:(NSRange)<em>range</em> isFinal:(BOOL)<em>isFinal</em> error:(NSError *__autoreleasing *)<em>validationError</em></code></div>
 
     
 	
@@ -437,11 +382,6 @@ See <a href="http://www.pdfill.com/download/FormsAPIReference.pdf">http://www.pd
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<div class="warning"><p><strong>Warning:</strong> This is still a work in progress.</p></div>
-	</div>
 	
 	
 	
@@ -472,7 +412,7 @@ See <a href="http://www.pdfill.com/download/FormsAPIReference.pdf">http://www.pd
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-31)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-04-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

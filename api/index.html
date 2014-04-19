@@ -34,13 +34,13 @@
 					<div class="section section-overview index-overview">
 						
 						
-						<h2>About PSPDFKit</h2>
+						<h2>About <a href="Classes/PSPDFKit.html">PSPDFKit</a></h2>
 
-<p>PSPDFKit is your framework of choice for displaying and annotating PDFs on iOS. It includes tools to display PDFs, edit PDFs, create PDFs, create/edit annotations, fill out forms and verify digital signatures.</p>
+<p><a href="Classes/PSPDFKit.html">PSPDFKit</a> is advanced framework for displaying and annotating PDFs on iOS. It includes tools to display PDFs, edit PDFs, create PDFs, create/edit annotations, fill out forms and create/verify digital signatures.</p>
 
 <h2>At a Glance</h2>
 
-<p>While the amount of API might look overwhelming at first, you won&rsquo;t need to touch most classes. We chose to expose a lot of API so that every aspect can be customized, however most settings have good and sensible defaults and you don&rsquo;t need to know about all classes to start using it.</p>
+<p>While the amount of API might look overwhelming at first, you usually only need a subset of these classes but have the power to customize almost anything.. We chose to expose a lot of API so that every aspect can be customized, however most settings have good and sensible defaults and you don&rsquo;t need to know about all classes to start using it.</p>
 
 <p>Here&rsquo;s the list of classes you will most likely use:</p>
 
@@ -53,13 +53,14 @@
 <li><a href="/api/Classes/PSPDFDocumentPickerController.html">PSPDFDocumentPickerController</a> - a handy document picker table view that also allows search.</li>
 <li><a href="/api/Classes/PSPDFProcessor.html">PSPDFProcessor</a> - create new documents or password-protect existing ones.</li>
 <li><a href="/api/Classes/PSPDFAnnotation.html">PSPDFAnnotation</a> - the base class for all annotation objects.</li>
-<li><a href="/api/Classes/PSPDFAnnotationToolbar.html">PSPDFAnnotationToolbar</a> - the toolbar to add annotations.</li>
+<li><a href="/api/Classes/PSPDFFlexibleAnnotationToolbar.html">PSPDFFlexibleAnnotationToolbar</a> - the toolbar to add annotations.</li>
+<li><a href="/api/Classes/PSPDFAnnotationStateManager.html">PSPDFAnnotationStateManager</a> - manages special states to create annotations. (drawings, etc)</li>
 <li><a href="/api/Classes/PSPDFGlyph.html">PSPDFGlyph</a> - represents a single character in a PDF document. Use <a href="/api/Classes/PSPDFDocument.html#//api/name/objectsAtPDFRect:page:options:">objectsAtPDFRect:page:options:</a> to extract from pages.</li>
 <li><a href="/api/Classes/PSPDFCache.html">PSPDFCache</a> - fine-tune the caching behavior or <a href="http://pspdfkit.com/api/Classes/PSPDFCache.html#//api/name/clearCache">clear the disk cache</a>.</li>
 </ul>
 
 
-<p>Via the <a href="/api/Classes/PSPDFViewController.html#//api/name/overrideClass:withClass:">overrideClass:withClass:</a> method you can override almost any class of the controller/view layer (via <a href="/api/Classes/PSPDFViewController.html">PSPDFViewController</a>) and the model layer (via <a href="/api/Classes/PSPDFDocument.html">PSPDFDocument</a>) with your own subclass. Use this to customize details that are deep within PSPDFKit with minimum effort. You find some examples for this in the PSPDFCatalog example app.</p>
+<p>Via the <a href="/api/Classes/PSPDFViewController.html#//api/name/overrideClass:withClass:">overrideClass:withClass:</a> method you can override almost any class of the controller/view layer (via <a href="/api/Classes/PSPDFViewController.html">PSPDFViewController</a>) and the model layer (via <a href="/api/Classes/PSPDFDocument.html">PSPDFDocument</a>) with your own subclass. Use this to customize details that are deep within <a href="Classes/PSPDFKit.html">PSPDFKit</a> with minimum effort. You find some examples for this in the PSPDFCatalog example app.</p>
 
 <p>Other generic useful classes:</p>
 
@@ -77,7 +78,7 @@
 <h2>License</h2>
 
 <p>PSPDFKit is commercially licensed. Visit <a href="http://pspdfkit.com/license.html">http://pspdfkit.com/license.html</a> for details or contact us at <a href="mailto:sales@pspdfkit.com">sales@pspdfkit.com</a>.
-Copyright © 2010-2014 PSPDFKit GmbH.</p>
+Copyright © 2010-2014 <a href="Classes/PSPDFKit.html">PSPDFKit</a> GmbH.</p>
 
 <h2>Support</h2>
 
@@ -95,6 +96,10 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 						<ul>
 							
 							<li><a href="Classes/PSPDFAESCryptoDataProvider.html">PSPDFAESCryptoDataProvider</a></li>
+							
+							<li><a href="Classes/PSPDFAESCryptoInputStream.html">PSPDFAESCryptoInputStream</a></li>
+							
+							<li><a href="Classes/PSPDFAESCryptoOutputStream.html">PSPDFAESCryptoOutputStream</a></li>
 							
 							<li><a href="Classes/PSPDFAESDecryptor.html">PSPDFAESDecryptor</a></li>
 							
@@ -124,6 +129,10 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							
 							<li><a href="Classes/PSPDFAnnotationGridViewController.html">PSPDFAnnotationGridViewController</a></li>
 							
+							<li><a href="Classes/PSPDFAnnotationGroup.html">PSPDFAnnotationGroup</a></li>
+							
+							<li><a href="Classes/PSPDFAnnotationGroupItem.html">PSPDFAnnotationGroupItem</a></li>
+							
 							<li><a href="Classes/PSPDFAnnotationManager.html">PSPDFAnnotationManager</a></li>
 							
 							<li><a href="Classes/PSPDFAnnotationSet.html">PSPDFAnnotationSet</a></li>
@@ -143,8 +152,6 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							<li><a href="Classes/PSPDFAnnotationView.html">PSPDFAnnotationView</a></li>
 							
 							<li><a href="Classes/PSPDFAnnotationViewCache.html">PSPDFAnnotationViewCache</a></li>
-							
-							<li><a href="Classes/PSPDFAudioHelper.html">PSPDFAudioHelper</a></li>
 							
 							<li><a href="Classes/PSPDFBarButtonItem.html">PSPDFBarButtonItem</a></li>
 							
@@ -199,6 +206,10 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							<li><a href="Classes/PSPDFContinuousScrollViewController.html">PSPDFContinuousScrollViewController</a></li>
 							
 							<li><a href="Classes/PSPDFConversionOperation.html">PSPDFConversionOperation</a></li>
+							
+							<li><a href="Classes/PSPDFCryptoInputStream.html">PSPDFCryptoInputStream</a></li>
+							
+							<li><a href="Classes/PSPDFCryptoOutputStream.html">PSPDFCryptoOutputStream</a></li>
 							
 							<li><a href="Classes/PSPDFCryptor.html">PSPDFCryptor</a></li>
 							
@@ -372,7 +383,7 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							
 							<li><a href="Classes/PSPDFKeyboardAvoidingScrollView.html">PSPDFKeyboardAvoidingScrollView</a></li>
 							
-							<li><a href="Classes/PSPDFKeychain.html">PSPDFKeychain</a></li>
+							<li><a href="Classes/PSPDFKit.html">PSPDFKit</a></li>
 							
 							<li><a href="Classes/PSPDFLabelParser.html">PSPDFLabelParser</a></li>
 							
@@ -411,6 +422,8 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							<li><a href="Classes/PSPDFMemoryCache.html">PSPDFMemoryCache</a></li>
 							
 							<li><a href="Classes/PSPDFMenuItem.html">PSPDFMenuItem</a></li>
+							
+							<li><a href="Classes/PSPDFMicrophonePlotView.html">PSPDFMicrophonePlotView</a></li>
 							
 							<li><a href="Classes/PSPDFMoreBarButtonItem.html">PSPDFMoreBarButtonItem</a></li>
 							
@@ -473,6 +486,8 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							<li><a href="Classes/PSPDFReachabilityObserver.html">PSPDFReachabilityObserver</a></li>
 							
 							<li><a href="Classes/PSPDFRelayTouchesView.html">PSPDFRelayTouchesView</a></li>
+							
+							<li><a href="Classes/PSPDFRemoteButton.html">PSPDFRemoteButton</a></li>
 							
 							<li><a href="Classes/PSPDFRemoteFileObject.html">PSPDFRemoteFileObject</a></li>
 							
@@ -563,6 +578,10 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							<li><a href="Classes/PSPDFStrokePreviewView.html">PSPDFStrokePreviewView</a></li>
 							
 							<li><a href="Classes/PSPDFStyleManager.html">PSPDFStyleManager</a></li>
+							
+							<li><a href="Classes/PSPDFStylusManager.html">PSPDFStylusManager</a></li>
+							
+							<li><a href="Classes/PSPDFStylusViewController.html">PSPDFStylusViewController</a></li>
 							
 							<li><a href="Classes/PSPDFSubmitFormAction.html">PSPDFSubmitFormAction</a></li>
 							
@@ -664,8 +683,6 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							
 							<li><a href="Protocols/PSPDFAnnotationViewProtocol.html">PSPDFAnnotationViewProtocol</a></li>
 							
-							<li><a href="Protocols/PSPDFAudioHelperDelegate.html">PSPDFAudioHelperDelegate</a></li>
-							
 							<li><a href="Protocols/PSPDFBookmarkTableViewCellDelegate.html">PSPDFBookmarkTableViewCellDelegate</a></li>
 							
 							<li><a href="Protocols/PSPDFBookmarkViewControllerDelegate.html">PSPDFBookmarkViewControllerDelegate</a></li>
@@ -766,6 +783,8 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							
 							<li><a href="Protocols/PSPDFStyleable.html">PSPDFStyleable</a></li>
 							
+							<li><a href="Protocols/PSPDFStylusViewControllerDelegate.html">PSPDFStylusViewControllerDelegate</a></li>
+							
 							<li><a href="Protocols/PSPDFTabBarViewDataSource.html">PSPDFTabBarViewDataSource</a></li>
 							
 							<li><a href="Protocols/PSPDFTabbedViewControllerDelegate.html">PSPDFTabbedViewControllerDelegate</a></li>
@@ -793,6 +812,10 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
                         
 						<h2 class="index-title">Constant References</h2>
 						<ul>
+                        
+                        <li><a href="Constants/PSPDFAESCryptoInputStreamErrorCode.html">PSPDFAESCryptoInputStreamErrorCode</a></li>
+                        
+                        <li><a href="Constants/PSPDFAESCryptoOutputStreamErrorCode.html">PSPDFAESCryptoOutputStreamErrorCode</a></li>
                         
                         <li><a href="Constants/PSPDFAESEncryptorErrorCode.html">PSPDFAESEncryptorErrorCode</a></li>
                         
@@ -860,6 +883,8 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
                         
                         <li><a href="Constants/PSPDFGalleryItemContentState.html">PSPDFGalleryItemContentState</a></li>
                         
+                        <li><a href="Constants/PSPDFGalleryVideoItemCoverMode.html">PSPDFGalleryVideoItemCoverMode</a></li>
+                        
                         <li><a href="Constants/PSPDFGalleryVideoItemQuality.html">PSPDFGalleryVideoItemQuality</a></li>
                         
                         <li><a href="Constants/PSPDFGalleryViewControllerState.html">PSPDFGalleryViewControllerState</a></li>
@@ -875,8 +900,6 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
                         <li><a href="Constants/PSPDFIconFitScaleType.html">PSPDFIconFitScaleType</a></li>
                         
                         <li><a href="Constants/PSPDFJavascriptErrorCode.html">PSPDFJavascriptErrorCode</a></li>
-                        
-                        <li><a href="Constants/PSPDFKeychainErrorCode.html">PSPDFKeychainErrorCode</a></li>
                         
                         <li><a href="Constants/PSPDFLabelStyle.html">PSPDFLabelStyle</a></li>
                         
@@ -897,6 +920,8 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
                         <li><a href="Constants/PSPDFMediaPlayerControllerContentState.html">PSPDFMediaPlayerControllerContentState</a></li>
                         
                         <li><a href="Constants/PSPDFMediaPlayerControllerState.html">PSPDFMediaPlayerControllerState</a></li>
+                        
+                        <li><a href="Constants/PSPDFMediaPlayerCoverMode.html">PSPDFMediaPlayerCoverMode</a></li>
                         
                         <li><a href="Constants/PSPDFModelEncodingBehavior.html">PSPDFModelEncodingBehavior</a></li>
                         
@@ -938,11 +963,17 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
                         
                         <li><a href="Constants/PSPDFSliderBackgroundStyle.html">PSPDFSliderBackgroundStyle</a></li>
                         
+                        <li><a href="Constants/PSPDFSoundAnnotationState.html">PSPDFSoundAnnotationState</a></li>
+                        
                         <li><a href="Constants/PSPDFStatefulTableViewState.html">PSPDFStatefulTableViewState</a></li>
                         
                         <li><a href="Constants/PSPDFStatusBarStyle.html">PSPDFStatusBarStyle</a></li>
                         
                         <li><a href="Constants/PSPDFStatusHUDStyle.html">PSPDFStatusHUDStyle</a></li>
+                        
+                        <li><a href="Constants/PSPDFStylusConnectionStatus.html">PSPDFStylusConnectionStatus</a></li>
+                        
+                        <li><a href="Constants/PSPDFStylusTouchClassification.html">PSPDFStylusTouchClassification</a></li>
                         
                         <li><a href="Constants/PSPDFSubmitFormActionFlag.html">PSPDFSubmitFormActionFlag</a></li>
                         
@@ -984,17 +1015,17 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 							
 							<li><a href="Categories/MPVolumeView+PSPDFKitAdditions.html">MPVolumeView(PSPDFKitAdditions)</a></li>
 							
-							<li><a href="Categories/NSBundle+PSPDFKitAdditions.html">NSBundle(PSPDFKitAdditions)</a></li>
+							<li><a href="Categories/NSBundle+PSPDFFoundation.html">NSBundle(PSPDFFoundation)</a></li>
 							
-							<li><a href="Categories/NSDate+PSPDFKitAdditions.html">NSDate(PSPDFKitAdditions)</a></li>
+							<li><a href="Categories/NSDate+PSPDFFoundation.html">NSDate(PSPDFFoundation)</a></li>
 							
-							<li><a href="Categories/NSDictionary+PSPDFHigherOrderAdditions.html">NSDictionary(PSPDFHigherOrderAdditions)</a></li>
+							<li><a href="Categories/NSDictionary+PSPDFFoundation.html">NSDictionary(PSPDFFoundation)</a></li>
 							
-							<li><a href="Categories/NSNumber+PSPDFKitAdditions.html">NSNumber(PSPDFKitAdditions)</a></li>
+							<li><a href="Categories/NSNumber+PSPDFFoundation.html">NSNumber(PSPDFFoundation)</a></li>
 							
-							<li><a href="Categories/NSObject+PSPDFKitAdditions.html">NSObject(PSPDFKitAdditions)</a></li>
+							<li><a href="Categories/NSObject+PSPDFFoundation.html">NSObject(PSPDFFoundation)</a></li>
 							
-							<li><a href="Categories/NSURL+PSPDFKitAdditions.html">NSURL(PSPDFKitAdditions)</a></li>
+							<li><a href="Categories/NSURL+PSPDFFoundation.html">NSURL(PSPDFFoundation)</a></li>
 							
 							<li><a href="Categories/NSURL+PSPDFKitYouTubeAdditions.html">NSURL(PSPDFKitYouTubeAdditions)</a></li>
 							
@@ -1015,7 +1046,7 @@ Copyright © 2010-2014 PSPDFKit GmbH.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-31)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-04-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

@@ -130,6 +130,8 @@
 	
 	<option value="//api/name/requriesPopupAnnotation">&nbsp;&nbsp;&nbsp;&nbsp;+ requriesPopupAnnotation</option>
 	
+	<option value="//api/name/wantsSelectionBorder">&nbsp;&nbsp;&nbsp;&nbsp;+ wantsSelectionBorder</option>
+	
 	
 	
 	
@@ -138,8 +140,6 @@
 	<option value="//api/name/annotationIcon">&nbsp;&nbsp;&nbsp;&nbsp;- annotationIcon</option>
 	
 	<option value="//api/name/boundingBoxForPageRect:">&nbsp;&nbsp;&nbsp;&nbsp;- boundingBoxForPageRect:</option>
-	
-	<option value="//api/name/boundingBoxForPageViewBounds:">&nbsp;&nbsp;&nbsp;&nbsp;- boundingBoxForPageViewBounds:</option>
 	
 	<option value="//api/name/copyToClipboard">&nbsp;&nbsp;&nbsp;&nbsp;- copyToClipboard</option>
 	
@@ -162,6 +162,8 @@
 	<option value="//api/name/minimumSize">&nbsp;&nbsp;&nbsp;&nbsp;- minimumSize</option>
 	
 	<option value="//api/name/setBoundingBox:transform:includeOptional:">&nbsp;&nbsp;&nbsp;&nbsp;- setBoundingBox:transform:includeOptional:</option>
+	
+	<option value="//api/name/shouldDeleteAnnotation">&nbsp;&nbsp;&nbsp;&nbsp;- shouldDeleteAnnotation</option>
 	
 	<option value="//api/name/shouldMaintainAspectRatio">&nbsp;&nbsp;&nbsp;&nbsp;- shouldMaintainAspectRatio</option>
 	
@@ -289,6 +291,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requriesPopupAnnotation">requriesPopupAnnotation</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wantsSelectionBorder">wantsSelectionBorder</a></span></li>
+	
 </ul></li>
 
 
@@ -298,8 +302,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/annotationIcon">annotationIcon</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundingBoxForPageRect:">boundingBoxForPageRect:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundingBoxForPageViewBounds:">boundingBoxForPageViewBounds:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyToClipboard">copyToClipboard</a></span></li>
 	
@@ -322,6 +324,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumSize">minimumSize</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBoundingBox:transform:includeOptional:">setBoundingBox:transform:includeOptional:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDeleteAnnotation">shouldDeleteAnnotation</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldMaintainAspectRatio">shouldMaintainAspectRatio</a></span></li>
 	
@@ -372,7 +376,7 @@
 <p>Don&rsquo;t directly make an instance of this class, use subclasses like <a href="../Classes/PSPDFNoteAnnotation.html"><code>PSPDFNoteAnnotation</code></a> or <a href="../Classes/PSPDFLinkAnnotation.html"><code>PSPDFLinkAnnotation</code></a>. This class will return <code>nil</code> if initialized directly, unless with the <a href="#//api/name/type">type</a> <code>PSPDFAnnotationTypeUndefined</code>.</p>
 
 <p><a href="../Classes/PSPDFAnnotationManager.html"><code>PSPDFAnnotationManager</code></a> searches the runtime for subclasses of <code>PSPDFAnnotation</code> and builds up a dictionary using <code>supportedTypes</code>.</p><div class="note"><p><strong>Note:</strong> on Thread safety:
-Annotation objects should only ever be edited on ONE thread. Modify properties on the main thread only if they are already active (for creation, it doesn&rsquo;t matter which thread creates them). Before rendering, obtain a copy of the annotation to ensure it&rsquo;s not mutated while properties are read.</p>
+Annotation objects should only ever be edited on ONE thread. Modify properties on the main thread only if they are already active (for creation, it doesn&rsquo;t matter which thread creates them). Before rendering, obtain a copy of the annotation to ensure it&rsquo;s not mutated while properties are read.</p></div><div class="warning"><p><strong>Warning:</strong> Annotations are mutable objects. Do not store them into NSSet or other objects that require a hash<a href="#//api/name/value">value</a> that does not change.</p>
 
 <p>Options to use for <a href="#//api/name/drawInContext:withOptions:"><code>drawInContext:withOptions:</code></a></p></div>
 					</div>
@@ -423,6 +427,12 @@ Annotation objects should only ever be edited on ONE thread. Modify properties o
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/requriesPopupAnnotation">+&nbsp;requriesPopupAnnotation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wantsSelectionBorder">+&nbsp;wantsSelectionBorder</a></code>
 	</span>
 	
 	
@@ -746,12 +756,6 @@ Annotation objects should only ever be edited on ONE thread. Modify properties o
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/boundingBoxForPageViewBounds:">&ndash;&nbsp;boundingBoxForPageViewBounds:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/shouldUpdatePropertiesOnBoundsChange">&ndash;&nbsp;shouldUpdatePropertiesOnBoundsChange</a></code>
 	</span>
 	
@@ -765,6 +769,12 @@ Annotation objects should only ever be edited on ONE thread. Modify properties o
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/copyToClipboard">&ndash;&nbsp;copyToClipboard</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDeleteAnnotation">&ndash;&nbsp;shouldDeleteAnnotation</a></code>
 	</span>
 	
 	
@@ -1161,7 +1171,7 @@ Note: use .<a href="#//api/name/alpha">alpha</a> for transparency, not the <a hr
 	
 	<div class="method-subsection brief-description">
 		<p>Date when the annotation was created. Might be nil.
-PSPDFKit will set this for newly created annotations.</p>
+<a href="../Classes/PSPDFKit.html">PSPDFKit</a> will set this for newly created annotations.</p>
 	</div>		
 	
     
@@ -1688,7 +1698,7 @@ If this is -1, it&rsquo;s not yet saved in the PDF or saved externally.</p>
 	<div class="method-subsection brief-description">
 		<p>Date where the annotation was last modified.
 Saved into the PDF as the &ldquo;M&rdquo; property (Optional, since PDF 1.1)
-Will be updated by PSPDFKit as soon as a property is changed.</p>
+Will be updated by <a href="../Classes/PSPDFKit.html">PSPDFKit</a> as soon as a property is changed.</p>
 	</div>		
 	
     
@@ -2254,7 +2264,7 @@ Will return nil for invalid JSON or not recognized types.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns YES if PSPDFKit has support to delete this annotation <a href="#//api/name/type">type</a> back into the PDF.</p>
+		<p>Returns YES if <a href="../Classes/PSPDFKit.html">PSPDFKit</a> has support to delete this annotation <a href="#//api/name/type">type</a> back into the PDF.</p>
 	</div>		
 	
     
@@ -2326,7 +2336,7 @@ Will return nil for invalid JSON or not recognized types.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns YES if PSPDFKit has support to write this annotation <a href="#//api/name/type">type</a> back into the PDF.</p>
+		<p>Returns YES if <a href="../Classes/PSPDFKit.html">PSPDFKit</a> has support to write this annotation <a href="#//api/name/type">type</a> back into the PDF.</p>
 	</div>		
 	
     
@@ -2368,6 +2378,42 @@ Will return nil for invalid JSON or not recognized types.
     
 
 	<div class="method-subsection method-declaration"><code>+ (BOOL)requriesPopupAnnotation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wantsSelectionBorder" title="wantsSelectionBorder"></a>
+	<h3 class="subsubtitle method-title">wantsSelectionBorder</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the annotation wants a selection border. Defaults to YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)wantsSelectionBorder</code></div>
 
     
 	
@@ -2448,42 +2494,6 @@ Will return nil for invalid JSON or not recognized types.
     
 
 	<div class="method-subsection method-declaration"><code>- (CGRect)boundingBoxForPageRect:(CGRect)<em>pageRect</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PSPDFAnnotation.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/boundingBoxForPageViewBounds:" title="boundingBoxForPageViewBounds:"></a>
-	<h3 class="subsubtitle method-title">boundingBoxForPageViewBounds:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Helper that converts the <a href="#//api/name/boundingBox">boundingBox</a> to a rect usable in <a href="../Classes/PSPDFPageView.html"><code>PSPDFPageView</code></a>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (CGRect)boundingBoxForPageViewBounds:(CGRect)<em>pageBounds</em></code></div>
 
     
 	
@@ -2907,6 +2917,42 @@ Use <code>PSPDFConvertViewRectToPDFRect:</code> to convert your coordinates acco
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/shouldDeleteAnnotation" title="shouldDeleteAnnotation"></a>
+	<h3 class="subsubtitle method-title">shouldDeleteAnnotation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Ask if we may remove an annotation. Only called if <a href="#//api/name/isDeletable"><code>isDeletable</code></a> returns YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldDeleteAnnotation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/shouldMaintainAspectRatio" title="shouldMaintainAspectRatio"></a>
 	<h3 class="subsubtitle method-title">shouldMaintainAspectRatio</h3>
 	
@@ -2995,7 +3041,7 @@ This returns NO by default.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-03-31)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-04-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
