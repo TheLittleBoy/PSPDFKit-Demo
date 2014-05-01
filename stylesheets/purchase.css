@@ -7,7 +7,7 @@
 /* line 6, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/purchase.scss */
 body.purchase section.products {
   width: 100%;
-  padding: 140px 0 0 0;
+  padding: 100px 0 0 0;
   background-color: #1880c2;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0173bc), color-stop(100%, #27a9e8));
   background-image: -webkit-linear-gradient(-320deg, #0173bc 0%, #27a9e8 100%);
