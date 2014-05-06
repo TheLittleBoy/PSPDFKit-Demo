@@ -34,7 +34,7 @@ nav.main {
   nav.main .whitebar {
     display: block;
     position: relative;
-    top: 10px;
+    top: 0px;
     width: 100%;
     background: rgba(255, 255, 255, 0.96); }
     /* line 18, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
@@ -45,7 +45,8 @@ nav.main {
       margin-right: auto;
       position: relative;
       display: block;
-      min-width: 64em; }
+      min-width: 64em;
+      padding-top: 10px; }
       /* line 18, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
       nav.main .whitebar ul:before, nav.main .whitebar ul:after {
         content: " ";
@@ -53,7 +54,7 @@ nav.main {
       /* line 23, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
       nav.main .whitebar ul:after {
         clear: both; }
-      /* line 24, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+      /* line 25, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
       nav.main .whitebar ul li {
         position: relative;
         display: inline-block;
@@ -63,7 +64,7 @@ nav.main {
         font-weight: 500;
         max-height: 60px;
         overflow: visible; }
-        /* line 34, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+        /* line 35, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
         nav.main .whitebar ul li img.pspdfkit-logo {
           z-index: 99;
           display: inline-block;
@@ -72,7 +73,7 @@ nav.main {
           margin: -10px 10px 0 -20px;
           width: 80px;
           height: 80px; }
-        /* line 44, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+        /* line 45, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
         nav.main .whitebar ul li a {
           display: block;
           height: 60px;
@@ -81,15 +82,15 @@ nav.main {
           line-height: 60px;
           color: #1880c2;
           text-decoration: none; }
-          /* line 53, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+          /* line 54, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
           nav.main .whitebar ul li a:hover {
             color: #0e6cae;
             background: rgba(24, 128, 194, 0.05); }
-          /* line 57, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+          /* line 58, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
           nav.main .whitebar ul li a.active {
             color: #334450;
             background-color: #fff; }
-          /* line 61, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+          /* line 62, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
           nav.main .whitebar ul li a.download {
             height: 40px;
             margin-top: 10px;
@@ -101,18 +102,18 @@ nav.main {
             text-align: center;
             color: #fff;
             background: #f0542b; }
-            /* line 72, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+            /* line 73, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
             nav.main .whitebar ul li a.download:hover {
               color: #fff;
               background: #ff572b; }
-            /* line 76, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+            /* line 77, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
             nav.main .whitebar ul li a.download:active {
               background: #cc3912; }
-        /* line 82, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+        /* line 83, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
         nav.main .whitebar ul li.download {
           float: right; }
 
-/* line 92, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+/* line 93, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
 nav.sub {
   position: fixed;
   display: block;
@@ -122,7 +123,7 @@ nav.sub {
   background: rgba(8, 147, 218, 0.9);
   color: #fa0;
   z-index: 100; }
-  /* line 101, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+  /* line 102, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
   nav.sub ul {
     width: auto;
     padding: 0 0 0 60px;
@@ -140,10 +141,10 @@ nav.sub {
     /* line 23, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
     nav.sub ul:after {
       clear: both; }
-    /* line 109, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+    /* line 110, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
     nav.sub ul li {
       display: inline-block; }
-      /* line 111, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+      /* line 112, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
       nav.sub ul li a {
         display: block;
         float: left;
@@ -155,13 +156,13 @@ nav.sub {
         color: #fff;
         font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
         font-weight: 400; }
-        /* line 123, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+        /* line 124, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
         nav.sub ul li a:hover {
           background-color: rgba(14, 108, 174, 0.5); }
-        /* line 126, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+        /* line 127, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
         nav.sub ul li a:active {
           background-color: #0e6cae; }
-        /* line 129, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
+        /* line 130, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
         nav.sub ul li a.active {
           color: #1880c2;
           background-color: #f7f8f9; }
@@ -562,12 +563,105 @@ body.references section.case-studies {
     position: relative;
     z-index: 2; }
   /* line 15, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+  body.references section.case-studies .case-study {
+    position: relative;
+    padding-top: 4em; }
+    /* line 19, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    body.references section.case-studies .case-study .case-study-container {
+      position: relative;
+      padding-bottom: 2em; }
+      /* line 23, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      body.references section.case-studies .case-study .case-study-container .case-study-logo {
+        display: block;
+        position: relative;
+        padding: 24px 0 32px 0; }
+      /* line 29, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      body.references section.case-studies .case-study .case-study-container .case-study-quote blockquote {
+        *zoom: 1;
+        max-width: 68em;
+        margin-left: auto;
+        margin-right: auto; }
+        /* line 18, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
+        body.references section.case-studies .case-study .case-study-container .case-study-quote blockquote:before, body.references section.case-studies .case-study .case-study-container .case-study-quote blockquote:after {
+          content: " ";
+          display: table; }
+        /* line 23, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
+        body.references section.case-studies .case-study .case-study-container .case-study-quote blockquote:after {
+          clear: both; }
+      /* line 32, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      body.references section.case-studies .case-study .case-study-container .case-study-quote p {
+        max-width: 740px;
+        margin: 0 auto;
+        float: none;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500; }
+      /* line 40, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      body.references section.case-studies .case-study .case-study-container .case-study-quote footer {
+        max-width: 740px;
+        margin: 1em auto 0 auto;
+        float: none;
+        font-size: 16px;
+        font-style: italic;
+        text-align: right; }
+      /* line 49, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      body.references section.case-studies .case-study .case-study-container.boxinc {
+        background: #168ed4;
+        background-color: #1880c2;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0173bc), color-stop(100%, #27a9e8));
+        background-image: -webkit-linear-gradient(-320deg, #0173bc 0%, #27a9e8 100%);
+        background-image: linear-gradient(50deg,#0173bc 0%, #27a9e8 100%); }
+        /* line 54, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        body.references section.case-studies .case-study .case-study-container.boxinc .case-study-logo img {
+          display: block;
+          margin: 0 auto;
+          width: 100px;
+          height: 50px; }
+        /* line 62, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        body.references section.case-studies .case-study .case-study-container.boxinc .case-study-quote p {
+          color: #fff; }
+        /* line 65, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        body.references section.case-studies .case-study .case-study-container.boxinc .case-study-quote footer {
+          color: #82e5fe; }
+      /* line 70, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      body.references section.case-studies .case-study .case-study-container.metrostar {
+        background: #fff; }
+        /* line 74, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        body.references section.case-studies .case-study .case-study-container.metrostar .case-study-logo img {
+          display: block;
+          margin: 0 auto;
+          width: 75px;
+          height: 75px; }
+        /* line 82, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        body.references section.case-studies .case-study .case-study-container.metrostar .case-study-quote p {
+          color: #334450; }
+        /* line 85, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        body.references section.case-studies .case-study .case-study-container.metrostar .case-study-quote footer {
+          color: #8e99a2; }
+    /* line 94, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    body.references section.case-studies .case-study .case-study-file img {
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: -61px;
+      margin-left: -495px;
+      width: 110px;
+      height: 140px; }
+    /* line 104, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    body.references section.case-studies .case-study .case-study-additional-info {
+      padding-top: 1em;
+      max-width: 740px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 20px;
+      color: #8e99a2; }
+  /* line 114, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
   body.references section.case-studies .projects-list {
     position: relative;
     z-index: 1;
     height: 1000px;
     overflow: hidden; }
-    /* line 21, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 120, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.case-studies .projects-list .project {
       position: absolute;
       width: 970px;
@@ -579,102 +673,102 @@ body.references section.case-studies {
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
-      /* line 30, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 129, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .project img {
         position: relative;
         display: block;
         max-width: 970px;
         height: auto; }
-      /* line 37, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 136, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .project.aw_is_animated {
         -webkit-transition: all 0.5s ease-in;
         -moz-transition: all 0.5s ease-in;
         transition: all 0.5s ease-in; }
-      /* line 41, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 140, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .project.aw_is_hidden {
         opacity: 0.001; }
-      /* line 45, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 144, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .project.aw_is_previous {
         -webkit-transform: translate3d(-360px, 0px, 0);
         -moz-transform: translate3d(-360px, 0px, 0);
         -ms-transform: translate3d(-360px, 0px, 0);
         -o-transform: translate3d(-360px, 0px, 0);
         transform: translate3d(-360px, 0px, 0); }
-        /* line 47, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        /* line 146, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
         body.references section.case-studies .projects-list .project.aw_is_previous.aw_is_current {
           -webkit-transform: translate3d(0px, 0px, 0);
           -moz-transform: translate3d(0px, 0px, 0);
           -ms-transform: translate3d(0px, 0px, 0);
           -o-transform: translate3d(0px, 0px, 0);
           transform: translate3d(0px, 0px, 0); }
-      /* line 53, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 152, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .project.aw_is_next {
         -webkit-transform: translate3d(360px, 0px, 0);
         -moz-transform: translate3d(360px, 0px, 0);
         -ms-transform: translate3d(360px, 0px, 0);
         -o-transform: translate3d(360px, 0px, 0);
         transform: translate3d(360px, 0px, 0); }
-        /* line 55, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        /* line 154, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
         body.references section.case-studies .projects-list .project.aw_is_next.aw_is_current {
           -webkit-transform: translate3d(0px, 0px, 0);
           -moz-transform: translate3d(0px, 0px, 0);
           -ms-transform: translate3d(0px, 0px, 0);
           -o-transform: translate3d(0px, 0px, 0);
           transform: translate3d(0px, 0px, 0); }
-    /* line 64, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 163, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.case-studies .projects-list .description {
       transition: opacity 0.75s; }
-    /* line 68, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 167, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.case-studies .projects-list h2 {
       text-align: left; }
-    /* line 73, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 172, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.case-studies .projects-list .aw_paginated__show_previous,
     body.references section.case-studies .projects-list .aw_paginated__show_next {
       top: 340px;
       color: #ccc; }
-      /* line 76, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 175, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .aw_paginated__show_previous:hover,
       body.references section.case-studies .projects-list .aw_paginated__show_next:hover {
         color: #0893da; }
-      /* line 80, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 179, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .aw_paginated__show_previous:active,
       body.references section.case-studies .projects-list .aw_paginated__show_next:active {
         color: #0893da; }
-    /* line 84, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 183, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.case-studies .projects-list .aw_paginated__indicators {
       top: 680px; }
-      /* line 87, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 186, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.case-studies .projects-list .aw_paginated__indicators .aw_paginated__indicator {
         border: 1px solid #ccc;
         border-radius: 5px;
         cursor: pointer; }
-        /* line 91, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        /* line 190, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
         body.references section.case-studies .projects-list .aw_paginated__indicators .aw_paginated__indicator:hover {
           background: #fff;
           border-color: #0893da; }
-        /* line 95, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        /* line 194, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
         body.references section.case-studies .projects-list .aw_paginated__indicators .aw_paginated__indicator:active {
           background: #ccc; }
-        /* line 99, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        /* line 198, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
         body.references section.case-studies .projects-list .aw_paginated__indicators .aw_paginated__indicator.aw_paginated__indicator_active {
           border: 1px solid #0893da;
           background: #0893da; }
-          /* line 104, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+          /* line 203, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
           body.references section.case-studies .projects-list .aw_paginated__indicators .aw_paginated__indicator.aw_paginated__indicator_active:hover {
             background: #fff; }
-          /* line 107, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+          /* line 206, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
           body.references section.case-studies .projects-list .aw_paginated__indicators .aw_paginated__indicator.aw_paginated__indicator_active:active {
             background: #0972a8; }
-/* line 116, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+/* line 215, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
 body.references section.apps {
   position: relative;
   min-height: 360px;
   padding: 100px 0 40px 0; }
-  /* line 121, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+  /* line 220, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
   body.references section.apps a {
     color: #7e8992;
     text-decoration: none; }
-  /* line 125, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+  /* line 224, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
   body.references section.apps .appgrid {
     *zoom: 1;
     max-width: 68em;
@@ -689,7 +783,7 @@ body.references section.apps {
     /* line 23, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
     body.references section.apps .appgrid:after {
       clear: both; }
-    /* line 130, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 229, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.apps .appgrid .app {
       width: 128px;
       height: 140px;
@@ -697,13 +791,13 @@ body.references section.apps {
       display: inline-block;
       text-align: center;
       vertical-align: text-top; }
-      /* line 138, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 237, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.apps .appgrid .app img {
         display: block;
         width: 96px;
         height: auto;
         margin: 0 auto; }
-      /* line 144, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 243, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.apps .appgrid .app p {
         margin-top: 10px;
         color: #334450;
@@ -711,13 +805,13 @@ body.references section.apps {
         line-height: 16px;
         font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
         font-weight: 300; }
-      /* line 152, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 251, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.apps .appgrid .app p.small {
         margin-top: 2px;
         color: #8e99a2;
         font-size: 11px;
         line-height: 14px; }
-  /* line 160, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+  /* line 259, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
   body.references section.apps .footer.link {
     position: absolute;
     bottom: 0px;
@@ -725,14 +819,14 @@ body.references section.apps {
     height: 30px;
     text-align: center;
     opacity: 0.25; }
-    /* line 167, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 266, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.apps .footer.link:hover {
       opacity: 1.0; }
-/* line 172, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+/* line 271, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
 body.references section.companies-using-pspdfkit {
   display: block;
   padding: 100px 0 40px 0; }
-  /* line 176, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+  /* line 275, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
   body.references section.companies-using-pspdfkit ul.companies-list {
     *zoom: 1;
     max-width: 68em;
@@ -746,7 +840,7 @@ body.references section.companies-using-pspdfkit {
     /* line 23, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
     body.references section.companies-using-pspdfkit ul.companies-list:after {
       clear: both; }
-    /* line 179, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+    /* line 278, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
     body.references section.companies-using-pspdfkit ul.companies-list li {
       display: block;
       float: left;
@@ -756,16 +850,16 @@ body.references section.companies-using-pspdfkit {
       /* line 41, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/neat/grid/_span-columns.scss */
       body.references section.companies-using-pspdfkit ul.companies-list li:last-child {
         margin-right: 0; }
-      /* line 182, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 281, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.companies-using-pspdfkit ul.companies-list li:nth-child(3n+0) {
         margin-right: 0; }
-      /* line 185, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 284, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.companies-using-pspdfkit ul.companies-list li .companylogo {
         display: block;
         width: 280px;
         height: 120px;
         margin: 0 auto; }
-      /* line 191, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 290, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.companies-using-pspdfkit ul.companies-list li a {
         display: block;
         text-decoration: none;
@@ -774,10 +868,10 @@ body.references section.companies-using-pspdfkit {
         font-weight: 300;
         font-size: 18px;
         text-align: center; }
-        /* line 199, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+        /* line 298, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
         body.references section.companies-using-pspdfkit ul.companies-list li a:hover {
           color: #0c81c7; }
-      /* line 203, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
+      /* line 302, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/references.scss */
       body.references section.companies-using-pspdfkit ul.companies-list li p.small {
         display: block;
         color: #7e8992;
