@@ -39,7 +39,7 @@
         <li><a class="active" href="/purchase">Purchase</a></li>
         <li><a class="" href="/documentation">Documentation</a></li>
         <li><a href="http://blog.pspdfkit.com">Blog</a></li>
-        <li class="download"><a class="button download" href="http://customers.pspdfkit.com/demo">Try now</a></li>
+        <li class="download"><a data-toggle="modal" data-target="#modal" href="javascript://" id="button">Try now</a></li>
       </ul>
     </div>
   </nav>
@@ -59,7 +59,6 @@
             <li>PDF Forms</li>
             <li>Full-Text Search</li>
             <li>Digital Signature Validation</li>
-            <li><em>Source Code (optional)</em></li>
             <li><em>Allows Apps with Authentification/Login</em></li>
             <li><em>Flexible License Terms</em></li>
             <li><em>Enterprise MDM support<br>(e.g. Good Technology)</em></li>
@@ -236,6 +235,84 @@
       <li class="floatright"><a href="mailto:support@pspdfkit.com">Contact • </a></li>
     </ul>
   </footer>
+
+  <div id="modal" class="modal hide">
+
+    <form action="http://newsletter.pspdfkit.com/t/j/s/btkltk/" method="post" id="subForm">
+      <a class="close" href="javascript://" data-dismiss="modal">&#215;</a>
+
+      <h2>Subscribe &amp; Download the PSPDFKit Demo</h2>
+      <p class="downloadinfo">
+        In order to better understand developers interested in PSPDFKit, we’d love to hear a bit about you. If you can, please tell us about the kind of product are you building!
+      </p>
+
+      <p class="forminputs">
+        <label for="fieldName">Name</label><br />
+        <input id="fieldName" name="cm-name" type="text" />
+      </p>
+      <p class="forminputs">
+        <label for="fieldEmail">Email <span>(required)</span></label><br />
+        <input id="fieldEmail" name="cm-btkltk-btkltk" type="email" required />
+      </p>
+      <p class="forminputs">
+        <label for="fieldhtlthu">Company Name</label><br />
+        <input id="fieldhtlthu" name="cm-f-htlthu" type="text" />
+      </p>
+      <p class="forminputs">
+        <label for="fieldhtltkl">What are you building?</label><br />
+        <textarea id="fieldhtltkl" name="cm-f-htltkl"></textarea>
+      </p>
+
+      <div id="subscribing2list">
+        <h3>Subscribing to the list…</h3>
+      </div>
+
+      <p class="forminputs">
+        <button type="submit" value="Submit">Download the PSPDFKit Demo</button>
+      </p>
+
+      <div id="response">
+        <i class="tick"><img src="/images/subscribe-tick.png" width="48" height="48"></i>
+        Thanks! You're subscribed, now downloading the PSPDFKit Demo!
+      </div>
+
+      <div class="popupdismiss">
+        Click anywhere outside the window to dismiss it!
+      </div>
+
+    </form>
+  </div>
+
+  <!-- Campaign Monitor AJAX Subscribe: https://gist.github.com/jdennes/1155479 -->
+  <script type="text/javascript">
+    $(function () {
+      $('#subForm').submit(function (e) {
+        e.preventDefault();
+        $('#fieldEmail').removeClass();
+        $('button').fadeTo(200,0.5);
+        $('#subscribing2list').show();
+        $('.modal .popupdismiss').hide();
+        $.getJSON(
+        this.action + "?callback=?",
+        $(this).serialize(),
+        function (data) {
+          $('button').stop().fadeTo(200,1);
+          if (data.Status === 400) { 
+            $('#fieldEmail').addClass('error'); 
+            $('#subscribing2list').hide();
+            $('.modal .popupdismiss').show();
+          } else { 
+            $('#subForm').find("label, input, p.forminputs, p.downloadinfo").hide();
+            $('#subscribing2list').hide();
+            $('#response').show();
+            $('.modal .popupdismiss').show();
+            window.location = "http://customers.pspdfkit.com/demo";
+          }
+        });
+      });
+    });
+  </script>
+
 
     </body>
 </html>

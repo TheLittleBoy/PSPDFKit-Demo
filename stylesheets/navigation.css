@@ -10,7 +10,7 @@ nav.main {
   position: fixed;
   height: 80px;
   width: 100%;
-  z-index: 101; }
+  z-index: 11; }
   /* line 11, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
   nav.main .whitebar {
     display: block;
@@ -103,7 +103,7 @@ nav.sub {
   height: 40px;
   background: rgba(8, 147, 218, 0.9);
   color: #fa0;
-  z-index: 100; }
+  z-index: 10; }
   /* line 102, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
   nav.sub ul {
     width: auto;

@@ -29,7 +29,7 @@ nav.main {
   position: fixed;
   height: 80px;
   width: 100%;
-  z-index: 101; }
+  z-index: 11; }
   /* line 11, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
   nav.main .whitebar {
     display: block;
@@ -122,7 +122,7 @@ nav.sub {
   height: 40px;
   background: rgba(8, 147, 218, 0.9);
   color: #fa0;
-  z-index: 100; }
+  z-index: 10; }
   /* line 102, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/navigation.scss */
   nav.sub ul {
     width: auto;
@@ -1268,7 +1268,332 @@ body > footer {
     .aw_paginated .aw_paginated__indicators .aw_paginated__indicator_active:active {
       background: #0972a8; }
 
-/* line 25, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 1, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal.hide {
+  display: none; }
+
+/* line 4, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #373c44; }
+
+/* line 13, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal-backdrop.fade {
+  opacity: 0; }
+
+/* line 17, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.3;
+  filter: alpha(opacity=40); }
+
+/* line 22, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+a#button {
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  height: 40px;
+  margin-top: 10px;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #f0542b;
+  border-radius: 7px; }
+
+/* line 36, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+a#button:hover {
+  color: #fff;
+  background: #ff572b; }
+
+/* line 41, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+a#button:active,
+a#button:focus {
+  background: #cc3912; }
+
+/* line 44, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal {
+  text-align: left;
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  z-index: 200;
+  width: 480px;
+  margin: 0 0 0 -240px;
+  background-color: #FFF;
+  z-index: 1000;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  -moz-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  -webkit-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  padding: 20px 50px 35px; }
+
+/* line 63, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal a.close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  padding: 5px 10px;
+  color: #9099A3;
+  text-decoration: none; }
+
+/* line 71, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal a.close:hover {
+  color: #5d6670; }
+
+/* line 75, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal h1,
+.modal h2 {
+  margin: 0;
+  padding: 0; }
+
+/* line 79, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal h1 {
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  font-weight: 700;
+  color: #373c44;
+  margin-left: -2px;
+  margin-bottom: 10px;
+  font-size: 35px; }
+
+/* line 87, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0c81c7;
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  border-bottom: 1px solid #DCDEE1;
+  padding-bottom: 5px;
+  margin-bottom: 10px; }
+
+/* line 99, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal #subscribing2list {
+  font-size: 15px;
+  padding: 10px;
+  display: none;
+  text-align: center; }
+
+/* line 106, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal #response {
+  float: left;
+  font-size: 15px;
+  color: #334450;
+  margin-bottom: 10px;
+  /*background: url('../images/tick.png') left center no-repeat;*/
+  display: none;
+  text-align: center; }
+
+/* line 116, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal #response i.tick {
+  position: relative;
+  display: block;
+  margin: 10px auto 10px auto;
+  width: 48px;
+  height: 48px;
+  /*  background: url('../images/subscribe-tick.png') center center no-repeat;
+    background-size: 48px 48px;
+  */ }
+
+/* line 126, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal #response strong {
+  font-weight: normal; }
+
+/* line 130, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal .popupdismiss {
+  padding: 5px 0 0 0;
+  text-align: center;
+  color: #9099A3; }
+
+/* line 136, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm p {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  clear: both;
+  overflow: hidden; }
+
+/* line 145, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm p span.formhalf {
+  display: block;
+  float: left;
+  width: 50%; }
+
+/* line 153, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm button,
+.modal form#subForm input,
+.modal form#subForm textarea {
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0; }
+
+/* line 162, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input,
+.modal form#subForm textarea {
+  width: 380px;
+  border: 1px solid #cfd4db;
+  padding: 7px 5px;
+  margin: 0 0 5px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #373c44; }
+
+/* line 171, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input::-webkit-input-placeholder {
+  color: #c8ccd1; }
+
+/* line 174, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input:-moz-placeholder {
+  color: #c8ccd1; }
+
+/* line 177, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input::-moz-placeholder {
+  color: #c8ccd1; }
+
+/* line 180, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input:-ms-input-placeholder {
+  color: #c8ccd1; }
+
+/* line 184, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input:focus,
+.modal form#subForm textarea:focus {
+  border-color: #b1b9c6;
+  outline: none; }
+
+/* line 188, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input:focus::-webkit-input-placeholder {
+  color: #acb3ba; }
+
+/* line 191, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input:focus:-moz-placeholder {
+  color: #acb3ba; }
+
+/* line 194, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input:focus::-moz-placeholder {
+  color: #acb3ba; }
+
+/* line 197, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input:focus:-ms-input-placeholder {
+  color: #acb3ba; }
+
+/* line 200, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input.error {
+  background: url("../images/cross.png") right center no-repeat;
+  background-position: 95% center;
+  color: #df452c;
+  background: rgba(255, 0, 0, 0.1); }
+
+/* line 207, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm input[type="checkbox"] {
+  margin: 0 2px;
+  width: 20px; }
+
+/* line 212, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm label.checkbox {
+  position: relative;
+  display: inline-block;
+  line-height: 2em; }
+
+/* line 218, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm label span {
+  font-size: 12px;
+  color: #999; }
+
+/* line 233, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm button {
+  width: 380px;
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  height: 40px;
+  margin-top: 10px;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #f0542b;
+  border-radius: 7px;
+  outline: none;
+  border: none; }
+
+/* line 250, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm button:hover {
+  color: #fff;
+  background: #ff572b; }
+
+/* line 255, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm button:active,
+.modal form#subForm button:focus {
+  background: #cc3912;
+  outline: none; }
+
+@media only screen and (max-width: 480px) {
+  /* line 260, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  body {
+    padding-top: 100px; }
+
+  /* line 263, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  .modal {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 96%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 8%; }
+
+  /* line 273, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  .modal form#subForm a.close {
+    font-size: 18px;
+    font-weight: bold; }
+
+  /* line 277, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  .modal form#subForm h1 {
+    line-height: 1;
+    margin-bottom: 30px; }
+
+  /* line 282, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  .modal form#subForm input,
+  .modal form#subForm textarea {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%; }
+
+  /* line 287, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  .modal form#subForm input.error {
+    background-position: 95% center; }
+
+  /* line 290, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  .modal form#subForm button {
+    float: left;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* line 296, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  .modal form#subForm #response {
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0 0 22px 0;
+    text-align: center;
+    background-position: bottom center; } }
+/* line 27, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 h1 {
   padding: 1em 0 0 0;
   color: #0c81c7;
@@ -1278,7 +1603,7 @@ h1 {
   text-align: center;
   font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif; }
 
-/* line 35, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 37, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 h2 {
   padding: 1em 0 0 0;
   color: #085075;
@@ -1288,29 +1613,29 @@ h2 {
   font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
   font-weight: 300; }
 
-/* line 45, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 47, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 a {
   color: #085075; }
-  /* line 47, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+  /* line 49, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
   a:hover {
     color: #1880c2; }
 
-/* line 52, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 54, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 .button {
   line-height: 20px;
   padding: 10px 24px;
   color: #fff;
   background: #1880c2;
   border-radius: 7px; }
-  /* line 58, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+  /* line 60, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
   .button:hover {
     color: #fff;
     background: #0e6cae; }
-  /* line 62, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+  /* line 64, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
   .button:active {
     background: #334450; }
 
-/* line 67, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 69, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 .halfwidth {
   display: block;
   float: left;
@@ -1321,23 +1646,23 @@ a {
   /* line 41, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/neat/grid/_span-columns.scss */
   .halfwidth:last-child {
     margin-right: 0; }
-  /* line 71, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+  /* line 73, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
   .halfwidth p {
     margin-bottom: 24px; }
 
-/* line 76, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 78, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 .floatright {
   float: right; }
 
-/* line 80, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 82, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 .gray {
   color: #7e8992; }
 
-/* line 85, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+/* line 87, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
 body.imprint section.imprint {
   padding-top: 120px;
   min-height: 95%; }
-  /* line 88, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+  /* line 90, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
   body.imprint section.imprint .container {
     *zoom: 1;
     max-width: 68em;
@@ -1350,7 +1675,7 @@ body.imprint section.imprint {
     /* line 23, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/bourbon/addons/_clearfix.scss */
     body.imprint section.imprint .container:after {
       clear: both; }
-    /* line 90, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
+    /* line 92, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/pspdfkit.scss */
     body.imprint section.imprint .container p {
       margin-bottom: 1em; }
 

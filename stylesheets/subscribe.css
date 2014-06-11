@@ -1,0 +1,304 @@
+.modal.hide {
+  display: none;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #373c44;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.3;
+  filter: alpha(opacity=40);
+}
+
+a#button {
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  height: 40px;
+  margin-top: 10px;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: rgba(240, 84, 43, 1);
+  border-radius: 7px;
+}
+a#button:hover {
+  color: #fff;
+  background: rgba(255, 87, 43, 1);
+}
+a#button:active,
+a#button:focus {
+  background: rgba(204, 57, 18, 1);
+}
+.modal {
+  text-align: left;
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  z-index: 200;
+  width: 480px;
+  margin: 0 0 0 -240px;
+  background-color: #FFF;
+  z-index: 1000;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  -moz-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  -webkit-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  padding: 20px 50px 35px;
+}
+.modal a.close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  padding: 5px 10px;
+  color: #9099A3;
+  text-decoration: none;
+}
+.modal a.close:hover {
+  color: #5d6670;
+}
+.modal h1,
+.modal h2 {
+  margin: 0;
+  padding: 0;
+}
+.modal h1 {
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  font-weight: 700;
+  color: #373c44;
+  margin-left: -2px;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.modal h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0c81c7;
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  border-bottom: 1px solid #DCDEE1;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.modal #subscribing2list {
+  font-size: 15px;
+  padding: 10px;
+  display: none;
+  text-align: center;
+}
+
+.modal #response {
+  float: left;
+  font-size: 15px;
+  color: #334450; 
+  margin-bottom: 10px;
+  /*background: url('../images/tick.png') left center no-repeat;*/
+  display: none;
+  text-align: center;
+}
+
+.modal #response i.tick {
+  position: relative;
+  display: block;
+  margin: 10px auto 10px auto;
+  width: 48px; 
+  height: 48px;
+/*  background: url('../images/subscribe-tick.png') center center no-repeat;
+  background-size: 48px 48px;
+*/}
+
+.modal #response strong {
+  font-weight: normal;
+}
+
+.modal .popupdismiss {
+  padding: 5px 0 0 0;
+  text-align: center;
+  color: #9099A3;
+}
+
+.modal form#subForm p {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  clear: both;
+  overflow: hidden;
+
+}
+
+.modal form#subForm p span.formhalf {
+  display: block;
+  float: left;
+  width:50%;
+}
+
+.modal form#subForm button,
+.modal form#subForm input,
+.modal form#subForm textarea {
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0;
+}
+.modal form#subForm input,
+.modal form#subForm textarea {
+  width: 380px;
+  border: 1px solid #cfd4db;
+  padding: 7px 5px;
+  margin: 0 0 5px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #373c44;
+}
+.modal form#subForm input::-webkit-input-placeholder {
+  color: #c8ccd1;
+}
+.modal form#subForm input:-moz-placeholder {
+  color: #c8ccd1;
+}
+.modal form#subForm input::-moz-placeholder {
+  color: #c8ccd1;
+}
+.modal form#subForm input:-ms-input-placeholder {
+  color: #c8ccd1;
+}
+.modal form#subForm input:focus,
+.modal form#subForm textarea:focus {
+  border-color: #b1b9c6;
+  outline: none;
+}
+.modal form#subForm input:focus::-webkit-input-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input:focus:-moz-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input:focus::-moz-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input:focus:-ms-input-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input.error {
+  background: url('../images/cross.png') right center no-repeat;
+  background-position: 95% center;
+  color: #df452c;
+  background: rgba(255,0,0,0.1);
+}
+
+.modal form#subForm input[type="checkbox"] {
+  margin: 0 2px;
+  width: 20px;
+}
+
+.modal form#subForm label.checkbox { 
+  position: relative;
+  display: inline-block;
+  line-height: 2em;
+}
+
+.modal form#subForm label span {
+  font-size: 12px;
+  color: #999;
+}
+
+a#button {
+}
+a#button:hover {
+}
+a#button:active,
+a#button:focus {
+}
+
+
+
+.modal form#subForm button {
+  width: 380px;
+  font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
+  height: 40px;
+  margin-top: 10px;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: rgba(240, 84, 43, 1);
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
+.modal form#subForm button:hover {
+  color: #fff;
+  background: rgba(255, 87, 43, 1);
+}
+.modal form#subForm button:active,
+.modal form#subForm button:focus {
+  background: rgba(204, 57, 18, 1);
+  outline: none;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    padding-top: 100px;
+  }
+  .modal {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 96%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 8%;
+  }
+  .modal form#subForm a.close {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .modal form#subForm h1 {
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+  .modal form#subForm input,
+  .modal form#subForm textarea {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .modal form#subForm input.error {
+    background-position: 95% center;
+  }
+  .modal form#subForm button {
+    float: left;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal form#subForm #response {
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0 0 22px 0;
+    text-align: center;
+    background-position: bottom center;
+  }
+}
