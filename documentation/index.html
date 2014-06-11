@@ -79,18 +79,6 @@
         <img src="/images/documentation/xcconfig.png" alt="How to set the PSPDFKit.xcconfig for your project" width="908" height="218" class="border">
       </p>
 
-      <h3>Source Code</h3>
-      <p>
-        If you have the source code and want to integrate PSPDFKit as a subproject, copy the PSPDFKit source folder into your repository and drag the <code>PSPDFKit-lib.xcodeproj</code> file into your project tree. Add it as a dependency (choose PSDPFKit, <i>not</i> PSPDFKit Demo) and add the library to the "Link Binary with Libraries" phase. Be sure to also add <code>PSPDFKit.bundle</code> and make sure it's within "Copy Bundle Resource.”
-      </p>
-      <img src="/images/documentation/sourcecode.png" alt="How to use PSPDFKit as a subproject" width="908" height="362" class="border">
-      <p>
-        In Build Settings, set the <a href="/images/documentation/project-settings.png">"User Header Search Paths" to "PSPDFKit"</a> (the folder that you copied into your project folder) and check “Recursive.”
-      </p>
-
-      <p>
-        Be sure to add the file ACKNOWLEDGEMENTS to your app resources to value third-party licenses.
-      </p>
       <p>
         Required frameworks are: <code>CoreText.framework</code>, <code>QuartzCore.framework</code>, <code>MessageUI.framework</code>, <code>libz.dylib</code>, <code>ImageIO.framework</code>, <code>CoreMedia.framework</code>, <code>MediaPlayer.framework</code>, <code>CFNetwork.framework</code>, <code>AVFoundation.framework</code>, <code>AssetsLibrary.framework</code>, <code>Security.framework</code>, <code>QuickLook.framework</code>, <code>AudioToolbox.framework</code>, <code>sqlite3</code>, <code>libxml2</code>, <code>CoreData.framework</code> ,<code>CoreTelephony.framework</code>, <code>SystemConfiguration.framework</code>, <code>Accelerate.framework</code> and the linker flags <code>-ObjC</code> and <code>-fobjc-arc</code> (only if you're not using ARC) (<a href="http://developer.apple.com/library/mac/#qa/qa1490/_index.html">see QA1490 for details</a>).
       </p>
