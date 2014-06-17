@@ -142,7 +142,9 @@
 	
 	<option value="//api/name/showFontPickerForAnnotation:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- showFontPickerForAnnotation:animated:</option>
 	
-	<option value="//api/name/showMenuForAnnotations:edgeInsets:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- showMenuForAnnotations:edgeInsets:animated:</option>
+	<option value="//api/name/showInspectorForAnnotations:options:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- showInspectorForAnnotations:options:animated:</option>
+	
+	<option value="//api/name/showMenuForAnnotations:edgeInsets:allowPopovers:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- showMenuForAnnotations:edgeInsets:allowPopovers:animated:</option>
 	
 	<option value="//api/name/showNoteControllerForAnnotation:showKeyboard:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- showNoteControllerForAnnotation:showKeyboard:animated:</option>
 	
@@ -186,9 +188,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_AnnotationMenu Methods">AnnotationMenu Methods</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_AnnotationViews Methods">AnnotationViews Methods</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Private Methods">Private Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_AnnotationViews Methods">AnnotationViews Methods</a></span></li>
 	
 </ul></li>
 
@@ -302,7 +304,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showFontPickerForAnnotation:animated:">showFontPickerForAnnotation:animated:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showMenuForAnnotations:edgeInsets:animated:">showMenuForAnnotations:edgeInsets:animated:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showInspectorForAnnotations:options:animated:">showInspectorForAnnotations:options:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showMenuForAnnotations:edgeInsets:allowPopovers:animated:">showMenuForAnnotations:edgeInsets:allowPopovers:animated:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showNoteControllerForAnnotation:showKeyboard:animated:">showNoteControllerForAnnotation:showKeyboard:animated:</a></span></li>
 	
@@ -672,7 +676,13 @@ Events from a attached UIScrollView will be relayed to all visible PSPDFPageView
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/showMenuForAnnotations:edgeInsets:animated:">&ndash;&nbsp;showMenuForAnnotations:edgeInsets:animated:</a></code>
+		<code><a href="#//api/name/showInspectorForAnnotations:options:animated:">&ndash;&nbsp;showInspectorForAnnotations:options:animated:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showMenuForAnnotations:edgeInsets:allowPopovers:animated:">&ndash;&nbsp;showMenuForAnnotations:edgeInsets:allowPopovers:animated:</a></code>
 	</span>
 	
 	
@@ -722,6 +732,20 @@ Events from a attached UIScrollView will be relayed to all visible PSPDFPageView
 						</ul>
 						
 						
+						<a title="Private Methods" name="task_Private Methods"></a>
+						<h3 class="subsubtitle task-title">Private Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suspendUpdate">&nbsp;&nbsp;suspendUpdate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
 						<a title="AnnotationViews Methods" name="task_AnnotationViews Methods"></a>
 						<h3 class="subsubtitle task-title">AnnotationViews Methods</h3>
 
@@ -761,20 +785,6 @@ Events from a attached UIScrollView will be relayed to all visible PSPDFPageView
 		<code><a href="#//api/name/selectAnnotation:animated:">&ndash;&nbsp;selectAnnotation:animated:</a></code>
 	</span>
 	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Private Methods" name="task_Private Methods"></a>
-						<h3 class="subsubtitle task-title">Private Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/suspendUpdate">&nbsp;&nbsp;suspendUpdate</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -2589,8 +2599,44 @@ If we use pageCurl mode, we have a global scrollView which can be accessed with 
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/showMenuForAnnotations:edgeInsets:animated:" title="showMenuForAnnotations:edgeInsets:animated:"></a>
-	<h3 class="subsubtitle method-title">showMenuForAnnotations:edgeInsets:animated:</h3>
+	<a name="//api/name/showInspectorForAnnotations:options:animated:" title="showInspectorForAnnotations:options:animated:"></a>
+	<h3 class="subsubtitle method-title">showInspectorForAnnotations:options:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Show the inspector.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)showInspectorForAnnotations:(NSArray *)<em>annotations</em> options:(NSDictionary *)<em>options</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSPDFPageView+AnnotationMenu.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showMenuForAnnotations:edgeInsets:allowPopovers:animated:" title="showMenuForAnnotations:edgeInsets:allowPopovers:animated:"></a>
+	<h3 class="subsubtitle method-title">showMenuForAnnotations:edgeInsets:allowPopovers:animated:</h3>
 	
 	
 	
@@ -2601,7 +2647,7 @@ This will usually call <code>menuItemsForAnnotation:</code> to show an <code>UIM
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)showMenuForAnnotations:(NSArray *)<em>annotations</em> edgeInsets:(UIEdgeInsets)<em>edgeInsets</em> animated:(BOOL)<em>animated</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)showMenuForAnnotations:(NSArray *)<em>annotations</em> edgeInsets:(UIEdgeInsets)<em>edgeInsets</em> allowPopovers:(BOOL)<em>allowPopovers</em> animated:(BOOL)<em>animated</em></code></div>
 
     
 	
@@ -2907,7 +2953,7 @@ Returns YES if the tap has been handled, else NO.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-05-26)</span><br />
+						<p><span class="copyright">&copy; 2014 PSPDFKit GmbH. All rights reserved. (Last updated: 2014-06-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
