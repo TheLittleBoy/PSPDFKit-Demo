@@ -1424,12 +1424,16 @@ a#button:focus {
   overflow: hidden; }
 
 /* line 145, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+.modal form#subForm p.fake {
+  display: none; }
+
+/* line 149, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm p span.formhalf {
   display: block;
   float: left;
   width: 50%; }
 
-/* line 153, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 157, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm button,
 .modal form#subForm input,
 .modal form#subForm textarea {
@@ -1440,7 +1444,7 @@ a#button:focus {
   border-radius: 3px;
   margin: 0; }
 
-/* line 162, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 166, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input,
 .modal form#subForm textarea {
   width: 380px;
@@ -1451,68 +1455,68 @@ a#button:focus {
   font-weight: 500;
   color: #373c44; }
 
-/* line 171, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 175, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input::-webkit-input-placeholder {
   color: #c8ccd1; }
 
-/* line 174, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 178, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input:-moz-placeholder {
   color: #c8ccd1; }
 
-/* line 177, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 181, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input::-moz-placeholder {
   color: #c8ccd1; }
 
-/* line 180, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 184, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input:-ms-input-placeholder {
   color: #c8ccd1; }
 
-/* line 184, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 188, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input:focus,
 .modal form#subForm textarea:focus {
   border-color: #b1b9c6;
   outline: none; }
 
-/* line 188, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 192, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input:focus::-webkit-input-placeholder {
   color: #acb3ba; }
 
-/* line 191, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 195, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input:focus:-moz-placeholder {
   color: #acb3ba; }
 
-/* line 194, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 198, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input:focus::-moz-placeholder {
   color: #acb3ba; }
 
-/* line 197, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 201, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input:focus:-ms-input-placeholder {
   color: #acb3ba; }
 
-/* line 200, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 204, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input.error {
   background: url("../images/cross.png") right center no-repeat;
   background-position: 95% center;
   color: #df452c;
   background: rgba(255, 0, 0, 0.1); }
 
-/* line 207, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 211, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm input[type="checkbox"] {
   margin: 0 2px;
   width: 20px; }
 
-/* line 212, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 216, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm label.checkbox {
   position: relative;
   display: inline-block;
   line-height: 2em; }
 
-/* line 218, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 222, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm label span {
   font-size: 12px;
   color: #999; }
 
-/* line 233, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 237, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm button {
   width: 380px;
   font-family: "Gotham", "Gotham A", "Gotham B", Helvetiva, sans-serif;
@@ -1530,23 +1534,23 @@ a#button:focus {
   outline: none;
   border: none; }
 
-/* line 250, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 254, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm button:hover {
   color: #fff;
   background: #ff572b; }
 
-/* line 255, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+/* line 259, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
 .modal form#subForm button:active,
 .modal form#subForm button:focus {
   background: #cc3912;
   outline: none; }
 
 @media only screen and (max-width: 480px) {
-  /* line 260, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 264, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   body {
     padding-top: 100px; }
 
-  /* line 263, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 267, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   .modal {
     margin: 0;
     top: 0;
@@ -1557,35 +1561,35 @@ a#button:focus {
     margin-right: 2%;
     padding: 8%; }
 
-  /* line 273, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 277, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   .modal form#subForm a.close {
     font-size: 18px;
     font-weight: bold; }
 
-  /* line 277, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 281, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   .modal form#subForm h1 {
     line-height: 1;
     margin-bottom: 30px; }
 
-  /* line 282, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 286, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   .modal form#subForm input,
   .modal form#subForm textarea {
     width: 100%;
     padding-left: 3%;
     padding-right: 3%; }
 
-  /* line 287, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 291, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   .modal form#subForm input.error {
     background-position: 95% center; }
 
-  /* line 290, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 294, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   .modal form#subForm button {
     float: left;
     width: 100%;
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 296, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
+  /* line 300, /Users/steipete/Documents/Projects/PSPDFKit-Website-v3/source/stylesheets/subscribe.css */
   .modal form#subForm #response {
     font-size: 16px;
     width: 100%;

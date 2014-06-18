@@ -306,6 +306,10 @@
         <label for="fieldhtlthu">Company Name</label><br />
         <input id="fieldhtlthu" name="cm-f-htlthu" type="text" />
       </p>
+      <p class="forminputs fake">
+        <label for="fieldhijuky">City</label><br />
+        <input id="fieldhijuky" name="cm-f-hijuky" type="text" />
+      </p>
       <p class="forminputs">
         <label for="fieldhtltkl">What are you building?</label><br />
         <textarea id="fieldhtltkl" name="cm-f-htltkl"></textarea>
@@ -316,12 +320,12 @@
       </div>
 
       <p class="forminputs">
-        <button type="submit" value="Submit">Download PSPDFKit</button>
+        <button type="submit" value="Submit">Get the Demo Link!</button>
       </p>
 
       <div id="response">
         <i class="tick"><img src="/images/subscribe-tick.png" width="48" height="48"></i>
-        Thanks! You're subscribed, now downloading the PSPDFKit Demo!
+        Thanks! You're subscribed, you'll find the download link in your email!
       </div>
 
       <div class="popupdismiss">
@@ -336,27 +340,28 @@
     $(function () {
       $('#subForm').submit(function (e) {
         e.preventDefault();
-        $('#fieldEmail').removeClass();
-        $('button').fadeTo(200,0.5);
-        $('#subscribing2list').show();
-        $('.modal .popupdismiss').hide();
-        $.getJSON(
-        this.action + "?callback=?",
-        $(this).serialize(),
-        function (data) {
-          $('button').stop().fadeTo(200,1);
-          if (data.Status === 400) { 
-            $('#fieldEmail').addClass('error'); 
-            $('#subscribing2list').hide();
-            $('.modal .popupdismiss').show();
-          } else { 
-            $('#subForm').find("label, input, p.forminputs, p.downloadinfo").hide();
-            $('#subscribing2list').hide();
-            $('#response').show();
-            $('.modal .popupdismiss').show();
-            window.location = "http://customers.pspdfkit.com/demo";
-          }
-        });
+        if ($("#fieldhijuky").val() == "") {
+          $('#fieldEmail').removeClass();
+          $('button').fadeTo(200,0.5);
+          $('#subscribing2list').show();
+          $('.modal .popupdismiss').hide();
+          $.getJSON(
+          this.action + "?callback=?",
+          $(this).serialize(),
+          function (data) {
+            $('button').stop().fadeTo(200,1);
+            if (data.Status === 400) { 
+              $('#fieldEmail').addClass('error'); 
+              $('#subscribing2list').hide();
+              $('.modal .popupdismiss').show();
+            } else { 
+              $('#subForm').find("label, input, p.forminputs, p.downloadinfo").hide();
+              $('#subscribing2list').hide();
+              $('#response').show();
+              $('.modal .popupdismiss').show();
+            }
+          });
+        }
       });
     });
   </script>

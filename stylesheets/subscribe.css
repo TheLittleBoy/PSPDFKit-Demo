@@ -142,6 +142,10 @@ a#button:focus {
 
 }
 
+.modal form#subForm p.fake {
+  display: none;
+}
+
 .modal form#subForm p span.formhalf {
   display: block;
   float: left;
